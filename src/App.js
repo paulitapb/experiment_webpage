@@ -1,7 +1,7 @@
 import './App.css';
+import FiveStarsRating from './StarRating';
+import ExperimentImages from './Experiment';
 import React,  { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function App() {
 
@@ -15,6 +15,7 @@ export default function App() {
       
       <div>
         <FiveStarsRating />
+        <ExperimentImages />
       </div>
     </div>
 
@@ -103,31 +104,6 @@ function Image(){
 }
 
 
-function FiveStarsRating(){
-
-  function handleRatingClick(){
-
-  }
-  return(
-    <section>
-      <Star onClick={() => handleRatingClick(i)} />
-
-    </section>
-    )
-}
 
 
-function Star({isYellow, onClick}){
-  
-  
-  const handleRatingClick = () => {
-    setIsYellow(!isYellow);
-  };
-
-  return(
-    <section>
-      <FontAwesomeIcon icon={faStar} style={ { color: ${isYellow ? 'yellow' : 'gray'}, height: "40px"}} />
-    </section>
-  )
-}
 
