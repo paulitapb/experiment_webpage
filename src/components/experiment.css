@@ -1,0 +1,21 @@
+.image-container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+.image-container div {
+    text-align: center;
+    border: 2px solid #7187dc;
+    border-radius: 10%;
+    padding: 10px; 
+    margin: 5px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.rating-container {
+    text-align: center;
+}
