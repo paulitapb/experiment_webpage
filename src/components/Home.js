@@ -1,6 +1,6 @@
 import './home.css';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 import React,  { useState } from 'react';
 
 export default function Home() {
@@ -11,8 +11,7 @@ export default function Home() {
     <div>
       <Header/>
       <SubHeader/>
-      <GetCellPhoneFromUser />
-      <StartExperimentButton />
+      <GetCellPhoneFromUser/>
     </div>
   );
 }
@@ -35,34 +34,54 @@ function SubHeader(){
   );
 }
 
-function StartExperimentButton() {
-  const navigate = useNavigate();
-  
-  const handleClick = () => {
-    alert('Va a arrancar el experimento!!');
-    //TODO: chequear que se puede comenzar
-    navigate('/experiment')
-  };
-
-  return (
-    <div style={{textAlign : 'center'}}>
-      <button className= "buttonStyle" onClick={handleClick}>Comenzar</button> {/* Add onClick event with the function to handle button click */}
-    </div>
-  );
-}
-
 function GetCellPhoneFromUser() {
 
-  //TODO: chequear en la base de datos que el telefono no este y parsearlo para que sea valido
-  const [inputValue, setInputValue] = useState('');
+  //TODO: parsear tel para que sea valido
+  // si cambia el userId sacar el registeredID 
+  // hacer que no puedan llenar la base con users 
+  const [userId, setUserId] = useState('');
+  const navigate = useNavigate();
+
   const handleInputChange = (event) => {
-    setInputValue(event.target.value); 
+    setUserId(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  
+  /* const [imgId, setImgId] = useState(4);
+  const [imgGroup, setImgGroup] = useState(1);
+  const [imgGeneratedBy, setImgGeneratedBy] = useState('SD');
+  const [promptUsed, setPromptUsed] = useState(100);
+  const [rating, setRating] = useState(1); */
+  
+  const handleCheckUser = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/api/checkUser/${userId}`);
+      const { userExists } = response.data;
+      return (userExists !== null);
+    } catch (error) {
+      console.error('Error checking user:', error);
+      return false;
+    }
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const userExists = await handleCheckUser();
     
-    console.log('Submitted data:', inputValue);
+    if (userExists) {
+      console.log('User already exists');
+      alert('Usuario ya registrado!')
+    } else {
+      console.log('Add new user: User does not exist');
+      try {
+        const response = await axios.post('http://localhost:5000/api/addUser', {
+           userId
+         });
+         navigate('/experiment')
+       } catch (error) {
+         console.error('Error submitting data:', error);
+       }
+    }
   };
 
   return (
@@ -71,7 +90,7 @@ function GetCellPhoneFromUser() {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={inputValue}
+          value={userId}
           onChange={handleInputChange}
           placeholder="Ingresa tu telefono"
         />
@@ -81,26 +100,7 @@ function GetCellPhoneFromUser() {
   );
 }
 
-function RateTwoImg(){
-  return(
-    <div>
-      <section>
-        <Image />
-        <Image />
-      </section>
-      
-    </div>
-  )
-}
 
-function Image(){
-  return(
-    <img className='image-style'
-      src="https://i.imgur.com/MK3eW3As.jpg"
-      alt="Katherine Johnson"
-    />
-  )
-}
 
 
 
