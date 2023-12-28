@@ -77,7 +77,7 @@ function GetCellPhoneFromUser() {
         const response = await axios.post('http://localhost:5000/api/addUser', {
            userId
          });
-         navigate('/experiment')
+         navigate(`/experiment/${userId}`)
        } catch (error) {
          console.error('Error submitting data:', error);
        }

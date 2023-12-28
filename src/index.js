@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ExperimentCompareImages from './components/Experiment';
 import Home from './components/Home';
+import ThankYouMessage from './components/thankYouMessage.js';
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
   },
   ,
   {
-    path: "experiment/",
+    path: "experiment/:userId",
     element: <ExperimentCompareImages />,
+  },
+  {
+    path: "thank-you/",
+    element: <ThankYouMessage />,
   },
 ]);
 

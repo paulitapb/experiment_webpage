@@ -9,7 +9,15 @@ export default class FiveStarsRating extends Component {
       super(props);
       this.state = { currRating: 0, hoverRating: 0};
     }
-  
+
+    reset(){
+      this.setState({ currRating: 0, hoverRating: 0});
+    }
+    
+    currentRating(){
+      return this.state.currRating;
+    }
+
     onHover(index) {
         this.setState({ hoverRating: index + 1 }); 
     }
@@ -28,7 +36,7 @@ export default class FiveStarsRating extends Component {
     starColor(index) {
       return (this.state.currRating > index || this.state.hoverRating > index) ? 'gold' : 'gray';
     }
-  
+
     render() {
       return [...Array(5).keys()].map((index) => (
         <span key={index} style={{ color: this.starColor(index) }}>
