@@ -9,11 +9,11 @@ const port = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGODB_URI);
 
-app.use(cors({
+/* app.use(cors({
   origin: 'http://localhost:3000',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true
-}));
+})); */
 app.use(express.json());
 
 app.use('/api', apiRoutes);
