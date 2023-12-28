@@ -7,7 +7,7 @@ const apiRoutes = require('./routes/api');
 const app = express();
 const port = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost/ExperimentDB');
+mongoose.connect(process.env.MONGODB_URI);
 
 app.use(cors({
   origin: 'http://localhost:3000',
