@@ -8,5 +8,11 @@
         "src": "src/",
         "use": "@vercel/next"
       }
-    ]
+    ],  
+    "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "src/index.html" 
+      }
+  ]
   }
