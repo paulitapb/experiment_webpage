@@ -7,6 +7,7 @@ import ExperimentCompareImages from './components/Experiment';
 import Home from './components/Home';
 import ThankYouMessage from './components/thankYouMessage.js';
 
+
 const router = createBrowserRouter([
   {
     path: "/",

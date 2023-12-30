@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const ExperimentModel = require('../models/ExperimentModel');
-
+require('dotenv').config()
 
 router.get('/ratings', async (req, res) => {
   try {
