@@ -11,6 +11,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 
 app.use(cors());
+app.use(express.static('public'));
 
 app.use(express.json());
 
