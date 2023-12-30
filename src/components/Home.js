@@ -47,17 +47,12 @@ function GetCellPhoneFromUser() {
   };
 
   
-  /* const [imgId, setImgId] = useState(4);
-  const [imgGroup, setImgGroup] = useState(1);
-  const [imgGeneratedBy, setImgGeneratedBy] = useState('SD');
-  const [promptUsed, setPromptUsed] = useState(100);
-  const [rating, setRating] = useState(1); */
-  
   const handleCheckUser = async () => {
     try {
       const response = await axios.get(process.env.MONGODB_URI + `/api/checkUser/${userId}`);
       const { userExists } = response.data;
       return (userExists !== null);
+      console.log(userExists);
     } catch (error) {
       console.error('Error checking user:', error);
       return false;
