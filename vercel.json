@@ -1,5 +1,0 @@
-{
-    "env": {
-      "NEXT_PUBLIC_TESTS_VAR": "@NEXT_PUBLIC_TESTS_VAR"
-    }
-  }
