@@ -52,7 +52,7 @@ function GetCellPhoneFromUser() {
       const response = await axios.get(process.env.MONGODB_URI + `/api/checkUser/${userId}`);
       const { userExists } = response.data;
       console.log(userExists);
-      console.log(process.env.TETS_VAR);
+      console.log(process.env.NEXT_PUBLIC_TESTS_VAR);
       console.log(process.env.MONGODB_URI);
       return (userExists !== null);
      
