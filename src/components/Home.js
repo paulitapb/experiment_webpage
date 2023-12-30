@@ -55,7 +55,7 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/checkUser/${userId}`);
+      const response = await axios.get(process.env.MONGODB_URI + `/api/checkUser/${userId}`);
       const { userExists } = response.data;
       return (userExists !== null);
     } catch (error) {
@@ -74,7 +74,7 @@ function GetCellPhoneFromUser() {
     } else {
       console.log('Add new user: User does not exist');
       try {
-        const response = await axios.post('http://localhost:5000/api/addUser', {
+        const response = await axios.post(process.env.MONGODB_URI + '/api/addUser', {
            userId
          });
          navigate(`/experiment/${userId}`)
