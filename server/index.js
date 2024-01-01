@@ -4,6 +4,9 @@ const cors = require('cors');
 require('dotenv').config(); //{ path: '/.env' }
 
 
+app.use(cors({
+  origin: 'https://experimentsd-o0d1lusk2-paulas-projects-16fd8cb8.vercel.app'
+}));
 
 const app = express();
 const port = process.env.PORT;
@@ -20,9 +23,7 @@ const connectDB = async () => {
 
 const apiRoutes = require('./routes/api');
 
-app.use(cors({
-  origin: 'https://experimentsd-o0d1lusk2-paulas-projects-16fd8cb8.vercel.app'
-}));
+
 
 app.use(express.static('public'));
 app.use(express.json());
