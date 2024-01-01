@@ -49,7 +49,7 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
-      const response = await axios.get(`/api/checkUser/${userId}`);
+      const response = await axios.get(`https://experiment-webpage-server.vercel.app/api/checkUser/${userId}`);
       const { userExists } = response.data;
       console.log(userExists);
       return (userExists !== null);
@@ -70,7 +70,7 @@ function GetCellPhoneFromUser() {
     } else {
       console.log('Add new user: User does not exist');
       try {
-        const response = await axios.post('/api/addUser', {
+        const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
            userId
          });
          navigate(`/experiment/${userId}`)

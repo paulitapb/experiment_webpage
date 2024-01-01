@@ -22,7 +22,7 @@ export default function ExperimentCompareImages() {
       setIndex(index+1);
       if (fiveStarsRatingRef) {
       try {
-        const response = await axios.post('/api/addRating', {
+        const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
           userId: userId,
           imgId: sd_english_captions_img.img, 
           imgGroup: sd_english_captions_img.group,
