@@ -21,7 +21,7 @@ const connectDB = async () => {
 const apiRoutes = require('./routes/api');
 
 app.use(cors({
-  origin: 'https://experimentsd-o0d1lusk2-paulas-projects-16fd8cb8.vercel.app/'
+  origin: 'https://experimentsd-o0d1lusk2-paulas-projects-16fd8cb8.vercel.app'
 }));
 
 app.use(express.static('public'));
