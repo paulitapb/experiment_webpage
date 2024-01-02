@@ -10,6 +10,7 @@
     --pale-purple: #DBD3D8;
     --pale-peach: #E1C6B7;
     --heart-red: #BF211E; 
+    --pale-cyan: #DDF8F8;
 
   }
 
@@ -64,7 +65,7 @@
     transition: background-color 0.3s ease;
   }
   body {
-    background-color: var(--platinum);
+    background-color: var(--pale-cyan);
   }
 
   @keyframes App-logo-spin {

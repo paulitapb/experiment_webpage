@@ -45,12 +45,11 @@ export default function ExperimentCompareImages() {
   
   return (
     <>
-        <h2>
-            ¿Cuán parecidas te parecen estas imagenes? <i>(1 es poco parecidas y 5 muy parecidas)</i>
-        </h2>
-        <h3>  
-            ({index + 1} of {originalImagesList.length})
-        </h3>
+        <div className='SubHeader'>
+            ¿Cuán parecidas te parecen estas imagenes? 
+        </div>
+        <div className='Center'> <i>(1 es poco parecidas y 5 muy parecidas)</i> </div>
+
         <div className='image-container'>
             <div>
                 <h4>Imagen original</h4> 
@@ -69,7 +68,7 @@ export default function ExperimentCompareImages() {
       </div>
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
-        <button onClick={handleNextClick}>
+        <button onClick={handleNextClick} className='SubmitButton'>
             Next
         </button>
       </div>

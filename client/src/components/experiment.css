@@ -1,14 +1,19 @@
 .image-container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     
 .image-container div {
     text-align: center;
-    border: 2px solid #7187dc;
-    border-radius: 10%;
-    padding: 10px; 
-    margin: 5px;
+    border: 2px solid var(--pale-peach);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0px; 
+    margin: 8px;
+    background-color: var(--pale-peach);
+    transition: transform 0.3s ease;
+    flex: 1;
 }
 
 img {
@@ -18,4 +23,35 @@ img {
 
 .rating-container {
     text-align: center;
+    padding: 1vw;
 }
+
+.SubHeader {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--deeper-gray-color);
+    padding: 20px 20px;
+    font-weight: bold;
+  }
+
+  .Center{
+text-align: center;
+}
+.SubmitButton {
+    padding: 10px 15px;
+    background-color: var(--deep-red);
+    color: var(--platinum);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .ThankYou {
+    text-align: center;
+    padding: 10vw;
+    font-size: 6vw;
+    color: var(--deep-red);
+    font-weight: bold;
+  }
