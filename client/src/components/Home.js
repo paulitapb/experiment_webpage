@@ -2,7 +2,7 @@ import './home.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import React,  { useState } from 'react';
-import crypto from 'crypto';
+import crypto from 'crypto-browserify';
 
 export default function Home() {
 
