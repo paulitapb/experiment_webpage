@@ -43,18 +43,9 @@ function GetCellPhoneFromUser() {
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
-    const cellNumber = event.target.value;
-
-    const cellNumberPattern = /^[0-9]{10}$/;
-    const isValidCellNumber = cellNumberPattern.test(cellNumber);
     
-    if (isValidCellNumber) {
-      const hashedCellNumber = SHA256(cellNumber).toString();
-      setUserId(hashedCellNumber);
-    } else {
-      console.error('Invalid cell number');
-      alert('Numero de telefono invalido');
-    }
+    setUserId(hashedCellNumber);
+    
   };
 
   
@@ -72,6 +63,17 @@ function GetCellPhoneFromUser() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const cellNumberPattern = /^[0-9]{10}$/;
+    const isValidCellNumber = cellNumberPattern.test(userId);
+    
+    if (isValidCellNumber) {
+      const hashedCellNumber = SHA256(userId).toString();
+      setUserId(hashedCellNumber);
+    } else {
+      console.error('Invalid cell number');
+    }
+
     const userExists = await handleCheckUser();
     
     if (userExists) {
