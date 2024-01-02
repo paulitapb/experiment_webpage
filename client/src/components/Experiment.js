@@ -1,4 +1,4 @@
-import {useRef, useState } from 'react';
+import {useRef, useState, useEffect } from 'react';
 import { originalImagesList,  sd_english_captions} from '../data';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
@@ -10,7 +10,26 @@ export default function ExperimentCompareImages() {
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
-  
+
+  const shuffleArray = (array) => {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+  const [shuffledCaptions, setShuffledCaptions] = useState([]);
+
+  useEffect(() => {
+    setShuffledCaptions(shuffleArray([...sd_english_captions]));
+  }, []);
 
   let sd_english_captions_img = sd_english_captions[index]; 
   let originalImage = originalImagesList[sd_english_captions_img.group-1][sd_english_captions_img.img-1];

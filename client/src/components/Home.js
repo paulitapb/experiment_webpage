@@ -62,7 +62,6 @@ function GetCellPhoneFromUser() {
     try {
       const response = await axios.get(`https://experiment-webpage-server.vercel.app/api/checkUser/${userId}`);
       const { userExists } = response.data;
-      console.log(userExists);
       return (userExists !== null);
      
     } catch (error) {
@@ -77,7 +76,8 @@ function GetCellPhoneFromUser() {
     
     if (userExists) {
       console.log('User already exists');
-      alert('Usuario ya registrado!')
+      alert("Bienvenidx nuevamente!")
+      navigate(`/experiment/${userId}`)
     } else {
       console.log('Add new user: User does not exist');
       try {
