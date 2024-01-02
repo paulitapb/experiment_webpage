@@ -32,7 +32,7 @@ export default function ExperimentCompareImages() {
   }, []);
 
   let sd_english_captions_img = sd_english_captions[index]; 
-  let originalImagePath = "../images/img_original/img" + String.toString(sd_english_captions_img.group) + String.toString(sd_english_captions_img.img-1) + ".png";
+  let originalImagePath = "../images/img_original/img" + String.toString(sd_english_captions_img.group) + String.toString(sd_english_captions_img.img) + ".png";
 
   const handleNextClick = async () => {
     if(index + 1  === sd_english_captions.length){

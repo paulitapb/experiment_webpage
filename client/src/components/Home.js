@@ -66,12 +66,12 @@ function GetCellPhoneFromUser() {
 
     const cellNumberPattern = /^[0-9]{10}$/;
     const isValidCellNumber = cellNumberPattern.test(userId);
-    
-    if (isValidCellNumber) {
-      const hashedCellNumber = SHA256(userId).toString();
-      setUserId(hashedCellNumber);
-    } else {
+    const hashedCellNumber = SHA256(userId).toString();
+
+    if (!isValidCellNumber) {
       console.error('Invalid cell number');
+      alert("El numero de telefono ingresado no es valido")
+      setUserId('')
     }
 
     const userExists = await handleCheckUser();
@@ -79,7 +79,7 @@ function GetCellPhoneFromUser() {
     if (userExists) {
       console.log('User already exists');
       alert("Bienvenidx nuevamente!")
-      navigate(`/experiment/${userId}`)
+      navigate(`/experiment/${hashedCellNumber}`)
     } else {
       console.log('Add new user: User does not exist');
       try {
