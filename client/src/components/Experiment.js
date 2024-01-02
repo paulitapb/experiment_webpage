@@ -1,5 +1,5 @@
 import {useRef, useState, useEffect } from 'react';
-import { originalImagesList,  sd_english_captions} from '../data';
+import {sd_english_captions} from '../data';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
 import { useNavigate, useParams } from 'react-router-dom';
@@ -32,7 +32,7 @@ export default function ExperimentCompareImages() {
   }, []);
 
   let sd_english_captions_img = sd_english_captions[index]; 
-  let originalImage = originalImagesList[sd_english_captions_img.group-1][sd_english_captions_img.img-1];
+  let originalImagePath = "../images/img_original/img" + String.toString(sd_english_captions_img.group) + String.toString(sd_english_captions_img.img-1) + ".png";
 
   const handleNextClick = async () => {
     if(index + 1  === sd_english_captions.length){
@@ -73,7 +73,7 @@ export default function ExperimentCompareImages() {
             <div>
                 <h4>Imagen original</h4> 
                     <img 
-                        src={process.env.PUBLIC_URL + originalImage.dir} 
+                        src={process.env.PUBLIC_URL + originalImagePath} 
                         alt=''
                     />
             </div>
