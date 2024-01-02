@@ -10,7 +10,7 @@ export default function ExperimentCompareImages() {
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
-  console.log('Experiment Page - User ID:', userId);
+  
 
   let sd_english_captions_img = sd_english_captions[index]; 
   let originalImage = originalImagesList[sd_english_captions_img.group-1][sd_english_captions_img.img-1];

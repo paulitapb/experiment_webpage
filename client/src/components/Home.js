@@ -2,6 +2,7 @@ import './home.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import React,  { useState } from 'react';
+import crypto from 'crypto';
 
 export default function Home() {
 
@@ -37,14 +38,25 @@ function SubHeader(){
 
 function GetCellPhoneFromUser() {
 
-  //TODO: parsear tel para que sea valido
-  // si cambia el userId sacar el registeredID 
-  // hacer que no puedan llenar la base con users 
+  
   const [userId, setUserId] = useState('');
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
-    setUserId(event.target.value);
+    const cellNumber = event.target.value;
+
+    const cellNumberPattern = /^[0-9]{10}$/;
+    const isValidCellNumber = cellNumberPattern.test(cellNumber);
+    
+    if (isValidCellNumber) {
+      const hash = crypto.createHash('sha256');
+      hash.update(cellNumber);
+      const hashedCellNumber = hash.digest('hex');
+      setUserId(hashedCellNumber);
+    } else {
+      console.error('Invalid cell number');
+      alert('Numero de telefono invalido');
+    }
   };
 
   
@@ -83,7 +95,8 @@ function GetCellPhoneFromUser() {
 
   return (
     <div>
-      <div className='SubSubHeader'>Ingresa tu telefono antes de comenzar</div>
+      <div className='SubSubHeader'>Ingresa tu telefono celular</div>
+      <div className='Center'> Solo guardaremos este dato modificado como identificador</div>
       <div className='Center'>
       <form onSubmit={handleSubmit}>
         <input

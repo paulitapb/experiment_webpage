@@ -35,7 +35,8 @@ img {
   }
 
   .Center{
-text-align: center;
+  text-align: center; 
+  color: var(--deeper-gray-color)
 }
 .SubmitButton {
     padding: 10px 15px;
