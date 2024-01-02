@@ -1,5 +1,5 @@
 
-export const sd_english_captions = [
+export const generated_images = [
   {
       name: 'img generada de grupo 4 img 3', 
       dir: '../images/SD-english/index561_group4_img3_seed2209029250_cfg7.png',

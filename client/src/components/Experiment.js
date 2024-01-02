@@ -1,9 +1,10 @@
 import {useRef, useState, useEffect } from 'react';
-import {sd_english_captions} from '../data';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import images from '../data.json';
+
 
 export default function ExperimentCompareImages() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function ExperimentCompareImages() {
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
 
-  const shuffleArray = (array) => {
+  /* const shuffleArray = (array) => {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
     while (0 !== currentIndex) {
@@ -29,13 +30,16 @@ export default function ExperimentCompareImages() {
 
   useEffect(() => {
     setShuffledCaptions(shuffleArray([...sd_english_captions]));
-  }, []);
+  }, []); */
 
-  let sd_english_captions_img = sd_english_captions[index]; 
-  let originalImagePath = "../images/img_original/img" + String.toString(sd_english_captions_img.group) + String.toString(sd_english_captions_img.img) + ".png";
+  let experimentImg = images.filter((img) => img.id === index)[0];
 
+  let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
+
+  console.log('original img: ', process.env.PUBLIC_URL + originalImagePath);
+  
   const handleNextClick = async () => {
-    if(index + 1  === sd_english_captions.length){
+    if(index + 1  === 10){
       navigate('/thank-you');
     }else{
       setIndex(index+1);
@@ -43,10 +47,10 @@ export default function ExperimentCompareImages() {
       try {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
           userId: userId,
-          imgId: sd_english_captions_img.img, 
-          imgGroup: sd_english_captions_img.group,
-          imgGeneratedBy: 'SD-english-captions', 
-          promptUsed: 7, 
+          imgId: experimentImg.img, 
+          imgGroup: experimentImg.group,
+          imgGeneratedBy:experimentImg.generatedBy, 
+          promptUsed: experimentImg.promptUsed, 
           rating: fiveStarsRatingRef.current.currentRating()
         });
   
@@ -80,7 +84,7 @@ export default function ExperimentCompareImages() {
             <div>
                 <h4>Imagen generada</h4> 
                 <img 
-                    src={process.env.PUBLIC_URL + sd_english_captions_img.dir} 
+                    src={process.env.PUBLIC_URL + experimentImg.dir} 
                     alt=''
                 />
             </div>
