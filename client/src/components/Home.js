@@ -19,7 +19,7 @@ export default function Home() {
 function Header(){
   return (
     <div className="Header">
-      <h1> Experimento </h1>
+      <h1> Humanos vs. IA Generativa </h1>
     </div>
 
   );
@@ -27,8 +27,9 @@ function Header(){
 
 function SubHeader(){
   return (
-    <div >
+    <div className="SubHeader">
       Explicacion del exp y condiciones para participar  
+      -- Explicar que el tel es un user para volver 
     </div>
 
   );
@@ -82,16 +83,20 @@ function GetCellPhoneFromUser() {
 
   return (
     <div>
-      <h1>Ingresa tu telefono antes de comenzar</h1>
+      <div className='SubSubHeader'>Ingresa tu telefono antes de comenzar</div>
+      <div className='Center'>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={userId}
           onChange={handleInputChange}
           placeholder="Ingresa tu telefono"
+          className='Input'
         />
-        <button type="submit">Ingresar</button>
+        
+        <button type="submit" className='SubmitButton'>Ingresar</button>
       </form>
+      </div>
     </div>
   );
 }

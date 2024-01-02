@@ -1,58 +1,72 @@
-.App {
-    text-align: center;
-    background-color: #11aa2b;
+
+  :root {
+    --gray-color: #C5C5C5;
+    --yellow-color: #f5c211;
+    --deeper-gray-color: #5e5d5d;
+
+    --deep-blue: #4B7D95;
+    --deep-red:#D2694B;
+    --platinum: #DCE0E5;
+    --pale-purple: #DBD3D8;
+    --pale-peach: #E1C6B7;
+    --heart-red: #BF211E; 
+
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    background-color: #28342a;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
+
   .Header {
-    font-size: 40px;
+    font-size: 3vw;
     text-align: center;
-    color: rgb(0, 162, 255); 
+    color: var(--deep-blue); 
   }
   
-  .buttonStyle {
-    font-size: 30px;
-    background-color:aquamarine;
-    justify-content: center;
-    border-radius: 10%;
-  
+  .SubHeader {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--deeper-gray-color);
+    padding: 20px 20px;
   }
-  
-  .image-style{
-    width: 300px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+  .SubSubHeader{
+    font-size: 2vw;
+    text-align: center;
+    color: var(--deeper-gray-color);
+    font-weight: bold;
+    padding: 20px 20px;
   }
-  
+
+  .Center{
+    text-align: center;
+  }
   .gray {
-    color: #C5C5C5;
+    color: var(--gray-color);
   }
   
   .yellow {
-    color: #f5c211;
+    color: var(--yellow-color);
   }
   
+  .SubmitButton {
+    padding: 10px 15px;
+    background-color: var(--deep-red);
+    color: var(--platinum);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  .Input{
+    padding: 10px 15px;
+    color: var(--platinum);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  body {
+    background-color: var(--platinum);
+  }
+
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
