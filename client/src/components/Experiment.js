@@ -5,41 +5,34 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import images from '../data.json';
 
+const imgAmountToRate = 5;
+
+function generateRandomIndices() {
+  //TODO: add check that theres no a rating with this id in the DB
+  const randomIndices = new Set();
+  while (randomIndices.size < imgAmountToRate) {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    randomIndices.add(randomIndex);
+  }
+  return Array.from(randomIndices);
+}
+
+const indicesImagesToRate = generateRandomIndices();
 
 export default function ExperimentCompareImages() {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
-
-  /* const shuffleArray = (array) => {
-    let currentIndex = array.length, temporaryValue, randomIndex;
-
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-  }
-  const [shuffledCaptions, setShuffledCaptions] = useState([]);
-
-  useEffect(() => {
-    setShuffledCaptions(shuffleArray([...sd_english_captions]));
-  }, []); */
-
-  let experimentImg = images.filter((img) => img.id === index)[0];
+  
+  
+  let experimentImg = images[indicesImagesToRate[index]];
 
   let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
 
-  console.log('original img: ', process.env.PUBLIC_URL + originalImagePath);
   
   const handleNextClick = async () => {
-    if(index + 1  === 10){
+    if(index + 1  === imgAmountToRate){
       navigate('/thank-you');
     }else{
       setIndex(index+1);
@@ -63,7 +56,6 @@ export default function ExperimentCompareImages() {
     }
  
   }
-
 
   
   return (
