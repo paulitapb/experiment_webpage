@@ -44,7 +44,7 @@ function GetCellPhoneFromUser() {
 
   const handleInputChange = (event) => {
     
-    setUserId(hashedCellNumber);
+    setUserId(event.target.value);
     
   };
 
