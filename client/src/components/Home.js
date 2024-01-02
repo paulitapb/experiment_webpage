@@ -2,7 +2,7 @@ import './home.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import React,  { useState } from 'react';
-import crypto from 'crypto-browserify';
+import { SHA256 } from 'crypto-js';
 
 export default function Home() {
 
@@ -49,9 +49,7 @@ function GetCellPhoneFromUser() {
     const isValidCellNumber = cellNumberPattern.test(cellNumber);
     
     if (isValidCellNumber) {
-      const hash = crypto.createHash('sha256');
-      hash.update(cellNumber);
-      const hashedCellNumber = hash.digest('hex');
+      const hashedCellNumber = SHA256(cellNumber).toString();
       setUserId(hashedCellNumber);
     } else {
       console.error('Invalid cell number');
