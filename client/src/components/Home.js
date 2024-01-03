@@ -40,6 +40,7 @@ function GetCellPhoneFromUser() {
 
   
   const [userId, setUserId] = useState('');
+  const [hashedUserId, sethashedUserId] = useState('');
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
@@ -51,7 +52,7 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
-      const response = await axios.get(`https://experiment-webpage-server.vercel.app/api/checkUser/${userId}`);
+      const response = await axios.get(`https://experiment-webpage-server.vercel.app/api/checkUser/${hashedUserId}`);
       const { userExists } = response.data;
       return (userExists !== null);
      
@@ -73,7 +74,6 @@ function GetCellPhoneFromUser() {
       alert("El numero de telefono ingresado no es valido")
       setUserId('')
     }
-    setUserId(hashedCellNumber);
     const userExists = await handleCheckUser();
     
     if (userExists) {
@@ -84,9 +84,9 @@ function GetCellPhoneFromUser() {
       console.log('Add new user: User does not exist');
       try {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
-           userId
+           hashedCellNumber
          });
-         navigate(`/experiment/${userId}`)
+         navigate(`/experiment/${hashedCellNumber}`)
        } catch (error) {
          console.error('Error submitting data:', error);
        }
