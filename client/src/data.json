@@ -1,62 +1,482 @@
 [
   {
     "id": 0,
+    "name": "img generada de grupo 3 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index443_group3_img4_seed3861852815_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 3,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 443
+  },
+  {
+    "id": 1,
+    "name": "img generada de grupo 3 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index382_group3_img2_seed3934986003_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 3,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 382
+  },
+  {
+    "id": 2,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index535_group4_img2_seed1609334132_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 535
+  },
+  {
+    "id": 3,
+    "name": "img generada de grupo 1 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index159_group1_img4_seed574055_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 159
+  },
+  {
+    "id": 4,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index552_group4_img3_seed1982645038_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 552
+  },
+  {
+    "id": 5,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english-txtInv/index618_group4_img4_seed2107373439_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promtUsed": 618
+    "promptUsed": 618
   },
   {
-    "id": 1,
+    "id": 6,
+    "name": "img generada de grupo 3 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index316_group3_img1_seed214149784_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 3,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 316
+  },
+  {
+    "id": 7,
+    "name": "img generada de grupo 2 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index183_group2_img1_seed1688036547_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 2,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 183
+  },
+  {
+    "id": 8,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english-txtInv/index612_group4_img4_seed1558183580_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promtUsed": 612
+    "promptUsed": 612
   },
   {
-    "id": 2,
+    "id": 9,
+    "name": "img generada de grupo 1 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index153_group1_img4_seed4094475467_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 153
+  },
+  {
+    "id": 10,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index502_group4_img2_seed3356838916_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 502
+  },
+  {
+    "id": 11,
+    "name": "img generada de grupo 1 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index108_group1_img3_seed1590005666_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 108
+  },
+  {
+    "id": 12,
+    "name": "img generada de grupo 1 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index24_group1_img1_seed2210790074_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 24
+  },
+  {
+    "id": 13,
+    "name": "img generada de grupo 1 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index123_group1_img3_seed3870814814_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 123
+  },
+  {
+    "id": 14,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index576_group4_img3_seed682770959_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 576
+  },
+  {
+    "id": 15,
+    "name": "img generada de grupo 1 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index116_group1_img3_seed2439056937_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 1,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 116
+  },
+  {
+    "id": 16,
+    "name": "img generada de grupo 2 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index214_group2_img2_seed1147341776_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 2,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 214
+  },
+  {
+    "id": 17,
+    "name": "img generada de grupo 3 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index321_group3_img1_seed1562415114_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 3,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 321
+  },
+  {
+    "id": 18,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index540_group4_img3_seed1266937377_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 540
+  },
+  {
+    "id": 19,
+    "name": "img generada de grupo 2 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index266_group2_img3_seed4146527469_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 2,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 266
+  },
+  {
+    "id": 20,
+    "name": "img generada de grupo 1 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index127_group1_img4_seed4189569538_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 1,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 127
+  },
+  {
+    "id": 21,
+    "name": "img generada de grupo 3 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index405_group3_img3_seed2003697065_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 3,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 405
+  },
+  {
+    "id": 22,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index522_group4_img2_seed563337927_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 522
+  },
+  {
+    "id": 23,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index517_group4_img2_seed3925296550_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 517
+  },
+  {
+    "id": 24,
+    "name": "img generada de grupo 3 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index331_group3_img1_seed3386789770_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 3,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 331
+  },
+  {
+    "id": 25,
+    "name": "img generada de grupo 3 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index326_group3_img1_seed1451844458_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 3,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 326
+  },
+  {
+    "id": 26,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index578_group4_img3_seed3377081295_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 578
+  },
+  {
+    "id": 27,
+    "name": "img generada de grupo 1 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index17_group1_img1_seed27511204_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 1,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 17
+  },
+  {
+    "id": 28,
+    "name": "img generada de grupo 2 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index199_group2_img1_seed1496169116_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 2,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 199
+  },
+  {
+    "id": 29,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index602_group4_img4_seed3717272902_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 602
+  },
+  {
+    "id": 30,
+    "name": "img generada de grupo 3 img 2",
+    "dir": "/images/generated_imgs/SD-english/index360_group3_img2_seed4247094547_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 3,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 360
+  },
+  {
+    "id": 31,
+    "name": "img generada de grupo 1 img 3",
+    "dir": "/images/generated_imgs/SD-english/index106_group1_img3_seed2062624681_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 1,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 106
+  },
+  {
+    "id": 32,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english/index604_group4_img4_seed129087651_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promtUsed": 604
+    "promptUsed": 604
   },
   {
-    "id": 3,
+    "id": 33,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index490_group4_img1_seed1673135585_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 490
+  },
+  {
+    "id": 34,
+    "name": "img generada de grupo 3 img 1",
+    "dir": "/images/generated_imgs/SD-english/index330_group3_img1_seed290537562_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 3,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 330
+  },
+  {
+    "id": 35,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english/index561_group4_img3_seed2209029250_cfg7.png",
     "alt": "",
     "img": 3,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promtUsed": 561
+    "promptUsed": 561
   },
   {
-    "id": 4,
+    "id": 36,
+    "name": "img generada de grupo 3 img 3",
+    "dir": "/images/generated_imgs/SD-english/index403_group3_img3_seed1456783215_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 3,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 403
+  },
+  {
+    "id": 37,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english/index602_group4_img4_seed3590091183_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promtUsed": 602
+    "promptUsed": 602
   },
   {
-    "id": 5,
+    "id": 38,
+    "name": "img generada de grupo 1 img 1",
+    "dir": "/images/generated_imgs/SD-english/index38_group1_img1_seed3555395728_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 1,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 38
+  },
+  {
+    "id": 39,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index545_group4_img3_seed1170462004_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 545
+  },
+  {
+    "id": 40,
+    "name": "img generada de grupo 2 img 1",
+    "dir": "/images/generated_imgs/SD-english/index188_group2_img1_seed1373260873_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 2,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 188
+  },
+  {
+    "id": 41,
+    "name": "img generada de grupo 1 img 1",
+    "dir": "/images/generated_imgs/SD-english/index15_group1_img1_seed128053677_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 1,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 15
+  },
+  {
+    "id": 42,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index496_group4_img2_seed3860396403_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 496
+  },
+  {
+    "id": 43,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english/index567_group4_img3_seed1923709387_cfg7.png",
     "alt": "",
     "img": 3,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promtUsed": 567
+    "promptUsed": 567
+  },
+  {
+    "id": 44,
+    "name": "img generada de grupo 1 img 4",
+    "dir": "/images/generated_imgs/SD-english/index159_group1_img4_seed1435800089_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 1,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 159
+  },
+  {
+    "id": 45,
+    "name": "img generada de grupo 2 img 4",
+    "dir": "/images/generated_imgs/SD-english/index288_group2_img4_seed2176452949_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 2,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 288
+  },
+  {
+    "id": 46,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index566_group4_img3_seed2498802564_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 566
+  },
+  {
+    "id": 47,
+    "name": "img generada de grupo 2 img 1",
+    "dir": "/images/generated_imgs/SD-english/index179_group2_img1_seed1250179803_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 2,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 179
   }
 ]

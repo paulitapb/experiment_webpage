@@ -26,10 +26,13 @@ export default function ExperimentCompareImages() {
   const { userId } = useParams();
   
   
-  let experimentImg = images[indicesImagesToRate[index]];
+  const [experimentImg, setExperimentImg] = useState(images[indicesImagesToRate[index]]);
 
   let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
 
+  useEffect(() => {
+    setExperimentImg(images[indicesImagesToRate[index]]);
+  }, [index]);
   
   const handleNextClick = async () => {
     if(index + 1  === imgAmountToRate){
@@ -38,11 +41,12 @@ export default function ExperimentCompareImages() {
       setIndex(index+1);
       if (fiveStarsRatingRef) {
       try {
+        console.log(experimentImg);
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
           userId: userId,
           imgId: experimentImg.img, 
           imgGroup: experimentImg.group,
-          imgGeneratedBy:experimentImg.generatedBy, 
+          imgGeneratedBy: experimentImg.imgGeneratedBy, 
           promptUsed: experimentImg.promptUsed, 
           rating: fiveStarsRatingRef.current.currentRating()
         });
