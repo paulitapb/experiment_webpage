@@ -41,7 +41,7 @@ export default function ExperimentCompareImages() {
       setIndex(index+1);
       if (fiveStarsRatingRef) {
       try {
-        console.log(experimentImg);
+        
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
           userId: userId,
           imgId: experimentImg.img, 

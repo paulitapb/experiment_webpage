@@ -57,7 +57,7 @@ router.post('/addRating', async (req, res) => {
   }
 
   try {
-    let user = await ExperimentModel.findOne({ userId });
+    let user = await ExperimentModel.findOne({ userId: String(userId) });
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
