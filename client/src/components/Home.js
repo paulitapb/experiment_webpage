@@ -73,7 +73,7 @@ function GetCellPhoneFromUser() {
       alert("El numero de telefono ingresado no es valido")
       setUserId('')
     }
-
+    setUserId(hashedCellNumber);
     const userExists = await handleCheckUser();
     
     if (userExists) {
