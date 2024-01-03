@@ -2,22 +2,22 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      width: 90vw;
     }
     
 .image-container div {
     text-align: center;
-    border: 2px solid var(--pale-peach);
-    border-radius: 10px;
+    border: 1px solid var(--pale-peach);
+    border-radius: 5px;
     overflow: hidden;
     padding: 0px; 
-    margin: 8px;
+    margin: auto;
     background-color: var(--pale-peach);
     transition: transform 0.3s ease;
-    flex: 1;
 }
 
 img {
-    max-width: 100vw; 
+    max-width: 28vw; 
     height: auto;
 }
 
@@ -36,7 +36,8 @@ img {
 
   .Center{
   text-align: center; 
-  color: var(--deeper-gray-color)
+  color: var(--deeper-gray-color);
+  padding: 1vw;
 }
 .SubmitButton {
     padding: 10px 15px;
