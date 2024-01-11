@@ -26,7 +26,7 @@ router.get('/checkUser/:userId', async (req, res) => {
   }
 });
 
-router.get('/api/hasRated', async (req, res) => {
+router.post('/api/hasRated', async (req, res) => {
   const { userId, imgId } = req.query;
 
   const rating = await RatingModel.findOne({ userId, imgId });
