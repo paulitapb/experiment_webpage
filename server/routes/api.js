@@ -29,12 +29,13 @@ router.get('/checkUser/:userId', async (req, res) => {
 router.post('/api/hasRated', async (req, res) => {
   const { userId, imgId } = req.query;
 
-  const rating = await RatingModel.findOne({ userId, imgId });
+  try {
+    const hasRated = await ExperimentModel.exists({ userId, imgId });
 
-  if (rating) {
-    res.json({ hasRated: true });
-  } else {
-    res.json({ hasRated: false });
+    res.json({ hasRated });
+  } catch (err){
+    console.error(err);
+    res.status(500).send('Server Error');
   }
 });
 
