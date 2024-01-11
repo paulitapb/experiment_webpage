@@ -33,12 +33,12 @@ export default function ExperimentCompareImages() {
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
   
-  
+  const indicesImagesToRate = generateRandomIndices(userId);
   const [experimentImg, setExperimentImg] = useState(images[indicesImagesToRate[index]]);
 
   let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
 
-  const indicesImagesToRate = generateRandomIndices(userId);
+  
 
   useEffect(() => {
     setExperimentImg(images[indicesImagesToRate[index]]);
