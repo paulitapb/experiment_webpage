@@ -7,12 +7,21 @@ import images from '../data.json';
 
 const imgAmountToRate = 5;
 
-function generateRandomIndices() {
+const generateRandomIndices = async (userId) => {
   //TODO: add check that theres no a rating with this id in the DB
   const randomIndices = new Set();
   while (randomIndices.size < imgAmountToRate) {
     const randomIndex = Math.floor(Math.random() * images.length);
-    randomIndices.add(randomIndex);
+    const userAlreadyRated = await axios.get('https://experiment-webpage-server.vercel.app/api/hasRated', {
+      params: {
+        userId: userId,
+        imgId: randomIndex
+      }
+    });
+    if (!userAlreadyRated.data.hasRated){
+      randomIndices.add(randomIndex);
+    }
+    
   }
   return Array.from(randomIndices);
 }

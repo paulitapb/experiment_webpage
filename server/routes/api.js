@@ -26,6 +26,17 @@ router.get('/checkUser/:userId', async (req, res) => {
   }
 });
 
+app.get('/api/hasRated', async (req, res) => {
+  const { userId, imgId } = req.query;
+
+  const rating = await RatingModel.findOne({ userId, imgId });
+
+  if (rating) {
+    res.json({ hasRated: true });
+  } else {
+    res.json({ hasRated: false });
+  }
+});
 
 router.post('/addUser', async (req, res) => {
   const { userId } = req.body;
