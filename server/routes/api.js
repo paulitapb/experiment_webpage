@@ -27,10 +27,11 @@ router.get('/checkUser/:userId', async (req, res) => {
 });
 
 router.post('/api/hasRated', async (req, res) => {
-  const { userId, imgId } = req.query;
+  const { userId, imgId } = req.body;
 
   try {
-    const hasRated = await ExperimentModel.exists({  userId: userId, imgId: imgId });
+    const hasRated = await ExperimentModel.exists({  userId: userId, 
+                          ratings: { imgId: { imgId } } });
 
     res.json({ hasRated });
   } catch (err){
