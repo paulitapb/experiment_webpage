@@ -26,7 +26,6 @@ const generateRandomIndices = async (userId) => {
   return Array.from(randomIndices);
 }
 
-const indicesImagesToRate = generateRandomIndices();
 
 export default function ExperimentCompareImages() {
   const navigate = useNavigate();
@@ -38,6 +37,8 @@ export default function ExperimentCompareImages() {
   const [experimentImg, setExperimentImg] = useState(images[indicesImagesToRate[index]]);
 
   let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
+
+  const indicesImagesToRate = generateRandomIndices(userId);
 
   useEffect(() => {
     setExperimentImg(images[indicesImagesToRate[index]]);
