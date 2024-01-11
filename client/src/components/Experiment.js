@@ -12,7 +12,7 @@ const generateRandomIndices = async (userId) => {
   const randomIndices = new Set();
   while (randomIndices.size < imgAmountToRate) {
     const randomIndex = Math.floor(Math.random() * images.length);
-    const userAlreadyRated = await axios.get('https://experiment-webpage-server.vercel.app/api/hasRated', {
+    const userAlreadyRated = await axios.post('https://experiment-webpage-server.vercel.app/api/hasRated', {
       params: {
         userId: userId,
         imgId: randomIndex
