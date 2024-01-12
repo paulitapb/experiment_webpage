@@ -1,4 +1,6 @@
 
+const db = require('../db');
+
 const ExperimentModel = require('../models/ExperimentModel');
 
 

@@ -1,5 +1,6 @@
-const ExperimentModel = require('../models/ExperimentModel');
+const db = require('../db');
 
+const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
     try {
