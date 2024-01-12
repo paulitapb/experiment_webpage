@@ -7,7 +7,12 @@ module.exports = async (req, res) => {
 
   try {
     const userExists = await ExperimentModel.exists({ userId });
-    res.json({ userExists });
+    if (userExists?.userExists){
+      res.json({ userExists: true });
+    }else{
+      res.json({ userExists: false });
+    }
+    
   } catch (err) {
     console.error(err);
     res.status(500).send('Server Error');
