@@ -27,7 +27,7 @@ router.get('/checkUser/:userId', async (req, res) => {
 });
 
 router.post('/api/hasRated', async (req, res) => {
-  const { userId, imgId } = req.body;
+  const { userId, imgId } = req.query;
 
   try {
     const hasRated = await ExperimentModel.exists({  userId: userId, 
