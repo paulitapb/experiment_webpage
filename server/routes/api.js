@@ -30,8 +30,7 @@ router.post('/api/hasRated', async (req, res) => {
   const { userId, imgId } = req.query;
 
   try {
-    const hasRated = await ExperimentModel.exists({  userId: userId, 
-                          ratings: { imgId: imgId } });
+    const hasRated = await ExperimentModel.exists({ userId, ratings: { $elemMatch: { imgId } } });
 
     res.json({ hasRated });
   } catch (err){
