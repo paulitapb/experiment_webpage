@@ -52,7 +52,12 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
-      const response = await axios.get(`https://experiment-webpage-server.vercel.app/api/checkUser/${hashedUserId}`);
+      const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
+      {
+        params: {
+          userId: hashedUserId,
+        }
+      });
       const { userExists } = response.data;
       return (userExists !== null);
      
@@ -87,7 +92,7 @@ function GetCellPhoneFromUser() {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
            userId: hashedCellNumber
          });
-         navigate(`/experiment/${hashedCellNumber}`)
+         navigate('/experiment')
        } catch (error) {
          console.error('Error submitting data:', error);
        }
