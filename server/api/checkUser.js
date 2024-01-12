@@ -1,8 +1,9 @@
-const db = require('../db');
 
+const { mongoose, allowCORS } = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
+  allowCORS(req, res, () => {});
   const userId = req.query.userId;
 
   try {
