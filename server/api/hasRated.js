@@ -6,7 +6,8 @@ module.exports = async (req, res) => {
   const { userId, imgId } = req.query;
 
   try {
-    const hasRated = await ExperimentModel.exists({ userId: userId, ratings: { $elemMatch: { imgId } } });
+    const hasRated = await ExperimentModel.exists({ userId: userId, 
+                                ratings: { $elemMatch: { imgId: { "$exists": imgId } } } });
     if (hasRated?.hasRated){
       res.json({ hasRated: true });
     }else{
