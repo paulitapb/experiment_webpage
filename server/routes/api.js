@@ -26,18 +26,6 @@ router.get('/checkUser/:userId', async (req, res) => {
   }
 });
 
-router.post('/api/hasRated', async (req, res) => {
-  const { userId, imgId } = req.query;
-
-  try {
-    const hasRated = await ExperimentModel.exists({ userId, ratings: { $elemMatch: { imgId } } });
-
-    res.json({ hasRated });
-  } catch (err){
-    console.error(err);
-    res.status(500).send('Server Error');
-  }
-});
 
 router.post('/addUser', async (req, res) => {
   const { userId } = req.body;
