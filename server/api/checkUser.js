@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
 
   try {
     const userExists = await ExperimentModel.exists({ userId: userId });
-    if (userExists?.userExists){
+    if (userExists){
       res.json({ userExists: true });
     }else{
       res.json({ userExists: false });
