@@ -31,7 +31,7 @@ router.post('/api/hasRated', async (req, res) => {
 
   try {
     const hasRated = await ExperimentModel.exists({  userId: userId, 
-                          ratings: { imgId: { imgId } } });
+                          ratings: { imgId: imgId } });
 
     res.json({ hasRated });
   } catch (err){
