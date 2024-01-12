@@ -3,11 +3,14 @@ const db = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
-  const { userId, imgId } = req.query;
+  const { userId, imgId, imgGroup, imgGeneratedBy, promptUsed} = req.query;
 
   try {
     const hasRated = await ExperimentModel.exists({ userId: userId, 
-                                ratings: { $elemMatch: { imgId: { "$eq": imgId } } } });
+                                ratings: { $elemMatch: { imgId: { "$eq": imgId },
+                                                         imgGroup: {"$eq": imgGroup},
+                                                         imgGeneratedBy: {"$eq": imgGeneratedBy},
+                                                         promptUsed: {"$eq": promptUsed} } } });
     if (hasRated){
       res.json({ hasRated: true });
     }else{

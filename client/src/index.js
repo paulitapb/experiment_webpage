@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   ,
   {
-    path: "experiment/:userId",
+    path: "experiment/",
     element: <ExperimentCompareImages />,
   },
   {
