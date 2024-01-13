@@ -85,7 +85,7 @@ function GetCellPhoneFromUser() {
     if (userExists) {
       console.log('User already exists');
       alert("Bienvenidx nuevamente!")
-      navigate(`/experiment/${hashedCellNumber}`)
+      navigate(`/experiment`)
     } else {
       console.log('Add new user: User does not exist');
       try {
