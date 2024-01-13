@@ -1,7 +1,7 @@
 import {useRef, useState, useEffect } from 'react';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import images from '../data.json';
 
@@ -33,10 +33,11 @@ const generateRandomIndices = async (userId) => {
 
 function ExperimentCompareImages() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
-  console.log("USER " + props.location.state.userId)
-  const { userId } = props.location.state;
+  console.log("USER " + location.state.userId)
+  const { userId } = location.state.userId;
   
   const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
   const [experimentImg, setExperimentImg] = useState(null);
