@@ -5,6 +5,11 @@ const ExperimentModel = require('../models/ExperimentModel');
 
 
 module.exports = async (req, res) => {
+    if (req.method === 'OPTIONS') {
+      allowCORS(req, res, () => {});
+      res.status(200).end();
+      return;
+    }
     allowCORS(req, res, () => {});
     const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating } = req.body; 
     
