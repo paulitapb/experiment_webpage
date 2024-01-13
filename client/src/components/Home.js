@@ -44,7 +44,6 @@ function GetCellPhoneFromUser() {
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
-    
     setUserId(event.target.value);
     
   };
@@ -52,6 +51,7 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
+      console.log('Checking user: ' + userId);
       console.log('Checking user: ' + hashedUserId);
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
       {
@@ -79,7 +79,9 @@ function GetCellPhoneFromUser() {
       console.error('Invalid cell number');
       alert("El numero de telefono ingresado no es valido")
       setUserId('')
+      return;
     }
+    
     const userExists = await handleCheckUser();
     
     if (userExists) {
