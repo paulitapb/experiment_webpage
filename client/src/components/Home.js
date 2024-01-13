@@ -54,9 +54,8 @@ function GetCellPhoneFromUser() {
     try {
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
       {
-        params: {
-          userId: hashedUserId,
-        }
+        userId: hashedUserId,
+        
       });
       const { userExists } = response.data;
       return (userExists !== null);
