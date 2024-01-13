@@ -73,9 +73,10 @@ function GetCellPhoneFromUser() {
     const cellNumberPattern = /^[0-9]{10}$/;
     const isValidCellNumber = cellNumberPattern.test(userId);
     const hashedCellNumber = SHA256(userId).toString();
-    console.log("hash" + hashedCellNumber);
+    
     sethashedUserId(hashedCellNumber);
-    console.log("hash" + hashedUserId);
+    
+    console.log('Hashed cell number: ' + hashedUserId);
     if (!isValidCellNumber) {
       console.error('Invalid cell number');
       alert("El numero de telefono ingresado no es valido")
