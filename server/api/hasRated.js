@@ -3,11 +3,11 @@ const { mongoose, allowCORS } = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
-  
-  allowCORS(req, res, () => {});
-  const { userId, imgId, imgGroup, imgGeneratedBy, promptUsed} = req.query;
-
   try {
+    allowCORS(req, res, () => {});
+    const { userId, imgId, imgGroup, imgGeneratedBy, promptUsed} = req.query;
+
+  
     const hasRated = await ExperimentModel.exists({ userId: userId, 
                                 ratings: { $elemMatch: { imgId: { "$eq": imgId },
                                                          imgGroup: {"$eq": imgGroup},

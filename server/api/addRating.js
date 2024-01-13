@@ -5,6 +5,7 @@ const ExperimentModel = require('../models/ExperimentModel');
 
 
 module.exports = async (req, res) => {
+  try {
     allowCORS(req, res, () => {});
     const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating } = req.body; 
     
@@ -12,7 +13,7 @@ module.exports = async (req, res) => {
       return res.status(400).json({ error: 'Missing required fields' });
     }
   
-    try {
+    
       let user = await ExperimentModel.findOne({ userId: String(userId) });
       if (!user) {
         return res.status(404).json({ error: 'User not found' });

@@ -3,9 +3,9 @@ const { mongoose, allowCORS } = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
+  try {
+      allowCORS(req, res, () => {});
     
-    allowCORS(req, res, () => {});
-    try {
       const ratings = await ExperimentModel.find();
       res.json(ratings);
     } catch (err) {
