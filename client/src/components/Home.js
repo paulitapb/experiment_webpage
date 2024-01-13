@@ -52,6 +52,7 @@ function GetCellPhoneFromUser() {
   
   const handleCheckUser = async () => {
     try {
+      console.log('Checking user: ' + hashedUserId);
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
       {
         userId: hashedUserId,
