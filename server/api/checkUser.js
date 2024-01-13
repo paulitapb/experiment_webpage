@@ -3,11 +3,7 @@ const { mongoose, allowCORS } = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
-  if (req.method === 'OPTIONS') {
-    allowCORS(req, res, () => {});
-    res.status(200).end();
-    return;
-  }
+  
   allowCORS(req, res, () => {});
   const userId = req.query.userId;
 
