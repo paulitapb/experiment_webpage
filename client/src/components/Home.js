@@ -49,13 +49,12 @@ function GetCellPhoneFromUser() {
   };
 
   
-  const handleCheckUser = async () => {
+  const handleCheckUser = async (hashedCellNumber) => {
     try {
-      console.log('Checking user: ' + userId);
-      console.log('Checking user: ' + hashedUserId);
+      
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
       {
-        userId: hashedUserId,
+        userId: hashedCellNumber,
         
       });
       const { userExists } = response.data;
@@ -76,7 +75,6 @@ function GetCellPhoneFromUser() {
     
     sethashedUserId(hashedCellNumber);
     
-    console.log('Hashed cell number: ' + hashedUserId);
     if (!isValidCellNumber) {
       console.error('Invalid cell number');
       alert("El numero de telefono ingresado no es valido")
@@ -84,7 +82,7 @@ function GetCellPhoneFromUser() {
       return;
     }
 
-    const userExists = await handleCheckUser();
+    const userExists = await handleCheckUser(hashedCellNumber);
     
     if (userExists) {
       console.log('User already exists');
