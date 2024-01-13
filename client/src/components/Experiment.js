@@ -86,6 +86,7 @@ function ExperimentCompareImages() {
         fiveStarsRatingRef.current.reset();
       } catch (error) {
         console.error('Error adding rating:', error);
+        
       }
     }
     }
