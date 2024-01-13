@@ -31,22 +31,36 @@ const generateRandomIndices = async (userId) => {
 }
 
 
-export default function ExperimentCompareImages() {
+function ExperimentCompareImages() {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = useParams();
   
-  const indicesImagesToRate = generateRandomIndices(userId);
-  const [experimentImg, setExperimentImg] = useState(images[indicesImagesToRate[index]]);
-
-  let originalImagePath = "../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png";
+  const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
+  const [experimentImg, setExperimentImg] = useState(null);
+  const [originalImagePath, setOriginalImagePath] = useState("");
 
   
+  useEffect(() => {
+    generateRandomIndices(userId).then(indices => {
+      setIndicesImagesToRate(indices);
+      setExperimentImg(images[indices[0]]);
+    });
+  }, [userId]);
 
   useEffect(() => {
-    setExperimentImg(images[indicesImagesToRate[index]]);
-  }, [index]);
+    if (indicesImagesToRate.length > 0) {
+      setExperimentImg(images[indicesImagesToRate[index]]);
+    }
+  }, [index, indicesImagesToRate]);
+
+  useEffect(() => {
+    if (experimentImg) {
+      setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
+    }
+  }, [experimentImg]);
+
   
   const handleNextClick = async () => {
     if(index + 1  === imgAmountToRate){
@@ -108,3 +122,5 @@ export default function ExperimentCompareImages() {
     </>
   );
 }
+
+export default ExperimentCompareImages;
