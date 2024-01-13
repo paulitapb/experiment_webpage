@@ -5,7 +5,7 @@ const ExperimentModel = require('../models/ExperimentModel');
 module.exports = async (req, res) => {
   try {
     allowCORS(req, res, () => {});
-    const { userId, imgId, imgGroup, imgGeneratedBy, promptUsed} = req.query;
+    const { userId, imgId, imgGroup, imgGeneratedBy, promptUsed} = req.body.params;
 
   
     const hasRated = await ExperimentModel.exists({ userId: userId, 
@@ -21,6 +21,8 @@ module.exports = async (req, res) => {
     
   } catch (err) {
     console.error(err);
-    res.status(500).send(err.message);
+    if (!res.headersSent) {
+      res.status(500).send('Server Error');
+    }
   }
 };
