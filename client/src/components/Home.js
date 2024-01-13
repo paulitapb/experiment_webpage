@@ -90,7 +90,7 @@ function GetCellPhoneFromUser() {
       console.log('Add new user: User does not exist');
       try {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
-           userId: hashedCellNumber
+           userId: hashedUserId
          });
          navigate('/experiment')
        } catch (error) {
