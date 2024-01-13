@@ -52,6 +52,9 @@ function ExperimentCompareImages() {
   useEffect(() => {
     if (indicesImagesToRate.length > 0) {
       setExperimentImg(images[indicesImagesToRate[index]]);
+      if (experimentImg) {
+        setExperimentImg(experimentImg);
+      }
     }
   }, [index, indicesImagesToRate]);
 
