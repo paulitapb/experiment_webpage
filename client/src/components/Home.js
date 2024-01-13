@@ -87,8 +87,8 @@ function GetCellPhoneFromUser() {
     if (userExists) {
       console.log('User already exists');
       alert("Bienvenidx nuevamente!")
-      navigate(`/experiment`)
-    } else {
+      navigate('/experiment', {state: {userId: hashedCellNumber}} );
+    }else{ 
       console.log('Add new user: User does not exist');
       try {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
