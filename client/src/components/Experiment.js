@@ -35,6 +35,7 @@ function ExperimentCompareImages() {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
+  console.log("USER " + props.location.state.userId)
   const { userId } = props.location.state;
   
   const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
