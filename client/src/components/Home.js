@@ -94,7 +94,7 @@ function GetCellPhoneFromUser() {
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
            userId: hashedUserId
          });
-         navigate('/experiment')
+         navigate('/experiment', {state: {userId: hashedCellNumber}})
        } catch (error) {
          console.error('Error submitting data:', error);
        }
