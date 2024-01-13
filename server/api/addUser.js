@@ -3,11 +3,9 @@ const { mongoose, allowCORS } = require('../db');
 const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
-  
-  allowCORS(req, res, () => {});
-  const { userId } = req.body;
-
-  try {
+  try{
+    allowCORS(req, res, () => {});
+    const { userId } = req.body;
     const userExists = await ExperimentModel.findOne({ userId: userId });
 
     if (userExists !== null) {
@@ -22,4 +20,6 @@ module.exports = async (req, res) => {
     console.error(err);
     res.status(500).send('Server Error');
   }
+  
+  
 }
