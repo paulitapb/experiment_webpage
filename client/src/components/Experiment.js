@@ -48,9 +48,9 @@ function ExperimentCompareImages() {
   useEffect(() => {
     generateRandomIndices(userId).then(indices => {
       setIndicesImagesToRate(indices);
-      setExperimentImg(images[indices[0]]);
+      setExperimentImg(images[indices[index]]);
     });
-  }, [userId]);
+  }, [userId, index]);
 
   useEffect(() => {
     if (indicesImagesToRate.length > 0) {
