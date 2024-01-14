@@ -36,8 +36,8 @@ function ExperimentCompareImages() {
   const location = useLocation();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
-  console.log("USER " + location.state.userId)
   const { userId } = location.state.userId;
+  console.log("user id" + userId);
   
   const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
   const [experimentImg, setExperimentImg] = useState(null);
