@@ -120,7 +120,7 @@ function GetCellPhoneFromUser() {
         {isLoading ? (
               <div className="loader"></div>
             ) : (
-              <button type="submit">Submit</button>
+              <button type="submit" className='SubmitButton'>Ingresar</button>
             )}
         {/*<button type="submit" className='SubmitButton'>Ingresar</button>*/ }
       </form>
