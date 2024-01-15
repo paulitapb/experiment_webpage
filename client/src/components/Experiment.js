@@ -1,6 +1,7 @@
 import {useRef, useState, useEffect } from 'react';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
+import './home.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import images from '../data.json';
@@ -37,9 +38,7 @@ function ExperimentCompareImages() {
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = location.state;
-  console.log("id  " + location.state);
-  console.log("userId var " + userId);
-
+  
   const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState("");
@@ -107,6 +106,13 @@ function ExperimentCompareImages() {
         <div className='image-container'>
             <div>
                 <h4>Imagen original</h4> 
+                  {originalImagePath ? (
+                    <div className="loader" style={{ height: '50px', width: '50px' }}></div>
+                  ):(
+                    <img 
+                    src={originalImagePath ? process.env.PUBLIC_URL + originalImagePath : "../loading.svg"} 
+                    alt=''/>)
+                  }
                     <img 
                         src={process.env.PUBLIC_URL + originalImagePath} 
                         alt=''
@@ -114,10 +120,15 @@ function ExperimentCompareImages() {
             </div>
             <div>
                 <h4>Imagen generada</h4> 
-                <img 
-                    src={experimentImg ? process.env.PUBLIC_URL + experimentImg.dir : "../loading.svg"} 
-                    alt=''
-                />
+                {experimentImg ? (
+                  <div className="loader" style={{ height: '50px', width: '50px' }}></div>
+                ):(
+                  <img 
+                  src={experimentImg ? process.env.PUBLIC_URL + experimentImg.dir : "../loading.svg"} 
+                  alt=''
+              />
+                )}
+                
             </div>
       </div>
       <div className='rating-container'>
