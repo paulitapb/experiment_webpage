@@ -1,7 +1,6 @@
 import {useRef, useState, useEffect } from 'react';
 import FiveStarsRating from './StarRating';
 import './experiment.css'
-import './home.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import images from '../data.json';
@@ -106,7 +105,7 @@ function ExperimentCompareImages() {
         <div className='image-container'>
             <div>
                 <h4>Imagen original</h4> 
-                  {originalImagePath ? (
+                  {!originalImagePath ? (
                     <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                   ):(
                     <img 
@@ -116,7 +115,7 @@ function ExperimentCompareImages() {
             </div>
             <div>
                 <h4>Imagen generada</h4> 
-                {experimentImg ? (
+                {!experimentImg ? (
                   <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                 ):(
                   <img 
