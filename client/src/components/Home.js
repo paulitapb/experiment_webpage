@@ -41,6 +41,7 @@ function GetCellPhoneFromUser() {
   
   const [userId, setUserId] = useState('');
   const [hashedUserId, sethashedUserId] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
@@ -68,6 +69,7 @@ function GetCellPhoneFromUser() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const cellNumberPattern = /^[0-9]{10}$/;
     const isValidCellNumber = cellNumberPattern.test(userId);
@@ -99,6 +101,7 @@ function GetCellPhoneFromUser() {
          console.error('Error submitting data:', error);
        }
     }
+    setIsLoading(false);
   };
 
   return (
@@ -114,8 +117,12 @@ function GetCellPhoneFromUser() {
           placeholder="Ingresa tu telefono"
           className='Input'
         />
-        
-        <button type="submit" className='SubmitButton'>Ingresar</button>
+        {isLoading ? (
+              <div className="loader"></div>
+            ) : (
+              <button type="submit">Submit</button>
+            )}
+        {/*<button type="submit" className='SubmitButton'>Ingresar</button>*/ }
       </form>
       </div>
     </div>
