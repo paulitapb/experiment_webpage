@@ -117,12 +117,14 @@ function GetCellPhoneFromUser() {
           placeholder="Ingresa tu telefono"
           className='Input'
         />
+        <div >
         {isLoading ? (
               <div className="loader"></div>
             ) : (
               <button type="submit" className='SubmitButton'>Ingresar</button>
             )}
         {/*<button type="submit" className='SubmitButton'>Ingresar</button>*/ }
+        </div>
       </form>
       </div>
     </div>
