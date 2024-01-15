@@ -113,10 +113,6 @@ function ExperimentCompareImages() {
                     src={originalImagePath ? process.env.PUBLIC_URL + originalImagePath : "../loading.svg"} 
                     alt=''/>)
                   }
-                    <img 
-                        src={process.env.PUBLIC_URL + originalImagePath} 
-                        alt=''
-                    />
             </div>
             <div>
                 <h4>Imagen generada</h4> 
