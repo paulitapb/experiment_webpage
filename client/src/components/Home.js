@@ -109,7 +109,7 @@ function GetCellPhoneFromUser() {
       <div className='SubSubHeader'>Ingresa tu telefono celular</div>
       <div className='Center'> Solo guardaremos este dato modificado como identificador</div>
       <div className='Center'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='input-button-container'>
         <input
           type="text"
           value={userId}
@@ -117,14 +117,14 @@ function GetCellPhoneFromUser() {
           placeholder="Ingresa tu telefono"
           className='Input'
         />
-        
+        <div className='button-container'>
         {isLoading ? (
               <div className="loader"></div>
             ) : (
               <button type="submit" className='SubmitButton'>Ingresar</button>
             )}
         {/*<button type="submit" className='SubmitButton'>Ingresar</button>*/ }
-        
+        </div>        
       </form>
       </div>
     </div>
