@@ -85,4 +85,12 @@ img {
     100% {
         transform: rotate(360deg);
     }
-} 
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
