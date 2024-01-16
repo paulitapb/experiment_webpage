@@ -13,7 +13,7 @@
     /* overflow: hidden; */
     padding: 0px; 
     margin: auto;
-    background-color: var(--pale-peach);
+    /*background-color: var(--pale-peach);*/
     transition: transform 0.3s ease;
 }
 
