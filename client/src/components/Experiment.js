@@ -26,37 +26,13 @@ const getNewImageToRate = async (userId) => {
   return randomIndex;
 }
 
-const generateRandomIndices = async (userId) => {
- 
-  const randomIndices = new Set();
-  while (randomIndices.size < imgAmountToRate) {
-    const randomIndex = Math.floor(Math.random() * images.length);
-    const imgSelected = images[randomIndex];
-    const userAlreadyRated = await axios.post('https://experiment-webpage-server.vercel.app/api/hasRated', {
-      params: {
-        userId: userId,
-        imgId: imgSelected.img,
-        group: imgSelected.group,
-        imgGeneratedBy: imgSelected.imgGeneratedBy,
-        promptUsed: imgSelected.promptUsed
-      }
-    });
-    if (!userAlreadyRated.data.hasRated){
-      randomIndices.add(randomIndex);
-    }
-    
-  }
-  return Array.from(randomIndices);
-}
-
-
 function ExperimentCompareImages() {
   const navigate = useNavigate();
   const location = useLocation();
   const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = location.state;
-  
+  const [amountOfImagesRated, setAmountOfImagesRated] = useState(0);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
 
@@ -89,7 +65,7 @@ function ExperimentCompareImages() {
 
   
   const handleNextClick = async () => {
-    if(index + 1  === imgAmountToRate){
+    if(amountOfImagesRated == imgAmountToRate){
       navigate('/thank-you');
     }else{
       setIndex(index+1);
@@ -104,12 +80,15 @@ function ExperimentCompareImages() {
           promptUsed: experimentImg.promptUsed, 
           rating: fiveStarsRatingRef.current.currentRating()
         });
-  
+        setAmountOfImagesRated(amountOfImagesRated + 1);
         console.log('Rating added successfully:', response.data);
         fiveStarsRatingRef.current.reset();
+        setExperimentImg(null);
+        setOriginalImagePath(null);
         getNewImageToRate(userId).then(index => {
           setExperimentImg(images[index]);
         });
+
       } catch (error) {
         console.error('Error adding rating:', error);
         
