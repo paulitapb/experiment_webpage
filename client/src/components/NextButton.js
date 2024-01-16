@@ -17,4 +17,6 @@ const NextButton = (handleOnClick) => {
                         )}
                 </div>        
         )
-}
+}; 
+
+export default NextButton;
