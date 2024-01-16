@@ -102,7 +102,7 @@ function ExperimentCompareImages() {
         </div>
         <div className='Center'> <i>(1 es poco parecidas y 5 muy parecidas)</i> </div>
 
-        <div className='image-container'>
+        <div className='image-container-exp'>
             <div>
                 <h4>Imagen original</h4> 
                 {console.log("original path" +originalImagePath)}
@@ -119,7 +119,7 @@ function ExperimentCompareImages() {
             <div>
                 <h4>Imagen generada</h4> 
                 {!experimentImg ? (
-                  <div className="loader2" style={{ height: '50px', width: '50px' }}></div>
+                  <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                 ):(
                   <img 
                   src={process.env.PUBLIC_URL + experimentImg.dir} 

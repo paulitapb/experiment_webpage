@@ -1,4 +1,4 @@
-.image-container {
+.image-container-exp {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -6,7 +6,7 @@
       height: 100vh;
     }
     
-.image-container div {
+.image-container-exp div {
     text-align: center;
     border: 1px solid var(--pale-peach);
     border-radius: 5px;
