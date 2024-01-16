@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 const NextButton = (handleOnClick) => {
-    const isLoading = false;
+    let isLoading = false;
 
     const handleClick = async () => {
         isLoading = true;
