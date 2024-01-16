@@ -1,21 +1,6 @@
 .image-container-exp {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 100vw;
-      height: 100vh;
+      margin: 10px;
     }
-    
-.image-container-exp div {
-    text-align: center;
-    border: 1px solid var(--pale-peach);
-    border-radius: 5px;
-    /* overflow: hidden; */
-    padding: 0px; 
-    margin: auto;
-    /*background-color: var(--pale-peach);*/
-    transition: transform 0.3s ease;
-}
 
 img {
     max-width: 28vw; 
@@ -77,6 +62,7 @@ img {
     display: inline-block;
     box-sizing: border-box;
     animation: spin 1s linear infinite;
+    margin: 10px;
     }
 
 @keyframes spin {
