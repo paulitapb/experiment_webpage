@@ -116,7 +116,7 @@ function ExperimentCompareImages() {
                     alt=''/>)
                   }
             </div>
-            <div>
+            <div className='outer-container'>
                 <h4>Imagen generada</h4> 
                 {!experimentImg ? (
                   <div className="loader2" style={{ height: '10px', width: '10px' }}></div>

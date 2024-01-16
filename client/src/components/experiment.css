@@ -58,6 +58,10 @@ img {
     color: var(--deep-red);
     font-weight: bold;
   }
+  .outer-container {
+    width: 500px; 
+    height: 500px;
+  }
 
   .loader2 {
     width: 50px;
