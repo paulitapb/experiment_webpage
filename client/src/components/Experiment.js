@@ -1,6 +1,6 @@
 import {useRef, useState, useEffect } from 'react';
 import FiveStarsRating from './StarRating';
-import styles from './experiment.module.css'
+import './experiment.css'
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import images from '../data.json';
