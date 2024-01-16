@@ -4,7 +4,7 @@ import axios from 'axios';
 import FiveStarsRating from '../components/StarRating';
 import './experiment.css'
 import images from '../data.json';
-import NextButton from '../components/NextButton';
+import NextButton from '../components/NextButton.js';
 
 const imgAmountToRate = 5;
 
