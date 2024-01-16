@@ -107,7 +107,9 @@ function ExperimentCompareImages() {
                 <h4>Imagen original</h4> 
                 {console.log("original path" +originalImagePath)}
                   {!originalImagePath ? (
-                    <div className="loader" style={{ height: '50px', width: '50px' }}></div>
+                    <div className="loader" style={{ height: '50px', width: '50px' }}>
+                      LOADER
+                    </div>
                   ):(
                     <img 
                     src={process.env.PUBLIC_URL + originalImagePath} 
