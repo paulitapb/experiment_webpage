@@ -38,7 +38,6 @@ function SubHeader(){
 
 function GetCellPhoneFromUser() {
 
-  
   const [userId, setUserId] = useState('');
   const [hashedUserId, sethashedUserId] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -48,15 +47,11 @@ function GetCellPhoneFromUser() {
     setUserId(event.target.value);
     
   };
-
-  
   const handleCheckUser = async (hashedCellNumber) => {
     try {
-      
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
       {
         userId: hashedCellNumber,
-        
       });
       const { userExists } = response.data;
       return (userExists !== null);
@@ -123,7 +118,6 @@ function GetCellPhoneFromUser() {
             ) : (
               <button type="submit" className='SubmitButton'>Ingresar</button>
             )}
-        {/*<button type="submit" className='SubmitButton'>Ingresar</button>*/ }
         </div>        
       </form>
       </div>

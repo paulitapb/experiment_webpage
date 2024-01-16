@@ -52,25 +52,3 @@ img {
     margin: auto;
     align-items: center;
   }
-
-  .loader2 {
-    width: 50px;
-    height: 50px;
-    border: 5px solid var(--gray-color);
-    border-bottom-color: #D2694B;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: spin 1s linear infinite;
-    margin: 10px;
-    }
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-

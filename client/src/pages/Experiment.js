@@ -75,11 +75,9 @@ function ExperimentCompareImages() {
     }
     if(amountOfImagesRated == imgAmountToRate){
       navigate('/thank-you');
-    }
- 
+    } 
   }
 
-  
   return (
     <>
         <div className='SubHeader'>
