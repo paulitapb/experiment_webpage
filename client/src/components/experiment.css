@@ -60,11 +60,12 @@ img {
   }
 
   .outer-container {
-    display: inline-flex;
+    display: flex;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+    align-items: center;
   }
 
   .loader2 {
@@ -87,10 +88,3 @@ img {
     }
 }
 
-body {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full height of the viewport */
-  margin: 0; /* Remove default margin */
-}
