@@ -1,3 +1,4 @@
+import '../pages/experiment.css';
 
 const NextButton = (handleOnClick) => {
     const [isLoading, setIsLoading] = useState(false);
