@@ -40,7 +40,7 @@ function ExperimentCompareImages() {
   
   const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
   const [experimentImg, setExperimentImg] = useState(null);
-  const [originalImagePath, setOriginalImagePath] = useState("");
+  const [originalImagePath, setOriginalImagePath] = useState(null);
 
   
   useEffect(() => {
@@ -109,7 +109,7 @@ function ExperimentCompareImages() {
                     <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                   ):(
                     <img 
-                    src={originalImagePath ? process.env.PUBLIC_URL + originalImagePath : "../loading.svg"} 
+                    src={process.env.PUBLIC_URL + originalImagePath} 
                     alt=''/>)
                   }
             </div>
@@ -119,7 +119,7 @@ function ExperimentCompareImages() {
                   <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                 ):(
                   <img 
-                  src={experimentImg ? process.env.PUBLIC_URL + experimentImg.dir : "../loading.svg"} 
+                  src={process.env.PUBLIC_URL + experimentImg.dir} 
                   alt=''
               />
                 )}
