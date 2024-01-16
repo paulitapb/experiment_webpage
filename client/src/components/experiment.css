@@ -2,8 +2,8 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      width: 90vw;
-      height: 100vh;
+      width: 150vw;
+      height: 150vh;
     }
     
 .image-container div {
