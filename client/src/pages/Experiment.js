@@ -1,12 +1,11 @@
 import {useRef, useState, useEffect } from 'react';
-import FiveStarsRating from './StarRating';
-import './experiment.css'
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
+import FiveStarsRating from '../components/StarRating';
+import './experiment.css'
 import images from '../data.json';
 
 const imgAmountToRate = 5;
-
 
 const getNewImageToRate = async (userId) => {
   const randomIndex = Math.floor(Math.random() * images.length);
@@ -29,7 +28,6 @@ const getNewImageToRate = async (userId) => {
 function ExperimentCompareImages() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [index, setIndex] = useState(0);
   const fiveStarsRatingRef = useRef(null);
   const { userId } = location.state;
   const [amountOfImagesRated, setAmountOfImagesRated] = useState(0);
@@ -42,21 +40,6 @@ function ExperimentCompareImages() {
     });
   }, [userId]);
 
-  /* useEffect(() => {
-    getNewImageToRate(userId).then(index => 
-      setExperimentImg(images[index]);
-    });
-  }, [userId, index]); */
-
- /*  useEffect(() => {
-    if (indicesImagesToRate.length > 0) {
-      setExperimentImg(images[indicesImagesToRate[index]]);
-      if (experimentImg) {
-        setExperimentImg(experimentImg);
-      }
-    }
-  }, [index, indicesImagesToRate]); */
-
   useEffect(() => {
     if (experimentImg) {
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
@@ -65,13 +48,9 @@ function ExperimentCompareImages() {
 
   
   const handleNextClick = async () => {
-    if(amountOfImagesRated == imgAmountToRate){
-      navigate('/thank-you');
-    }else{
-      setIndex(index+1);
-      if (fiveStarsRatingRef) {
+    if (fiveStarsRatingRef) {
       try {
-        console.log("user " + userId)
+        
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
           userId: userId,
           imgId: experimentImg.img, 
@@ -94,6 +73,8 @@ function ExperimentCompareImages() {
         
       }
     }
+    if(amountOfImagesRated == imgAmountToRate){
+      navigate('/thank-you');
     }
  
   }
@@ -111,7 +92,7 @@ function ExperimentCompareImages() {
                 <h4>Imagen original</h4> 
                 {console.log("original path" +originalImagePath)}
                   {!originalImagePath ? (
-                    <div className="loader2" style={{ height: '50px', width: '50px' }}>
+                    <div className="loader" style={{ height: '50px', width: '50px' }}>
                       
                     </div>
                   ):(
@@ -123,7 +104,7 @@ function ExperimentCompareImages() {
             <div className='image-container-exp'>
                 <h4>Imagen generada</h4> 
                 {!experimentImg ? (
-                  <div className="loader2" style={{ height: '50px', width: '50px' }}></div>
+                  <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                 ):(
                   <img 
                   src={process.env.PUBLIC_URL + experimentImg.dir} 

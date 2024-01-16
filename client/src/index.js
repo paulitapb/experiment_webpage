@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ExperimentCompareImages from './components/Experiment';
-import Home from './components/Home';
+import ExperimentCompareImages from './pages/Experiment.js';
+import Home from './pages/Home.js';
 import ThankYouMessage from './components/thankYouMessage.js';
-
+import './styles/global.css';
 
 const router = createBrowserRouter([
   {

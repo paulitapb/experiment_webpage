@@ -1,4 +1,4 @@
-import './experiment.css'
+import '../pages/experiment.css'
 
 
 export default function ThankYouMessage() {

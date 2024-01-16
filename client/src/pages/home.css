@@ -1,0 +1,64 @@
+
+.Header {
+  font-size: 3vw;
+  text-align: center;
+  color: var(--deep-blue); 
+}
+
+.SubHeader {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--deeper-gray-color);
+  padding: 20px 20px;
+}
+.SubSubHeader{
+  font-size: 2vw;
+  text-align: center;
+  color: var(--deeper-gray-color);
+  font-weight: bold;
+  padding: 20px 20px;
+}
+
+.Center{
+  text-align: center;
+}
+.gray {
+  color: var(--gray-color);
+}
+
+.yellow {
+  color: var(--yellow-color);
+}
+
+.SubmitButton {
+  padding: 10px 15px;
+  background-color: var(--deep-red);
+  color: var(--platinum);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.Input{
+  padding: 10px 15px;
+  color: var(--deeper-gray-color);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.input-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  position: relative;
+  width: 120px;
+  height: 40px; 
+}
+
+ 
+
