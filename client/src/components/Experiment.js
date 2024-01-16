@@ -105,6 +105,7 @@ function ExperimentCompareImages() {
         <div className='image-container'>
             <div>
                 <h4>Imagen original</h4> 
+                {console.log("original path" +originalImagePath)}
                   {!originalImagePath ? (
                     <div className="loader" style={{ height: '50px', width: '50px' }}></div>
                   ):(
