@@ -4,6 +4,7 @@ import axios from 'axios';
 import FiveStarsRating from '../components/StarRating';
 import './experiment.css'
 import images from '../data.json';
+import NextButton from '../components/NextButton';
 
 const imgAmountToRate = 5;
 
@@ -114,9 +115,7 @@ function ExperimentCompareImages() {
       </div>
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
-        <button onClick={handleNextClick} className='SubmitButton'>
-            Next
-        </button>
+        <NextButton handleNextClick={handleNextClick}/>
       </div>
     </>
   );
