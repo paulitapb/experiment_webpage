@@ -10,6 +10,10 @@ img {
 .rating-container {
     text-align: center;
     padding: 1vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
 }
 
 .SubHeader {
