@@ -9,7 +9,7 @@
     text-align: center;
     border: 1px solid var(--pale-peach);
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0px; 
     margin: auto;
     background-color: var(--pale-peach);
@@ -66,14 +66,10 @@ img {
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-  }
+  animation: rotation 2s linear infinite;
+}
 
 @keyframes rotation {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
 } 
