@@ -103,7 +103,7 @@ function ExperimentCompareImages() {
         <div className='Center'> <i>(1 es poco parecidas y 5 muy parecidas)</i> </div>
 
         <div className='image-container-exp'>
-            <div>
+            <div className='outer-container'>
                 <h4>Imagen original</h4> 
                 {console.log("original path" +originalImagePath)}
                   {!originalImagePath ? (
