@@ -1,14 +1,15 @@
+import { faL } from '@fortawesome/free-solid-svg-icons';
 import '../pages/experiment.css';
 import { useState } from 'react';
 
 
 const NextButton = (handleOnClick) => {
-    const [isLoading, setIsLoading] = useState(false);
+    const isLoading = false;
 
     const handleClick = async () => {
-        setIsLoading(true);
+        isLoading = true;
         await handleOnClick();
-        setIsLoading(false);
+        isLoading = false;
     };
         return(
                 <div className='button-container'>
