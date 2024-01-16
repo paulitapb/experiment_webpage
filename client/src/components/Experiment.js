@@ -7,8 +7,27 @@ import images from '../data.json';
 
 const imgAmountToRate = 5;
 
+
+const getNewImageToRate = async (userId) => {
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const imgSelected = images[randomIndex];
+  const userAlreadyRated = await axios.post('https://experiment-webpage-server.vercel.app/api/hasRated', {
+    params: {
+      userId: userId,
+      imgId: imgSelected.img,
+      group: imgSelected.group,
+      imgGeneratedBy: imgSelected.imgGeneratedBy,
+      promptUsed: imgSelected.promptUsed
+    }
+  });
+  if (userAlreadyRated.data.hasRated){
+    return getNewImageToRate(userId);
+  }
+  return randomIndex;
+}
+
 const generateRandomIndices = async (userId) => {
-  //TODO: add check that theres no a rating with this id in the DB
+ 
   const randomIndices = new Set();
   while (randomIndices.size < imgAmountToRate) {
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -38,26 +57,29 @@ function ExperimentCompareImages() {
   const fiveStarsRatingRef = useRef(null);
   const { userId } = location.state;
   
-  const [indicesImagesToRate, setIndicesImagesToRate] = useState([]);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
 
-  
   useEffect(() => {
-    generateRandomIndices(userId).then(indices => {
-      setIndicesImagesToRate(indices);
-      setExperimentImg(images[indices[index]]);
+    getNewImageToRate(userId).then(index => {
+      setExperimentImg(images[index]);
     });
-  }, [userId, index]);
+  }, [userId]);
 
-  useEffect(() => {
+  /* useEffect(() => {
+    getNewImageToRate(userId).then(index => 
+      setExperimentImg(images[index]);
+    });
+  }, [userId, index]); */
+
+ /*  useEffect(() => {
     if (indicesImagesToRate.length > 0) {
       setExperimentImg(images[indicesImagesToRate[index]]);
       if (experimentImg) {
         setExperimentImg(experimentImg);
       }
     }
-  }, [index, indicesImagesToRate]);
+  }, [index, indicesImagesToRate]); */
 
   useEffect(() => {
     if (experimentImg) {
@@ -85,6 +107,9 @@ function ExperimentCompareImages() {
   
         console.log('Rating added successfully:', response.data);
         fiveStarsRatingRef.current.reset();
+        getNewImageToRate(userId).then(index => {
+          setExperimentImg(images[index]);
+        });
       } catch (error) {
         console.error('Error adding rating:', error);
         
