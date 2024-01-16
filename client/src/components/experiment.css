@@ -60,6 +60,9 @@ img {
   }
   .outer-container {
     display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .loader2 {
