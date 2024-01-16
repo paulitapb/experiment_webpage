@@ -86,14 +86,14 @@
     animation: rotation 1s linear infinite;
     }
 
-    @keyframes rotation {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-    } 
+} 
   body {
     background-color: var(--pale-cyan);
   }
