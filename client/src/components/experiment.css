@@ -58,11 +58,13 @@ img {
     color: var(--deep-red);
     font-weight: bold;
   }
+
   .outer-container {
     display: inline-flex;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
   }
 
   .loader2 {
