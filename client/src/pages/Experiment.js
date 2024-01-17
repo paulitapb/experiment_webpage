@@ -26,6 +26,7 @@ const getNewImageToRate = async (userId) => {
   return randomIndex;
 }
 
+
 function ExperimentCompareImages() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -48,36 +49,38 @@ function ExperimentCompareImages() {
     }
   }, [experimentImg]);
 
-  
+  const submitRating = async () => {
+    try {
+      const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
+        userId: userId,
+        imgId: experimentImg.img, 
+        imgGroup: experimentImg.group,
+        imgGeneratedBy: experimentImg.imgGeneratedBy, 
+        promptUsed: experimentImg.promptUsed, 
+        rating: fiveStarsRatingRef.current.currentRating()
+      });
+      setAmountOfImagesRated(amountOfImagesRated + 1);
+      console.log('Rating added successfully:', response.data);
+      fiveStarsRatingRef.current.reset();
+      setExperimentImg(null);
+      setOriginalImagePath(null);
+      getNewImageToRate(userId).then(index => {
+        setExperimentImg(images[index]);
+      });
+
+    } catch (error) {
+      console.error('Error adding rating:', error);
+    }
+  };
+
+
   const handleNextClick = async () => {
     if (fiveStarsRatingRef) {
       if(fiveStarsRatingRef.current.currentRating() == 0){
         alert('Ingresa una calificación antes de continuar');
         return;
       }
-      try {
-        
-        const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
-          userId: userId,
-          imgId: experimentImg.img, 
-          imgGroup: experimentImg.group,
-          imgGeneratedBy: experimentImg.imgGeneratedBy, 
-          promptUsed: experimentImg.promptUsed, 
-          rating: fiveStarsRatingRef.current.currentRating()
-        });
-        setAmountOfImagesRated(amountOfImagesRated + 1);
-        console.log('Rating added successfully:', response.data);
-        fiveStarsRatingRef.current.reset();
-        setExperimentImg(null);
-        setOriginalImagePath(null);
-        getNewImageToRate(userId).then(index => {
-          setExperimentImg(images[index]);
-        });
-
-      } catch (error) {
-        console.error('Error adding rating:', error);
-        
-      }
+      submitRating();
     }
     if(amountOfImagesRated == imgAmountToRate){
       setRatingExtraImgs(true);
@@ -88,6 +91,7 @@ function ExperimentCompareImages() {
       alert('Ingresa una calificación antes de salir del experimento');
       return;
     }
+    submitRating();
     navigate('/thank-you');
   }
 
