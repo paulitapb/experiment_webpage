@@ -1,4 +1,4 @@
-import { faL } from '@fortawesome/free-solid-svg-icons';
+
 import '../pages/experiment.css';
 import { useState } from 'react';
 
