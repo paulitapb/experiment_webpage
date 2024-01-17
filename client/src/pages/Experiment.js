@@ -51,6 +51,10 @@ function ExperimentCompareImages() {
   
   const handleNextClick = async () => {
     if (fiveStarsRatingRef) {
+      if(fiveStarsRatingRef.current.currentRating() == 0){
+        alert('Ingresa una calificación antes de continuar');
+        return;
+      }
       try {
         
         const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
@@ -78,6 +82,13 @@ function ExperimentCompareImages() {
     if(amountOfImagesRated == imgAmountToRate){
       setRatingExtraImgs(true);
     } 
+  }
+  const handleExitClick = async () => {
+    if (fiveStarsRatingRef.current.currentRating() == 0) {
+      alert('Ingresa una calificación antes de salir del experimento');
+      return;
+    }
+    navigate('/thank-you');
   }
 
   return (
@@ -119,7 +130,7 @@ function ExperimentCompareImages() {
         <FiveStarsRating ref={fiveStarsRatingRef} />
         <NextButton handleOnClick={handleNextClick}/>
         {ratingExtraImgs && (
-          <button onClick={() => navigate('/thank-you')} className='SubmitButton'>Salir del experimento</button>
+          <button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>
         )}
       </div>
     </>
