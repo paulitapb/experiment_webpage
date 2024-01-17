@@ -5,14 +5,14 @@ const ExperimentModel = require('../models/ExperimentModel');
 module.exports = async (req, res) => {
   try{
     allowCORS(req, res, () => {});
-    const { userId } = req.body;
+    const { userId } = req.query.userId;
     const userExists = await ExperimentModel.findOne({ userId: userId });
 
     if (userExists !== null) {
       return res.status(400).json({ error: 'User already exists' });
     }
 
-    const newUser = new ExperimentModel({ userId, ratings: [] });
+    const newUser = new ExperimentModel({ userId:userId, ratings: [] });
     await newUser.save();
 
     res.json(newUser);
