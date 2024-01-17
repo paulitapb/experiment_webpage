@@ -75,6 +75,7 @@ function GetCellPhoneFromUser() {
       console.error('Invalid cell number');
       alert("El numero de telefono ingresado no es valido")
       setUserId('')
+      setIsLoading(false);
       return;
     }
 

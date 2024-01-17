@@ -5,7 +5,7 @@ const ExperimentModel = require('../models/ExperimentModel');
 module.exports = async (req, res) => {
   try{
     allowCORS(req, res, () => {});
-    const { userId } = req.query.userId;
+    const { userId } = req.body;
     const userExists = await ExperimentModel.findOne({ userId: userId });
 
     if (userExists !== null) {
