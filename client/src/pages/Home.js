@@ -53,7 +53,7 @@ function GetCellPhoneFromUser() {
       {
         userId: hashedCellNumber,
       });
-      return (userExists.data.userExists);
+      return (response.data.userExists);
      
     } catch (error) {
       console.error('Error checking user:', error);
