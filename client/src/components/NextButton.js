@@ -3,13 +3,18 @@ import '../pages/experiment.css';
 import { useState } from 'react';
 
 
-const NextButton = (handleOnClick) => {
-    let isLoading = false;
+const NextButton = ({handleOnClick}) => {
+    const isLoading = useState(false);
 
     const handleClick = async () => {
-        isLoading = true;
-        await handleOnClick();
-        isLoading = false;
+        setIsLoading(true);
+        try {
+            await handleOnClick();
+        } catch (error) {
+            console.error(error);
+        } finally {
+            setIsLoading(false);
+        }
     };
         return(
                 <div className='button-container'>
