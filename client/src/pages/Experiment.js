@@ -34,6 +34,7 @@ function ExperimentCompareImages() {
   const [amountOfImagesRated, setAmountOfImagesRated] = useState(0);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
+  const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
 
   useEffect(() => {
     getNewImageToRate(userId).then(index => {
@@ -75,7 +76,7 @@ function ExperimentCompareImages() {
       }
     }
     if(amountOfImagesRated == imgAmountToRate){
-      navigate('/thank-you');
+      setRatingExtraImgs(true);
     } 
   }
 
@@ -113,9 +114,13 @@ function ExperimentCompareImages() {
                 
             </div>
       </div>
+      
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
         <NextButton handleOnClick={handleNextClick}/>
+        {ratingExtraImgs && (
+          <button onClick={() => navigate('/thank-you')} className='SubmitButton'>Salir del experimento</button>
+        )}
       </div>
     </>
   );
