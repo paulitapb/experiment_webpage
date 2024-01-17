@@ -115,7 +115,7 @@ function ExperimentCompareImages() {
       </div>
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
-        <NextButton handleNextClick={handleNextClick}/>
+        <NextButton handleOnClick={handleNextClick}/>
       </div>
     </>
   );
