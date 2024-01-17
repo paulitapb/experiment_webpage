@@ -20,7 +20,9 @@ module.exports = async (req, res) => {
     res.json(newUser);
   } catch (err) {
     console.error(err);
-    res.status(500).send('Server Error');
+    if (!res.headersSent) {
+      res.status(500).send('Server Error');
+    }
   }
   
   
