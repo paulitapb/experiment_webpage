@@ -3,16 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import React,  { useState } from 'react';
 import { SHA256 } from 'crypto-js';
+import OriginalImagesGrid from '../components/OriginalImagesGrid.js';
+import experimentDiagram from '../assets/expDiagram2.png';
 
 export default function Home() {
 
-  //TODO:  add Texto experimento
-  //TODO: agregar una fase de prueba 
   return (
     <div>
       <Header/>
       <SubHeader/>
+      <ExperimentExplanation/>
       <GetCellPhoneFromUser/>
+      
     </div>
   );
 }
@@ -29,10 +31,22 @@ function Header(){
 function SubHeader(){
   return (
     <div className="SubHeader">
-      Explicacion del exp y condiciones para participar  
-      -- Explicar que el tel es un user para volver 
+      En este experimento te pedimos que nos ayudes a entender cuán buenos son los humanos y la Inteligencia Artificial para generar imágenes a partir de descripciones.  
     </div>
 
+  );
+}
+
+function ExperimentExplanation(){
+  return (
+    <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column',}}>
+      <p className='experiment-explanation'>
+        En un experimento anterior le mostramos a distintas personas imágenes y les pedimos que las describieran en texto. Luego otras personas generaron imágenes a partir de las descripciones y se evaluó cuán parecidas eran esas imágenes a las originales. Ahora le dimos estas descripciones a distintas Inteligencias Artificiales y queremos ver si generan imágenes parecidas a las originales. 
+      </p>
+      <div className='image-container'>
+        <img src={experimentDiagram} alt="Diagrama del experimento"/>
+      </div>
+    </div>
   );
 }
 
@@ -101,9 +115,6 @@ function GetCellPhoneFromUser() {
 
   return (
     <div>
-      <div className='SubSubHeader'>Ingresa tu telefono celular</div>
-      <div className='Center'> Solo guardaremos este dato modificado como identificador</div>
-      <div className='Center'>
       <form onSubmit={handleSubmit} className='input-button-container'>
         <input
           type="text"
@@ -120,7 +131,8 @@ function GetCellPhoneFromUser() {
             )}
         </div>        
       </form>
-      </div>
+  
+      <div className='Center'> Solo guardaremos este dato modificado como identificador.</div>
     </div>
   );
 }

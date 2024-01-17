@@ -35,3 +35,24 @@ body {
       transform: rotate(360deg);
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 0;
+  margin: 0;
+  padding: 0;
+  width: 22vw;
+  box-sizing: border-box;
+}
+
+.cell img {
+  height: 100%;
+  max-height: 70px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
