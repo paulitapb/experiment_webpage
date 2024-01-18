@@ -1,37 +1,22 @@
 import {useRef, useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
-import FiveStarsRating from '../components/StarRating';
+
 import './experiment.css'
 import images from '../data.json';
+
 import NextButton from '../components/NextButton.js';
-
+import FiveStarsRating from '../components/StarRating';
+import { getNewImageToRate } from '../utils/dbInteractionFunctions.js';
 const imgAmountToRate = 5;
-
-const getNewImageToRate = async (userId) => {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  const imgSelected = images[randomIndex];
-  const userAlreadyRated = await axios.post('https://experiment-webpage-server.vercel.app/api/hasRated', {
-    params: {
-      userId: userId,
-      imgId: imgSelected.img,
-      group: imgSelected.group,
-      imgGeneratedBy: imgSelected.imgGeneratedBy,
-      promptUsed: imgSelected.promptUsed
-    }
-  });
-  if (userAlreadyRated.data.hasRated){
-    return getNewImageToRate(userId);
-  }
-  return randomIndex;
-}
-
 
 function ExperimentCompareImages() {
   const navigate = useNavigate();
   const location = useLocation();
-  const fiveStarsRatingRef = useRef(null);
   const { userId } = location.state;
+
+  const fiveStarsRatingRef = useRef(null);
+  
   const [amountOfImagesRated, setAmountOfImagesRated] = useState(0);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
@@ -76,18 +61,18 @@ function ExperimentCompareImages() {
 
   const handleNextClick = async () => {
     if (fiveStarsRatingRef) {
-      if(fiveStarsRatingRef.current.currentRating() == 0){
+      if(fiveStarsRatingRef.current.currentRating() === 0){
         alert('Ingresa una calificación antes de continuar');
         return;
       }
       submitRating();
     }
-    if(amountOfImagesRated == imgAmountToRate){
+    if(amountOfImagesRated === imgAmountToRate){
       setRatingExtraImgs(true);
     } 
   }
   const handleExitClick = async () => {
-    if (fiveStarsRatingRef.current.currentRating() == 0) {
+    if (fiveStarsRatingRef.current.currentRating() === 0) {
       alert('Ingresa una calificación antes de salir del experimento');
       return;
     }
