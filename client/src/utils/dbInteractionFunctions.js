@@ -4,8 +4,10 @@ import images from '../data.json';
 export async function checkUserExists(hashedCellNumber){
     try {
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
-      {
-        userId: hashedCellNumber,
+      {},{
+        params: {
+          userId: hashedCellNumber,
+        },
       });
       console.log("response" + response.data)
       console.log(response.data.userExists);
