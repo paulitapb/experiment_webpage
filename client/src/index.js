@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
+
 import ExperimentCompareImages from './pages/Experiment.js';
 import Home from './pages/Home.js';
 import ThankYouMessage from './components/thankYouMessage.js';
+
 import './styles/global.css';
+import './index.css';
 
 const router = createBrowserRouter([
   {
