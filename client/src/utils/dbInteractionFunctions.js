@@ -7,7 +7,7 @@ export async function checkUserExists(hashedCellNumber){
       {
         userId: hashedCellNumber,
       });
-      console.log("response" + response)
+      console.log("response" + response.data)
       console.log(response.data.userExists);
       return (response.data.userExists);
      
