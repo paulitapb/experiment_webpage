@@ -34,7 +34,7 @@ function CellPhoneLogin() {
       }
     
       const userExists = await checkUserExists(hashedCellNumber);
-      console.log("user exists " + userExists)
+      
       if (userExists) {
         console.log('User already exists');
         alert("Bienvenidx nuevamente!")
