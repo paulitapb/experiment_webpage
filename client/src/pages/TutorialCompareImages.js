@@ -31,7 +31,7 @@ function TutorialCompareImages() {
             <div className='image-container-exp'>
                 <h4>Imagen original</h4> 
                     <img 
-                    src={process.env.PUBLIC_URL + "../images/img_original/img44.jpg"} 
+                    src={process.env.PUBLIC_URL + "../images/img_original/img44.png"} 
                     alt=''/>
                   
             </div>
