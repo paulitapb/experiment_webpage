@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import ExperimentCompareImages from './pages/Experiment.js';
 import Home from './pages/Home.js';
 import ThankYouMessage from './components/thankYouMessage.js';
+import TutorialCompareImages from './pages/TutorialCompareImages.js';
 
 import './styles/global.css';
 import './index.css';
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "thank-you/",
     element: <ThankYouMessage />,
+  },
+  {
+    path: "tutorial/",
+    element: <TutorialCompareImages />,
   },
 ]);
 

@@ -39,13 +39,14 @@ function CellPhoneLogin() {
         console.log('User already exists');
         alert("Bienvenidx nuevamente!")
         navigate('/experiment', {state: {userId: hashedCellNumber}} );
+
       }else{ 
         console.log('Add new user: User does not exist');
         try {
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
              userId: hashedCellNumber
            });
-           navigate('/experiment', {state: {userId: hashedCellNumber}})
+           navigate('/tutorial', {state: {userId: hashedCellNumber}})
          } catch (error) {
            console.error('Error submitting data:', error);
          }
