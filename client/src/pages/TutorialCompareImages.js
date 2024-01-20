@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import FiveStarsRating from '../components/StarRating.js';
 
 import './experiment.css';
-import './home.css';
+
 
 function TutorialCompareImages() {
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ function TutorialCompareImages() {
 
   return (
     <div>
-        <div className='Header'>
+        <div className='SubHeader'>
             Fase de prueba
         </div>
         <p className='experiment-explanation'>
