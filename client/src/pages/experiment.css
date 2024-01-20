@@ -18,9 +18,16 @@ img {
 }
 
 .SubHeader {
-    font-size: 2vw;
+    font-size: calc(8px + 1.5vw);
     text-align: center;
     color: var(--deeper-gray-color);
+    padding: 20px 20px;
+    font-weight: bold;
+  }
+  .BlueSubHeader {
+    font-size: calc(8px + 1.5vw);
+    text-align: center;
+    color: var(--deep-blue);
     padding: 20px 20px;
     font-weight: bold;
   }

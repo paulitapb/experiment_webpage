@@ -17,11 +17,10 @@ function TutorialCompareImages() {
 
   return (
     <div>
-        <div className='SubHeader'>
+        <div className='BlueSubHeader'>
             Fase de prueba
         </div>
-        <p className='experiment-explanation'>
-        Te vamos a mostrar dos imágenes. La primera es alguna de las imágenes que les mostramos a los sujetos para que las describan. La segunda imágen fue generada por una Inteligencia Artificial u otro humano a partir de una descripción. Necesitamos que compares las imágenes y nos indiques cuán parecidas son. Para esto usamos un sistema de estrellitas donde 1 estrella es la menor puntuación y 5 estrellas la máxima. 
+        <p className='experiment-explanation'>Te vamos a mostrar dos imágenes. La primera es alguna de las imágenes que les mostramos a las personas para que las describan. La segunda imágen fue generada por una Inteligencia Artificial u otro humano a partir de una descripción. Necesitamos que compares las imágenes y nos indiques cuán parecidas son. Para esto usamos un sistema de estrellitas donde 1 estrella es la menor puntuación y 5 estrellas la máxima.Te vamos a mostrar dos imágenes. La primera es alguna de las imágenes que les mostramos a los sujetos para que las describan. La segunda imágen fue generada por una Inteligencia Artificial u otro humano a partir de una descripción. Necesitamos que compares las imágenes y nos indiques cuán parecidas son. Para esto usamos un sistema de estrellitas donde 1 estrella es la menor puntuación y 5 estrellas la máxima. 
         </p>
       <div className='SubHeader'>
             ¿Cuán parecidas te parecen estas imagenes? 
@@ -32,7 +31,7 @@ function TutorialCompareImages() {
             <div className='image-container-exp'>
                 <h4>Imagen original</h4> 
                     <img 
-                    src={process.env.PUBLIC_URL + "/images/img_original/img44.jpg"} 
+                    src={process.env.PUBLIC_URL + "../images/img_original/img44.jpg"} 
                     alt=''/>
                   
             </div>
@@ -40,7 +39,7 @@ function TutorialCompareImages() {
                 <h4>Imagen generada</h4> 
                 
                   <img 
-                  src={process.env.PUBLIC_URL + "/images/img_original/img44.jpg"} 
+                  src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
                   alt=''></img>
                 
             </div>
