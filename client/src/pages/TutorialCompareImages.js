@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import FiveStarsRating from '../components/StarRating.js';
@@ -10,9 +10,15 @@ function TutorialCompareImages() {
     const navigate = useNavigate();
     const location = useLocation();
     const { userId } = location.state;
+    const fiveStarsRatingRef = useRef(null);
 
     const handleGoToExperiment = () => {
-        navigate('/experiment', {state: {userId: userId}} );
+        if(fiveStarsRatingRef.current.currentRating() > 0){
+            navigate('/experiment', {state: {userId: userId}} );
+        }else{
+            alert("Por favor, califique la imagen antes de continuar")
+        }
+        
     }
 
   return (

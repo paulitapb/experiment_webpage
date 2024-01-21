@@ -45,7 +45,7 @@ function ExperimentCompareImages() {
         rating: fiveStarsRatingRef.current.currentRating()
       });
       setAmountOfImagesRated(amountOfImagesRated + 1);
-      console.log('Rating added successfully:', response.data);
+      console.log('Rating added successfully!');
       fiveStarsRatingRef.current.reset();
       setExperimentImg(null);
       setOriginalImagePath(null);
