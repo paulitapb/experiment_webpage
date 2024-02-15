@@ -48,6 +48,14 @@ img {
     transition: background-color 0.3s ease;
     margin: 10px;
   }
+  @media (max-width: 600px) {
+    .SubmitButton {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
   .ThankYou {
     text-align: center;
