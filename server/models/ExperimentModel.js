@@ -17,12 +17,7 @@ const expDBSchema = new mongoose.Schema({
     
 });
 
-const current_serie_index = mongoose.Schema({
-    current_index : {type: Number, required: true}
-});
 
 const ExperimentModel = mongoose.model('ExperimentModel', expDBSchema);
-const CurrentSerieIndex = mongoose.model('CurrentSerieIndex', current_serie_index);
 
 module.exports = ExperimentModel;
-module.exports = CurrentSerieIndex;
