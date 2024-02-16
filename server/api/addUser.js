@@ -13,8 +13,8 @@ module.exports = async (req, res) => {
     if (userExists !== null) {
       return res.status(400).json({ error: 'User already exists' });
     }
-
-    const newUser = new ExperimentModel({ userId:userId, login_time: loginTime, ratings: [] });
+    const login_time = new Date(loginTime);
+    const newUser = new ExperimentModel({ userId:userId, login_time: login_time, ratings: [] });
     await newUser.save();
 
     res.json(newUser);
