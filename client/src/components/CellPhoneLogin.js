@@ -48,7 +48,7 @@ function CellPhoneLogin() {
           console.log(timestamp)
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
             userId: hashedCellNumber, 
-            login_time: timestamp
+            loginTime: timestamp
            })
            .then(response => {
             console.log(response.data);
