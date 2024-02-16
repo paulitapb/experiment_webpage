@@ -48,7 +48,13 @@ function CellPhoneLogin() {
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
             userId: hashedCellNumber, 
             login_time: timestamp
-           });
+           })
+           .then(response => {
+            console.log(response.data);
+          })
+          .catch(error => {
+            console.log(error.response.data);
+          });
            navigate('/tutorial', {state: {userId: hashedCellNumber}})
          } catch (error) {
            console.error('Error submitting data:', error);
