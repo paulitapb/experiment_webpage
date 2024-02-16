@@ -7,9 +7,9 @@ module.exports = async (req, res) => {
     if (allowCORS(req, res, () => {})) {
       return;
     }
-    const { userId, login_time } = req.body;
+    const { userId, loginTime } = req.body;
     const userExists = await ExperimentModel.findOne({ userId: userId , 
-                                                      login_time: login_time});
+                                                       login_time: loginTime});
 
     if (userExists !== null) {
       return res.status(400).json({ error: 'User already exists' });
