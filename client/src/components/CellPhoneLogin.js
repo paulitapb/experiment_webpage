@@ -45,6 +45,7 @@ function CellPhoneLogin() {
       }else{ 
         console.log('Add new user: User does not exist');
         try {
+          console.log(timestamp)
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
             userId: hashedCellNumber, 
             login_time: timestamp
