@@ -20,7 +20,9 @@ function CellPhoneLogin() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       setIsLoading(true);
-    
+      
+      const timestamp = new Date().getTime(); 
+
       const cellNumberPattern = /^[0-9]{10}$/;
       const isValidCellNumber = cellNumberPattern.test(cellPhoneInput);
       const hashedCellNumber = SHA256(cellPhoneInput).toString();
@@ -44,7 +46,8 @@ function CellPhoneLogin() {
         console.log('Add new user: User does not exist');
         try {
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
-             userId: hashedCellNumber
+             userId: hashedCellNumber, 
+              login_time: timestamp
            });
            navigate('/tutorial', {state: {userId: hashedCellNumber}})
          } catch (error) {

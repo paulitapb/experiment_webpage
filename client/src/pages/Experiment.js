@@ -34,7 +34,7 @@ function ExperimentCompareImages() {
     }
   }, [experimentImg]);
 
-  const submitRating = async () => {
+  const submitRating = async (timestamp) => {
     try {
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
         userId: userId,
@@ -42,7 +42,8 @@ function ExperimentCompareImages() {
         imgGroup: experimentImg.group,
         imgGeneratedBy: experimentImg.imgGeneratedBy, 
         promptUsed: experimentImg.promptUsed, 
-        rating: fiveStarsRatingRef.current.currentRating()
+        rating: fiveStarsRatingRef.current.currentRating(), 
+        submit_time: timestamp
       });
       setAmountOfImagesRated(amountOfImagesRated + 1);
       console.log('Rating added successfully!');
@@ -65,7 +66,8 @@ function ExperimentCompareImages() {
         alert('Ingresa una calificación antes de continuar');
         return;
       }
-      submitRating();
+      const timestamp = new Date().getTime();
+      submitRating(timestamp);
     }
     if(amountOfImagesRated === imgAmountToRate){
       setRatingExtraImgs(true);
