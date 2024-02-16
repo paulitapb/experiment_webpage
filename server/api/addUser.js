@@ -8,14 +8,13 @@ module.exports = async (req, res) => {
       return;
     }
     const { userId, loginTime } = req.body;
-    const userExists = await ExperimentModel.findOne({ userId: userId , 
-                                                       login_time: loginTime});
+    const userExists = await ExperimentModel.findOne({ userId: userId});
 
     if (userExists !== null) {
       return res.status(400).json({ error: 'User already exists' });
     }
 
-    const newUser = new ExperimentModel({ userId:userId, ratings: [] });
+    const newUser = new ExperimentModel({ userId:userId, login_time: loginTime, ratings: [] });
     await newUser.save();
 
     res.json(newUser);
