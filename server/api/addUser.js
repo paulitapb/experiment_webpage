@@ -7,10 +7,11 @@ module.exports = async (req, res) => {
     if (allowCORS(req, res, () => {})) {
       return;
     }
+    console.log('req.body:', req.body)
     const { userId, loginTime } = req.body;
     console.log('userId:', userId);
     console.log('loginTime:', loginTime);
-    
+
     if (!userId || !loginTime) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
