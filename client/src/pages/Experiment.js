@@ -43,7 +43,7 @@ function ExperimentCompareImages() {
         imgGeneratedBy: experimentImg.imgGeneratedBy, 
         promptUsed: experimentImg.promptUsed, 
         rating: fiveStarsRatingRef.current.currentRating(), 
-        submit_time: timestamp
+        submitTime: timestamp
       });
       setAmountOfImagesRated(amountOfImagesRated + 1);
       console.log('Rating added successfully!');
