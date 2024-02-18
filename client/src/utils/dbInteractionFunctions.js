@@ -36,3 +36,13 @@ export async function getNewImageToRate(userId){
     }
     return randomIndex;
 };
+
+export async function getSerieNumber(){
+  try {
+    const response = await axios.get('https://experiment-webpage-server.vercel.app/api/getCurrentSerie');
+    return response.data.serieNumber;
+  } catch (error) {
+    console.error('Error getting serie number:', error);
+    return false;
+  }
+}

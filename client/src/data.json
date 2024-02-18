@@ -1,46 +1,506 @@
 [
   {
     "id": 0,
-    "name": "img generada de grupo 3 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index443_group3_img4_seed3861852815_cfg7.png",
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index537_group4_img2.png",
     "alt": "",
-    "img": 4,
-    "group": 3,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 443
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 537
   },
   {
     "id": 1,
-    "name": "img generada de grupo 3 img 2",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index382_group3_img2_seed3934986003_cfg7.png",
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index587_group4_img4.png",
     "alt": "",
-    "img": 2,
-    "group": 3,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 382
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 587
   },
   {
     "id": 2,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index547_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 547
+  },
+  {
+    "id": 3,
     "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index535_group4_img2_seed1609334132_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index506_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 506
+  },
+  {
+    "id": 4,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index533_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 533
+  },
+  {
+    "id": 5,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index491_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 491
+  },
+  {
+    "id": 6,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index495_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 495
+  },
+  {
+    "id": 7,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index556_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 556
+  },
+  {
+    "id": 8,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index546_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 546
+  },
+  {
+    "id": 9,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index603_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 603
+  },
+  {
+    "id": 10,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index560_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 560
+  },
+  {
+    "id": 11,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index597_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 597
+  },
+  {
+    "id": 12,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index500_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 500
+  },
+  {
+    "id": 13,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index464_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 464
+  },
+  {
+    "id": 14,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index535_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 535
+  },
+  {
+    "id": 15,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index516_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 516
+  },
+  {
+    "id": 16,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index505_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 505
+  },
+  {
+    "id": 17,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index595_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 595
+  },
+  {
+    "id": 18,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index614_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 614
+  },
+  {
+    "id": 19,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index468_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 468
+  },
+  {
+    "id": 20,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index572_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 572
+  },
+  {
+    "id": 21,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index494_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 494
+  },
+  {
+    "id": 22,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index519_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 519
+  },
+  {
+    "id": 23,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index514_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 514
+  },
+  {
+    "id": 24,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index618_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 618
+  },
+  {
+    "id": 25,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index502_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 502
+  },
+  {
+    "id": 26,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index476_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 476
+  },
+  {
+    "id": 27,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index586_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 586
+  },
+  {
+    "id": 28,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index583_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 583
+  },
+  {
+    "id": 29,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index485_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 485
+  },
+  {
+    "id": 30,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index566_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 566
+  },
+  {
+    "id": 31,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index575_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 575
+  },
+  {
+    "id": 32,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index461_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 461
+  },
+  {
+    "id": 33,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index493_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 493
+  },
+  {
+    "id": 34,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index604_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 604
+  },
+  {
+    "id": 35,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index576_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 576
+  },
+  {
+    "id": 36,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index540_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 540
+  },
+  {
+    "id": 37,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index601_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 601
+  },
+  {
+    "id": 38,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index543_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 543
+  },
+  {
+    "id": 39,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA1/index467_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA1",
+    "promptUsed": 467
+  },
+  {
+    "id": 40,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index513_group4_img2_seed2650413412_cfg7.png",
     "alt": "",
     "img": 2,
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 535
+    "promptUsed": 513
   },
   {
-    "id": 3,
-    "name": "img generada de grupo 1 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index159_group1_img4_seed574055_cfg7.png",
+    "id": 41,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index491_group4_img1_seed222468149_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 491
+  },
+  {
+    "id": 42,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index474_group4_img1_seed1505236156_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 474
+  },
+  {
+    "id": 43,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index510_group4_img2_seed3516205573_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 510
+  },
+  {
+    "id": 44,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index529_group4_img2_seed2839004355_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 529
+  },
+  {
+    "id": 45,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index616_group4_img4_seed932919414_cfg7.png",
     "alt": "",
     "img": 4,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 159
+    "promptUsed": 616
   },
   {
-    "id": 4,
+    "id": 46,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index572_group4_img3_seed138381837_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 572
+  },
+  {
+    "id": 47,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index614_group4_img4_seed3972852761_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 614
+  },
+  {
+    "id": 48,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index607_group4_img4_seed1005511402_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 607
+  },
+  {
+    "id": 49,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index508_group4_img2_seed276232470_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 508
+  },
+  {
+    "id": 50,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english-txtInv/index552_group4_img3_seed1982645038_cfg7.png",
     "alt": "",
@@ -50,7 +510,27 @@
     "promptUsed": 552
   },
   {
-    "id": 5,
+    "id": 51,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index489_group4_img1_seed3619416847_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 489
+  },
+  {
+    "id": 52,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index570_group4_img3_seed543028966_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 570
+  },
+  {
+    "id": 53,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english-txtInv/index618_group4_img4_seed2107373439_cfg7.png",
     "alt": "",
@@ -60,47 +540,157 @@
     "promptUsed": 618
   },
   {
-    "id": 6,
-    "name": "img generada de grupo 3 img 1",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index316_group3_img1_seed214149784_cfg7.png",
+    "id": 54,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index485_group4_img1_seed3779900136_cfg7.png",
     "alt": "",
     "img": 1,
-    "group": 3,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 316
+    "promptUsed": 485
   },
   {
-    "id": 7,
-    "name": "img generada de grupo 2 img 1",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index183_group2_img1_seed1688036547_cfg7.png",
+    "id": 55,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index514_group4_img2_seed3439248762_cfg7.png",
     "alt": "",
-    "img": 1,
-    "group": 2,
+    "img": 2,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 183
+    "promptUsed": 514
   },
   {
-    "id": 8,
+    "id": 56,
     "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index612_group4_img4_seed1558183580_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index601_group4_img4_seed4108375087_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 612
+    "promptUsed": 601
   },
   {
-    "id": 9,
-    "name": "img generada de grupo 1 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index153_group1_img4_seed4094475467_cfg7.png",
+    "id": 57,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index521_group4_img2_seed729624293_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 521
+  },
+  {
+    "id": 58,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index540_group4_img3_seed2751007114_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 540
+  },
+  {
+    "id": 59,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index591_group4_img4_seed2958298469_cfg7.png",
     "alt": "",
     "img": 4,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 153
+    "promptUsed": 591
   },
   {
-    "id": 10,
+    "id": 60,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index598_group4_img4_seed1912188498_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 598
+  },
+  {
+    "id": 61,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index617_group4_img4_seed3810044044_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 617
+  },
+  {
+    "id": 62,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index575_group4_img3_seed1511517058_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 575
+  },
+  {
+    "id": 63,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index470_group4_img1_seed1438108937_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 470
+  },
+  {
+    "id": 64,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index556_group4_img3_seed2463839038_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 556
+  },
+  {
+    "id": 65,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index483_group4_img1_seed1208544029_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 483
+  },
+  {
+    "id": 66,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index578_group4_img3_seed4237614_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 578
+  },
+  {
+    "id": 67,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index551_group4_img3_seed2839602802_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 551
+  },
+  {
+    "id": 68,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index566_group4_img3_seed2051401405_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 566
+  },
+  {
+    "id": 69,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-english-txtInv/index502_group4_img2_seed3356838916_cfg7.png",
     "alt": "",
@@ -110,37 +700,67 @@
     "promptUsed": 502
   },
   {
-    "id": 11,
-    "name": "img generada de grupo 1 img 3",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index108_group1_img3_seed1590005666_cfg7.png",
+    "id": 70,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index515_group4_img2_seed2409501070_cfg7.png",
     "alt": "",
-    "img": 3,
-    "group": 1,
+    "img": 2,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 108
+    "promptUsed": 515
   },
   {
-    "id": 12,
-    "name": "img generada de grupo 1 img 1",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index24_group1_img1_seed2210790074_cfg7.png",
+    "id": 71,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index501_group4_img2_seed3091621052_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 501
+  },
+  {
+    "id": 72,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index482_group4_img1_seed3716710708_cfg7.png",
     "alt": "",
     "img": 1,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 24
+    "promptUsed": 482
   },
   {
-    "id": 13,
-    "name": "img generada de grupo 1 img 3",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index123_group1_img3_seed3870814814_cfg7.png",
+    "id": 73,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index605_group4_img4_seed4111133788_cfg7.png",
     "alt": "",
-    "img": 3,
-    "group": 1,
+    "img": 4,
+    "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 123
+    "promptUsed": 605
   },
   {
-    "id": 14,
+    "id": 74,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index465_group4_img1_seed1360137817_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 465
+  },
+  {
+    "id": 75,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index587_group4_img4_seed2806916397_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 587
+  },
+  {
+    "id": 76,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english-txtInv/index576_group4_img3_seed682770959_cfg7.png",
     "alt": "",
@@ -150,37 +770,167 @@
     "promptUsed": 576
   },
   {
-    "id": 15,
-    "name": "img generada de grupo 1 img 3",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index116_group1_img3_seed2439056937_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 1,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 116
-  },
-  {
-    "id": 16,
-    "name": "img generada de grupo 2 img 2",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index214_group2_img2_seed1147341776_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 2,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 214
-  },
-  {
-    "id": 17,
-    "name": "img generada de grupo 3 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index321_group3_img1_seed1562415114_cfg7.png",
+    "id": 77,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index477_group4_img1_seed634583201_cfg7.png",
     "alt": "",
     "img": 1,
-    "group": 3,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 321
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 477
   },
   {
-    "id": 18,
+    "id": 78,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index478_group4_img1_seed3825640134_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 478
+  },
+  {
+    "id": 79,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-txtInv/index507_group4_img2_seed4217426551_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-txtInv",
+    "promptUsed": 507
+  },
+  {
+    "id": 80,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index599_group4_img4_seed4084420406_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 599
+  },
+  {
+    "id": 81,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index476_group4_img1_seed1333189430_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 476
+  },
+  {
+    "id": 82,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index543_group4_img3_seed307892484_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 543
+  },
+  {
+    "id": 83,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index493_group4_img1_seed1608791329_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 493
+  },
+  {
+    "id": 84,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index496_group4_img2_seed1445859968_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 496
+  },
+  {
+    "id": 85,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index601_group4_img4_seed856497544_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 601
+  },
+  {
+    "id": 86,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index546_group4_img3_seed1715112819_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 546
+  },
+  {
+    "id": 87,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index537_group4_img2_seed3432396828_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 537
+  },
+  {
+    "id": 88,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index505_group4_img2_seed371126102_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 505
+  },
+  {
+    "id": 89,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index564_group4_img3_seed1314732772_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 564
+  },
+  {
+    "id": 90,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index575_group4_img3_seed1108961277_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 575
+  },
+  {
+    "id": 91,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index514_group4_img2_seed3841872748_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 514
+  },
+  {
+    "id": 92,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index590_group4_img4_seed2704913519_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 590
+  },
+  {
+    "id": 93,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-spanish/index540_group4_img3_seed1266937377_cfg7.png",
     "alt": "",
@@ -190,37 +940,97 @@
     "promptUsed": 540
   },
   {
-    "id": 19,
-    "name": "img generada de grupo 2 img 3",
-    "dir": "/images/generated_imgs/SD-spanish/index266_group2_img3_seed4146527469_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 2,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 266
-  },
-  {
-    "id": 20,
-    "name": "img generada de grupo 1 img 4",
-    "dir": "/images/generated_imgs/SD-spanish/index127_group1_img4_seed4189569538_cfg7.png",
+    "id": 94,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index614_group4_img4_seed1347421384_cfg7.png",
     "alt": "",
     "img": 4,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 127
+    "promptUsed": 614
   },
   {
-    "id": 21,
-    "name": "img generada de grupo 3 img 3",
-    "dir": "/images/generated_imgs/SD-spanish/index405_group3_img3_seed2003697065_cfg7.png",
+    "id": 95,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index550_group4_img3_seed2031475203_cfg7.png",
     "alt": "",
     "img": 3,
-    "group": 3,
+    "group": 4,
     "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 405
+    "promptUsed": 550
   },
   {
-    "id": 22,
+    "id": 96,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index587_group4_img4_seed1016885598_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 587
+  },
+  {
+    "id": 97,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index604_group4_img4_seed339593697_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 604
+  },
+  {
+    "id": 98,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index495_group4_img1_seed1007427813_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 495
+  },
+  {
+    "id": 99,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index510_group4_img2_seed2602338007_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 510
+  },
+  {
+    "id": 100,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index491_group4_img1_seed3730086834_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 491
+  },
+  {
+    "id": 101,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index465_group4_img1_seed2165346656_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 465
+  },
+  {
+    "id": 102,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index468_group4_img1_seed3813770054_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 468
+  },
+  {
+    "id": 103,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-spanish/index522_group4_img2_seed563337927_cfg7.png",
     "alt": "",
@@ -230,7 +1040,7 @@
     "promptUsed": 522
   },
   {
-    "id": 23,
+    "id": 104,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-spanish/index517_group4_img2_seed3925296550_cfg7.png",
     "alt": "",
@@ -240,27 +1050,37 @@
     "promptUsed": 517
   },
   {
-    "id": 24,
-    "name": "img generada de grupo 3 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index331_group3_img1_seed3386789770_cfg7.png",
+    "id": 105,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index595_group4_img4_seed3423414305_cfg7.png",
     "alt": "",
-    "img": 1,
-    "group": 3,
+    "img": 4,
+    "group": 4,
     "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 331
+    "promptUsed": 595
   },
   {
-    "id": 25,
-    "name": "img generada de grupo 3 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index326_group3_img1_seed1451844458_cfg7.png",
+    "id": 106,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index536_group4_img2_seed3388418889_cfg7.png",
     "alt": "",
-    "img": 1,
-    "group": 3,
+    "img": 2,
+    "group": 4,
     "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 326
+    "promptUsed": 536
   },
   {
-    "id": 26,
+    "id": 107,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index586_group4_img4_seed2130719907_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 586
+  },
+  {
+    "id": 108,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-spanish/index578_group4_img3_seed3377081295_cfg7.png",
     "alt": "",
@@ -270,67 +1090,187 @@
     "promptUsed": 578
   },
   {
-    "id": 27,
-    "name": "img generada de grupo 1 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index17_group1_img1_seed27511204_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 1,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 17
-  },
-  {
-    "id": 28,
-    "name": "img generada de grupo 2 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index199_group2_img1_seed1496169116_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 2,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 199
-  },
-  {
-    "id": 29,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-spanish/index602_group4_img4_seed3717272902_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 602
-  },
-  {
-    "id": 30,
-    "name": "img generada de grupo 3 img 2",
-    "dir": "/images/generated_imgs/SD-english/index360_group3_img2_seed4247094547_cfg7.png",
+    "id": 109,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index500_group4_img2_seed696230449_cfg7.png",
     "alt": "",
     "img": 2,
-    "group": 3,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 360
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 500
   },
   {
-    "id": 31,
-    "name": "img generada de grupo 1 img 3",
-    "dir": "/images/generated_imgs/SD-english/index106_group1_img3_seed2062624681_cfg7.png",
+    "id": 110,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index474_group4_img1_seed1835849870_cfg7.png",
     "alt": "",
-    "img": 3,
-    "group": 1,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 106
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 474
   },
   {
-    "id": 32,
+    "id": 111,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index467_group4_img1_seed2150910960_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 467
+  },
+  {
+    "id": 112,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index464_group4_img1_seed3565154179_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 464
+  },
+  {
+    "id": 113,
     "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english/index604_group4_img4_seed129087651_cfg7.png",
+    "dir": "/images/generated_imgs/SD-spanish/index603_group4_img4_seed2521765087_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 604
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 603
   },
   {
-    "id": 33,
+    "id": 114,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index547_group4_img3_seed3273112751_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 547
+  },
+  {
+    "id": 115,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-spanish/index457_group4_img1_seed3836992737_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 457
+  },
+  {
+    "id": 116,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index570_group4_img3_seed1262293598_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 570
+  },
+  {
+    "id": 117,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-spanish/index560_group4_img3_seed2847488558_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 560
+  },
+  {
+    "id": 118,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-spanish/index598_group4_img4_seed465493477_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 598
+  },
+  {
+    "id": 119,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-spanish/index513_group4_img2_seed2936560661_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-spanish",
+    "promptUsed": 513
+  },
+  {
+    "id": 120,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index474_group4_img1_seed877423056_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 474
+  },
+  {
+    "id": 121,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index477_group4_img1_seed861574740_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 477
+  },
+  {
+    "id": 122,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index565_group4_img3_seed1462412078_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 565
+  },
+  {
+    "id": 123,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index568_group4_img3_seed2391470254_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 568
+  },
+  {
+    "id": 124,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index522_group4_img2_seed2545052696_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 522
+  },
+  {
+    "id": 125,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index505_group4_img2_seed2703407398_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 505
+  },
+  {
+    "id": 126,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index551_group4_img3_seed2681423402_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 551
+  },
+  {
+    "id": 127,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english/index490_group4_img1_seed1673135585_cfg7.png",
     "alt": "",
@@ -340,17 +1280,17 @@
     "promptUsed": 490
   },
   {
-    "id": 34,
-    "name": "img generada de grupo 3 img 1",
-    "dir": "/images/generated_imgs/SD-english/index330_group3_img1_seed290537562_cfg7.png",
+    "id": 128,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index598_group4_img4_seed670477836_cfg7.png",
     "alt": "",
-    "img": 1,
-    "group": 3,
+    "img": 4,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 330
+    "promptUsed": 598
   },
   {
-    "id": 35,
+    "id": 129,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english/index561_group4_img3_seed2209029250_cfg7.png",
     "alt": "",
@@ -360,37 +1300,67 @@
     "promptUsed": 561
   },
   {
-    "id": 36,
-    "name": "img generada de grupo 3 img 3",
-    "dir": "/images/generated_imgs/SD-english/index403_group3_img3_seed1456783215_cfg7.png",
+    "id": 130,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index491_group4_img1_seed1677558892_cfg7.png",
     "alt": "",
-    "img": 3,
-    "group": 3,
+    "img": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 403
+    "promptUsed": 491
   },
   {
-    "id": 37,
+    "id": 131,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index478_group4_img1_seed1803141_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 478
+  },
+  {
+    "id": 132,
     "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english/index602_group4_img4_seed3590091183_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english/index583_group4_img4_seed2116216496_cfg7.png",
     "alt": "",
     "img": 4,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 602
+    "promptUsed": 583
   },
   {
-    "id": 38,
-    "name": "img generada de grupo 1 img 1",
-    "dir": "/images/generated_imgs/SD-english/index38_group1_img1_seed3555395728_cfg7.png",
+    "id": 133,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index618_group4_img4_seed3453764313_cfg7.png",
     "alt": "",
-    "img": 1,
-    "group": 1,
+    "img": 4,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 38
+    "promptUsed": 618
   },
   {
-    "id": 39,
+    "id": 134,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index514_group4_img2_seed3572928385_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 514
+  },
+  {
+    "id": 135,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index616_group4_img4_seed2097271582_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 616
+  },
+  {
+    "id": 136,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english/index545_group4_img3_seed1170462004_cfg7.png",
     "alt": "",
@@ -400,83 +1370,1053 @@
     "promptUsed": 545
   },
   {
-    "id": 40,
-    "name": "img generada de grupo 2 img 1",
-    "dir": "/images/generated_imgs/SD-english/index188_group2_img1_seed1373260873_cfg7.png",
+    "id": 137,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index467_group4_img1_seed1058369230_cfg7.png",
     "alt": "",
     "img": 1,
-    "group": 2,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 188
+    "promptUsed": 467
   },
   {
-    "id": 41,
-    "name": "img generada de grupo 1 img 1",
-    "dir": "/images/generated_imgs/SD-english/index15_group1_img1_seed128053677_cfg7.png",
+    "id": 138,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index489_group4_img1_seed1080614703_cfg7.png",
     "alt": "",
     "img": 1,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 15
+    "promptUsed": 489
   },
   {
-    "id": 42,
+    "id": 139,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index584_group4_img4_seed2094519845_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 584
+  },
+  {
+    "id": 140,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index590_group4_img4_seed1014746818_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 590
+  },
+  {
+    "id": 141,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index600_group4_img4_seed1390821788_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 600
+  },
+  {
+    "id": 142,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index461_group4_img1_seed3459611279_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 461
+  },
+  {
+    "id": 143,
     "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english/index496_group4_img2_seed3860396403_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english/index536_group4_img2_seed3422623709_cfg7.png",
     "alt": "",
     "img": 2,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 496
+    "promptUsed": 536
   },
   {
-    "id": 43,
+    "id": 144,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index465_group4_img1_seed1683105422_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 465
+  },
+  {
+    "id": 145,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index539_group4_img2_seed3028027649_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 539
+  },
+  {
+    "id": 146,
     "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english/index567_group4_img3_seed1923709387_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english/index544_group4_img3_seed3825199717_cfg7.png",
     "alt": "",
     "img": 3,
     "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 567
+    "promptUsed": 544
   },
   {
-    "id": 44,
-    "name": "img generada de grupo 1 img 4",
-    "dir": "/images/generated_imgs/SD-english/index159_group1_img4_seed1435800089_cfg7.png",
+    "id": 147,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index606_group4_img4_seed3646399111_cfg7.png",
     "alt": "",
     "img": 4,
-    "group": 1,
+    "group": 4,
     "imgGeneratedBy": "SD-english",
-    "promptUsed": 159
+    "promptUsed": 606
   },
   {
-    "id": 45,
-    "name": "img generada de grupo 2 img 4",
-    "dir": "/images/generated_imgs/SD-english/index288_group2_img4_seed2176452949_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 2,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 288
-  },
-  {
-    "id": 46,
+    "id": 148,
     "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english/index566_group4_img3_seed2498802564_cfg7.png",
+    "dir": "/images/generated_imgs/SD-english/index546_group4_img3_seed1541309366_cfg7.png",
     "alt": "",
     "img": 3,
     "group": 4,
     "imgGeneratedBy": "SD-english",
+    "promptUsed": 546
+  },
+  {
+    "id": 149,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index560_group4_img3_seed2142659361_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 560
+  },
+  {
+    "id": 150,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index502_group4_img2_seed2183505412_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 502
+  },
+  {
+    "id": 151,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index510_group4_img2_seed4141363273_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 510
+  },
+  {
+    "id": 152,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index529_group4_img2_seed3796514449_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 529
+  },
+  {
+    "id": 153,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index507_group4_img2_seed1757344781_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 507
+  },
+  {
+    "id": 154,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index571_group4_img3_seed1855389653_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 571
+  },
+  {
+    "id": 155,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english/index581_group4_img3_seed97479700_cfg7.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 581
+  },
+  {
+    "id": 156,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index587_group4_img4_seed101962434_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 587
+  },
+  {
+    "id": 157,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english/index479_group4_img1_seed2022870583_cfg7.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 479
+  },
+  {
+    "id": 158,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english/index611_group4_img4_seed4130192629_cfg7.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 611
+  },
+  {
+    "id": 159,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english/index523_group4_img2_seed3928140797_cfg7.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english",
+    "promptUsed": 523
+  },
+  {
+    "id": 160,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index537_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 537
+  },
+  {
+    "id": 161,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index523_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 523
+  },
+  {
+    "id": 162,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index507_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 507
+  },
+  {
+    "id": 163,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index488_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 488
+  },
+  {
+    "id": 164,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index573_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 573
+  },
+  {
+    "id": 165,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index620_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 620
+  },
+  {
+    "id": 166,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index547_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 547
+  },
+  {
+    "id": 167,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index529_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 529
+  },
+  {
+    "id": 168,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index463_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 463
+  },
+  {
+    "id": 169,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index495_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 495
+  },
+  {
+    "id": 170,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index545_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 545
+  },
+  {
+    "id": 171,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index538_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 538
+  },
+  {
+    "id": 172,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index484_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 484
+  },
+  {
+    "id": 173,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index597_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 597
+  },
+  {
+    "id": 174,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index535_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 535
+  },
+  {
+    "id": 175,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index606_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 606
+  },
+  {
+    "id": 176,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index581_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 581
+  },
+  {
+    "id": 177,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index494_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 494
+  },
+  {
+    "id": 178,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index519_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 519
+  },
+  {
+    "id": 179,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index470_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 470
+  },
+  {
+    "id": 180,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index600_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 600
+  },
+  {
+    "id": 181,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index617_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 617
+  },
+  {
+    "id": 182,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index458_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 458
+  },
+  {
+    "id": 183,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index502_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 502
+  },
+  {
+    "id": 184,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index476_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 476
+  },
+  {
+    "id": 185,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index586_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 586
+  },
+  {
+    "id": 186,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index583_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 583
+  },
+  {
+    "id": 187,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index485_group4_img1.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 485
+  },
+  {
+    "id": 188,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index521_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 521
+  },
+  {
+    "id": 189,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index566_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
     "promptUsed": 566
   },
   {
-    "id": 47,
-    "name": "img generada de grupo 2 img 1",
-    "dir": "/images/generated_imgs/SD-english/index179_group2_img1_seed1250179803_cfg7.png",
+    "id": 190,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index575_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 575
+  },
+  {
+    "id": 191,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index461_group4_img1.png",
     "alt": "",
     "img": 1,
-    "group": 2,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 179
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 461
+  },
+  {
+    "id": 192,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index570_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 570
+  },
+  {
+    "id": 193,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index611_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 611
+  },
+  {
+    "id": 194,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index565_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 565
+  },
+  {
+    "id": 195,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index601_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 601
+  },
+  {
+    "id": 196,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index585_group4_img4.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 585
+  },
+  {
+    "id": 197,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index522_group4_img2.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 522
+  },
+  {
+    "id": 198,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index543_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 543
+  },
+  {
+    "id": 199,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/SD-english-LORA2/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "SD-english-LORA2",
+    "promptUsed": 542
+  },
+  {
+    "id": 200,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 201,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 202,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 203,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 204,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 205,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 206,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 207,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 208,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 209,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 210,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 211,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 212,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 213,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 214,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 215,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 216,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 217,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 218,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 219,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 220,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 221,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 222,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 223,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 224,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 225,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 226,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 227,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 228,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 229,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 230,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 231,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 232,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 233,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 234,
+    "name": "img generada de grupo 4 img 4",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 235,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 236,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 237,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 238,
+    "name": "img generada de grupo 4 img 3",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 239,
+    "name": "img generada de grupo 4 img 1",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 240,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
+  },
+  {
+    "id": 241,
+    "name": "img generada de grupo 4 img 2",
+    "dir": "/images/generated_imgs/dibujos/index542_group4_img3.png",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "dibujos",
+    "promptUsed": 542
   }
 ]

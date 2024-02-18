@@ -7,10 +7,13 @@ import images from '../data.json';
 
 import NextButton from '../components/NextButton.js';
 import FiveStarsRating from '../components/StarRating';
-import { getNewImageToRate } from '../utils/dbInteractionFunctions.js';
+import { getNewImageToRate, getSerieNumber } from '../utils/dbInteractionFunctions.js';
+import series from '../id_images_series_piloto.json';
+
 const imgAmountToRate = 5;
 
 function ExperimentCompareImages() {
+
   const navigate = useNavigate();
   const location = useLocation();
   const { userId } = location.state;
@@ -21,7 +24,9 @@ function ExperimentCompareImages() {
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
-
+  
+  const currentSerie = getSerieNumber();
+  console.log('currentSerie:', currentSerie);
   useEffect(() => {
     getNewImageToRate(userId).then(index => {
       setExperimentImg(images[index]);
@@ -33,6 +38,7 @@ function ExperimentCompareImages() {
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
     }
   }, [experimentImg]);
+
 
   const submitRating = async (timestamp) => {
     try {
@@ -69,10 +75,11 @@ function ExperimentCompareImages() {
       const timestamp = new Date().getTime();
       submitRating(timestamp);
     }
-    if(amountOfImagesRated === imgAmountToRate){
+    /* if(amountOfImagesRated === imgAmountToRate){
       setRatingExtraImgs(true);
-    } 
+    }  */
   }
+
   const handleExitClick = async () => {
     if (fiveStarsRatingRef.current.currentRating() === 0) {
       alert('Ingresa una calificación antes de salir del experimento');
