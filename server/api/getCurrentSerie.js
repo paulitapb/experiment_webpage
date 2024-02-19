@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
       return;
     }
     const new_index = (current_serie_index.current_index + 1) % 50;
-
+    console.log('new_index:', new_index)
     const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
       { _id: current_serie_index._id }, 
       { $set: { current_index: new_index } },
