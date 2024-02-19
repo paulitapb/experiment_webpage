@@ -11,9 +11,9 @@ module.exports = async (req, res) => {
       console.log('No document found with findOne');
       return;
     }
-    console.log(current_serie_index)
+    
     const new_index = (current_serie_index.currentIndex + 1) % 50;
-    console.log('new_index:', new_index)
+    
     
     const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
       { _id: current_serie_index._id }, 
@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
       { new: true }  // return the updated document
     ).catch(err => console.log(err + ' Error updating serie index'));
 
-    res.json(updated_serie_index);
+    res.json(current_serie_index.currentIndex);
 
   } catch (err) {
     console.error(err);
