@@ -27,7 +27,7 @@ function ExperimentCompareImages() {
   
   const img_index = 0;
   const currentSerie = getSerieNumber();
-
+  const image_serie = series[currentSerie];
 
   console.log('currentSerie:', currentSerie);
   /* useEffect(() => {
@@ -64,7 +64,7 @@ function ExperimentCompareImages() {
       /* getNewImageToRate(userId).then(index => {
         setExperimentImg(images[index]);
       }); */
-      setExperimentImg(series[img_index]);
+      setExperimentImg(img_serie[series[img_index]]);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
