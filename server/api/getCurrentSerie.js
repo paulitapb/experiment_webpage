@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
     
     const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
       { _id: current_serie_index._id }, 
-      { $set: { current_index: new_index } },
+      { $set: { currentIndex: new_index } },
       { new: true }  // return the updated document
     ).catch(err => console.log(err + ' Error updating serie index'));
 
