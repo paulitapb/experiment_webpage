@@ -7,12 +7,15 @@ module.exports = async (req, res) => {
     allowCORS(req, res, () => {});
     
     const current_serie_index = await CurrentSerieIndex.findOne();
-    res.json(current_serie_index);
-
-   
     const new_index = (current_serie_index.current_index + 1) % 50;
-    current_serie_index.current_index = new_index;
-    await current_serie_index.save();
+    
+    const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
+      { _id: current_serie_index._id }, 
+      { $set: { current_index: new_index } },
+      { new: true }  // return the updated document
+    );
+
+    res.json(updated_serie_index);
 
   } catch (err) {
     console.error(err);
