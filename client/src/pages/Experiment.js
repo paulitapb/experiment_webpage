@@ -64,7 +64,7 @@ function ExperimentCompareImages() {
       /* getNewImageToRate(userId).then(index => {
         setExperimentImg(images[index]);
       }); */
-      setExperimentImg(img_serie[series[img_index]]);
+      setExperimentImg(image_serie[series[img_index]]);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
