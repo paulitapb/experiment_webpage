@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
       console.log('No document found with findOne');
       return;
     }
-    const new_index = (current_serie_index.current_index + 1) % 50;
+    const new_index = (current_serie_index.currentIndex + 1) % 50;
     console.log('new_index:', new_index)
     const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
       { _id: current_serie_index._id }, 
