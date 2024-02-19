@@ -7,13 +7,17 @@ module.exports = async (req, res) => {
     allowCORS(req, res, () => {});
     
     const current_serie_index = await CurrentSerieIndex.findOne();
+    if (!current_serie_index) {
+      console.log('No document found with findOne');
+      return;
+    }
     const new_index = (current_serie_index.current_index + 1) % 50;
-    
+
     const updated_serie_index = await CurrentSerieIndex.findOneAndUpdate(
       { _id: current_serie_index._id }, 
       { $set: { current_index: new_index } },
       { new: true }  // return the updated document
-    );
+    ).catch(err => console.log(err));
 
     res.json(updated_serie_index);
 
