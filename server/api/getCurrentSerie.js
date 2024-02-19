@@ -1,6 +1,6 @@
 
 const { mongoose, allowCORS } = require('../db');
-const CurrentSerieIndex = require('../models/CurrentSerieIndex');
+const CurrentSerieIndex = require('../models/CurrentSerieModel');
 
 module.exports = async (req, res) => {
   try {
