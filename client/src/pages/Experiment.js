@@ -25,13 +25,16 @@ function ExperimentCompareImages() {
   const [originalImagePath, setOriginalImagePath] = useState(null);
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
+  const img_index = 0;
   const currentSerie = getSerieNumber();
+
+
   console.log('currentSerie:', currentSerie);
-  useEffect(() => {
+  /* useEffect(() => {
     getNewImageToRate(userId).then(index => {
       setExperimentImg(images[index]);
     });
-  }, [userId]);
+  }, [userId]); */
 
   useEffect(() => {
     if (experimentImg) {
@@ -54,12 +57,14 @@ function ExperimentCompareImages() {
       setAmountOfImagesRated(amountOfImagesRated + 1);
       console.log('Rating added successfully!');
       fiveStarsRatingRef.current.reset();
+      
       setExperimentImg(null);
       setOriginalImagePath(null);
-      getNewImageToRate(userId).then(index => {
+      
+      /* getNewImageToRate(userId).then(index => {
         setExperimentImg(images[index]);
-      });
-
+      }); */
+      setExperimentImg(series[img_index]);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
