@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
       { new: true }  // return the updated document
     );
 
-    res.json(current_serie_index.currentIndex);
+    res.json(updated_serie_index);
 
   } catch (err) {
     console.error(err);
