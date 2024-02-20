@@ -20,10 +20,8 @@ function ExperimentCompareImages() {
 
   const fiveStarsRatingRef = useRef(null);
   
-  const [amountOfImagesRated, setAmountOfImagesRated] = useState(0);
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
-  const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
   const [img_index, setImgIndex] = useState(0);
   const [currentSerie, setCurrentSerie] = useState(null);
@@ -38,23 +36,16 @@ function ExperimentCompareImages() {
     fetchCurrentSerie();
     }, []);
 
-
+  // update next image 
   useEffect(() => {
-    console.log('currentSerie', currentSerie);
     if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
-      console.log('img', image);
+      
     }
   } , [currentSerie, img_index]);
 
-
-  /* useEffect(() => {
-    getNewImageToRate(userId).then(index => {
-      setExperimentImg(images[index]);
-    });
-  }, [userId]); */
-
+  //update original img to match the experiment image  
   useEffect(() => {
     if (experimentImg) {
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
@@ -73,7 +64,6 @@ function ExperimentCompareImages() {
         rating: fiveStarsRatingRef.current.currentRating(), 
         submitTime: timestamp
       });
-      setAmountOfImagesRated(amountOfImagesRated + 1);
       console.log('Rating added successfully!');
       fiveStarsRatingRef.current.reset();
       
@@ -95,6 +85,7 @@ function ExperimentCompareImages() {
       }
       const timestamp = new Date().getTime();
       submitRating(timestamp);
+
     }
   }
 
@@ -103,7 +94,8 @@ function ExperimentCompareImages() {
       alert('Ingresa una calificación antes de salir del experimento');
       return;
     }
-    submitRating();
+    const timestamp = new Date().getTime();
+    submitRating(timestamp);
     navigate('/thank-you');
   }
 
@@ -120,7 +112,6 @@ function ExperimentCompareImages() {
                 
                   {!originalImagePath ? (
                     <div className="loader" style={{ height: '50px', width: '50px' }}>
-                      
                     </div>
                   ):(
                     <img 
@@ -135,8 +126,7 @@ function ExperimentCompareImages() {
                 ):(
                   <img 
                   src={process.env.PUBLIC_URL + experimentImg.dir} 
-                  alt=''
-              /> 
+                  alt=''/> 
                 )}
                 
             </div>
@@ -144,10 +134,10 @@ function ExperimentCompareImages() {
       
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
-        <NextButton handleOnClick={handleNextClick}/>
-        {ratingExtraImgs && (
-          <button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>
-        )}
+        {(img_index < images.length()-1) ? (
+           <NextButton handleOnClick={handleNextClick}/>
+        ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
+        }
       </div>
     </>
   );
