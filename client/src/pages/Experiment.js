@@ -25,7 +25,7 @@ function ExperimentCompareImages() {
   
   const [img_index, setImgIndex] = useState(0);
   const [currentSerie, setCurrentSerie] = useState(null);
-
+  
   
   useEffect(() => {
     const fetchCurrentSerie = async () => {
@@ -136,7 +136,7 @@ function ExperimentCompareImages() {
       
       <div className='rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
-        {(img_index < images.length()-1) ? (
+        {(img_index < images.length-1) ? (
            <NextButton handleOnClick={handleNextClick}/>
         ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
         }
