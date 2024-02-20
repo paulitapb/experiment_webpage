@@ -14,10 +14,10 @@
   object-fit: cover;
 }
 
-img {
+/* img {
     max-width: 28vw; 
     height: auto;
-}
+} */
 
 .rating-container {
     text-align: center;
