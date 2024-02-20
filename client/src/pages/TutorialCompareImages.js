@@ -27,12 +27,13 @@ function TutorialCompareImages() {
             Fase de prueba
         </div>
         <p className='experiment-explanation'>
-          Te vamos a mostrar dos imágenes. La primera es alguna de las imágenes que les mostramos a las personas para que las describan. La segunda imágen fue generada por una Inteligencia Artificial u otro humano a partir de una descripción. Necesitamos que compares las imágenes y nos indiques cuán parecidas son. Para esto usamos un sistema de estrellitas donde 1 estrella es la menor puntuación y 5 estrellas la máxima.
+          Te vamos a mostrar dos imágenes. La imágen de la izquierda fue mostrada a las personas y descrita en texto. La imágen de la derecha fue generada por una Inteligencia Artificial u otro humano a partir de una descripción. Necesitamos que compares las imágenes y suponiendo que la imágen de la derecha fue generada con una descripción de la imágen original ¿Cuán bien te parece que salió el proceso? Para esto usamos un sistema de estrellas donde 1 estrella es la menor puntuación y 5 estrellas la máxima. 
         </p>
       <div className='SubHeader'>
-            ¿Cuán parecidas te parecen estas imagenes? 
+        Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original ¿Cuán bien te parece que salió el proceso?
+
         </div>
-        <div className='Center'> <i>(1 es poco parecidas y 5 muy parecidas)</i> </div>
+        <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
 
         <div className='outer-container'>
             <div className='image-container-exp'>

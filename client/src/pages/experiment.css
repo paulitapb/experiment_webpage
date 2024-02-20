@@ -14,10 +14,6 @@
   object-fit: cover;
 }
 
-/* img {
-    max-width: 28vw; 
-    height: auto;
-} */
 
 .rating-container {
     text-align: center;
@@ -25,7 +21,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    
     
 }
 
