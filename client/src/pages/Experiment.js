@@ -46,8 +46,9 @@ function ExperimentCompareImages() {
 
   useEffect(() => {
     if (currentSerie) {
-      console.log('currentSerie', series[currentSerie]);
-      console.log('img_index', img_index);
+      console.log('currentSerie', series[currentSerie][img_index]);
+      console.log('img at 0', images[0]);
+      console.log('img at 0', typeof images[0].id );
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       console.log('image', image);
       setExperimentImg(image);
