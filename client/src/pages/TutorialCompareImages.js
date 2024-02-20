@@ -36,18 +36,21 @@ function TutorialCompareImages() {
 
         <div className='outer-container'>
             <div className='image-container-exp'>
-                <h4>Imagen original</h4> 
+                <h4>Imagen original</h4>
+                  <div className="image-container">
                     <img 
                     src={process.env.PUBLIC_URL + "../images/img_original/img44.png"} 
                     alt=''/>
+                  </div>
                   
             </div>
             <div className='image-container-exp'>
                 <h4>Imagen generada</h4> 
-                
-                  <img 
-                  src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
-                  alt=''></img>
+                  <div className="image-container">
+                    <img 
+                    src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
+                    alt=''></img>
+                  </div>
                 
             </div>
       </div>

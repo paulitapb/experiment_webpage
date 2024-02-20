@@ -1,9 +1,13 @@
 .image-container-exp {
       margin: 10px;
-      width: 28vw;
-      height: 50vw;
-      overflow: hidden;
     }
+
+.image-container {
+  margin: 10px;
+  width: 28vw;
+  height: 50vw;
+  overflow: hidden;
+}
 .image-container img {
   width: 100%;
   height: 100%;
