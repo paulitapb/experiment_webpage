@@ -79,13 +79,13 @@
 
 }
 
-.image-container{
+.image-container-home{
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
 }
 
-.image-container img {
+.image-container-home img {
   max-width: 60%;
   height: auto;
 }
