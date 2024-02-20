@@ -7,10 +7,10 @@ import images from '../data.json';
 
 import NextButton from '../components/NextButton.js';
 import FiveStarsRating from '../components/StarRating';
-import { getNewImageToRate, getSerieNumber } from '../utils/dbInteractionFunctions.js';
+import {getSerieNumber } from '../utils/dbInteractionFunctions.js';
 import series from '../id_images_series_piloto.json';
 
-const imgAmountToRate = 5;
+
 
 function ExperimentCompareImages() {
 
@@ -26,7 +26,6 @@ function ExperimentCompareImages() {
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
   const [img_index, setImgIndex] = useState(0);
-
   const [currentSerie, setCurrentSerie] = useState(null);
 
   
@@ -41,10 +40,11 @@ function ExperimentCompareImages() {
 
 
   useEffect(() => {
-    
-    if (currentSerie !== undefined) {
+    console.log('currentSerie', currentSerie);
+    if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
+      console.log('img', image);
     }
   } , [currentSerie, img_index]);
 
