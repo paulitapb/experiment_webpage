@@ -48,8 +48,7 @@ function TutorialCompareImages() {
                 
                   <img 
                   src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
-                  alt=''
-                  style={{ height: '50px', width: '50px' }}></img>
+                  alt=''></img>
                 
             </div>
       </div>
