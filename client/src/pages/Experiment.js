@@ -46,7 +46,7 @@ function ExperimentCompareImages() {
 
   useEffect(() => {
     console.log('currentSerie', currentSerie);
-    if (currentSerie) {
+    if (currentSerie !== undefined) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       console.log('image', image.id);
       setExperimentImg(image);
@@ -62,6 +62,7 @@ function ExperimentCompareImages() {
 
   useEffect(() => {
     if (experimentImg) {
+      console.log("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png")
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
     }
   }, [experimentImg]);
