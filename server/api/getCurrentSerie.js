@@ -8,6 +8,7 @@ module.exports = async (req, res) => {
     
     const current_serie_index = await CurrentSerieIndex.findOne();
     if (!current_serie_index) {
+      console.log('Document not found')
       res.status(404).json({ message: 'Document not found' });
       return;
     }
