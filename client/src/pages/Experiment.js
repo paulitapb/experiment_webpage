@@ -25,7 +25,8 @@ function ExperimentCompareImages() {
   const [originalImagePath, setOriginalImagePath] = useState(null);
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
-  const img_index = 0;
+  const [img_index, setImgIndex] = useState(0);
+
   const [currentSerie, setCurrentSerie] = useState(null);
  
   /* const first_image = images.find(img => img.id === series[currentSerie][img_index]);
@@ -52,10 +53,10 @@ function ExperimentCompareImages() {
     }
   } , [currentSerie]);
   
-  useEffect(() => {
+/*   useEffect(() => {
     const image = images.find(img => img.id === series[currentSerie][img_index]);
     setExperimentImg(image);
-  }, [img_index]);
+  }, [img_index]); */
 
 
   /* useEffect(() => {
