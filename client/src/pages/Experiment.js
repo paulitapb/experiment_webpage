@@ -28,6 +28,7 @@ function ExperimentCompareImages() {
   const img_index = 0;
   console.log('img_index', img_index);
   const currentSerie = getSerieNumber();
+  console.log('currentSerie',currentSerie);
 
   console.log('currentSerie',series[currentSerie]);
   const first_image = images.find(img => img.id === series[currentSerie][img_index]);
