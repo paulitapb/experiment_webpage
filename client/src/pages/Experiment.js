@@ -27,18 +27,14 @@ function ExperimentCompareImages() {
   
   const img_index = 0;
   const currentSerie = getSerieNumber();
-  const image_id_serie = series[currentSerie];
-  
+
+  setExperimentImg(images.find(img => img.id === series[currentSerie][img_index]));
   
   useEffect(() => {
     const image = images.find(img => img.id === series[currentSerie][img_index]);
     setExperimentImg(image);
   }, [img_index]);
 
-  useEffect(() => {
-    const image = images.find(img => img.id === series[currentSerie][img_index]);
-    setExperimentImg(image);
-  }, [currentSerie]);
 
   /* useEffect(() => {
     getNewImageToRate(userId).then(index => {
