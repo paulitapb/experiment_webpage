@@ -31,10 +31,10 @@ function ExperimentCompareImages() {
   console.log('currentSerie',currentSerie);
 
   console.log('currentSerie',series[currentSerie]);
-  const first_image = images.find(img => img.id === series[currentSerie][img_index]);
+  /* const first_image = images.find(img => img.id === series[currentSerie][img_index]);
   
   console.log('first_image', first_image);
-  setExperimentImg(first_image);
+  setExperimentImg(first_image); */
   
   useEffect(() => {
     const image = images.find(img => img.id === series[currentSerie][img_index]);
