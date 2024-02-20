@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
       { _id: current_serie_index._id }, 
       { $set: { currentIndex: new_index } },
       { new: true }  // return the updated document
-    ).catch(err => console.log(err + ' Error updating serie index'));
+    );
 
     res.json(current_serie_index.currentIndex);
 
