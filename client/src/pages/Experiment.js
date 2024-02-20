@@ -28,11 +28,7 @@ function ExperimentCompareImages() {
   const [img_index, setImgIndex] = useState(0);
 
   const [currentSerie, setCurrentSerie] = useState(null);
- 
-  /* const first_image = images.find(img => img.id === series[currentSerie][img_index]);
-  
-  console.log('first_image', first_image);
-  setExperimentImg(first_image); */
+
   
   useEffect(() => {
     const fetchCurrentSerie = async () => {
@@ -45,11 +41,12 @@ function ExperimentCompareImages() {
 
 
   useEffect(() => {
-    console.log('currentSerie', currentSerie);
+    
     if (currentSerie !== undefined) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
-      console.log('image', image.id);
       setExperimentImg(image);
+      console.log(image.dir)
+
     }
   } , [currentSerie, img_index]);
 
@@ -62,7 +59,6 @@ function ExperimentCompareImages() {
 
   useEffect(() => {
     if (experimentImg) {
-      console.log("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png")
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
     }
   }, [experimentImg]);
@@ -85,11 +81,8 @@ function ExperimentCompareImages() {
       
       setExperimentImg(null);
       setOriginalImagePath(null);
-      
-      /* getNewImageToRate(userId).then(index => {
-        setExperimentImg(images[index]);
-      }); */
       setImgIndex(img_index + 1);
+
     } catch (error) {
       console.error('Error adding rating:', error);
     }
@@ -105,9 +98,6 @@ function ExperimentCompareImages() {
       const timestamp = new Date().getTime();
       submitRating(timestamp);
     }
-    /* if(amountOfImagesRated === imgAmountToRate){
-      setRatingExtraImgs(true);
-    }  */
   }
 
   const handleExitClick = async () => {
@@ -148,7 +138,7 @@ function ExperimentCompareImages() {
                   <img 
                   src={process.env.PUBLIC_URL + experimentImg.dir} 
                   alt=''
-              />
+              /> 
                 )}
                 
             </div>

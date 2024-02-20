@@ -39,7 +39,8 @@ function TutorialCompareImages() {
                 <h4>Imagen original</h4> 
                     <img 
                     src={process.env.PUBLIC_URL + "../images/img_original/img44.png"} 
-                    alt=''/>
+                    alt=''
+                    style={{ height: '50px', width: '50px' }}/>
                   
             </div>
             <div className='image-container-exp'>
@@ -47,7 +48,8 @@ function TutorialCompareImages() {
                 
                   <img 
                   src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
-                  alt=''></img>
+                  alt=''
+                  style={{ height: '50px', width: '50px' }}></img>
                 
             </div>
       </div>
