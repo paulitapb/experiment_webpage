@@ -78,7 +78,6 @@
   text-align: center;
 
 }
-
 .image-container-home{
   display: flex;
   justify-content: center;
@@ -86,6 +85,6 @@
 }
 
 .image-container-home img {
-  max-width: 60%;
+  max-width: 50vw;
   height: auto;
 }
