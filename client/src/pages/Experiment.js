@@ -40,11 +40,12 @@ function ExperimentCompareImages() {
     };
 
     fetchCurrentSerie();
-    console.log('currentSerie', currentSerie);
     }, []);
+
 
   useEffect(() => {
     if (currentSerie) {
+      console.log('currentSerie', currentSerie);
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       console.log('image', image);
       setExperimentImg(image);
