@@ -26,6 +26,7 @@ function ExperimentCompareImages() {
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
   const img_index = 0;
+  console.log('img_index', img_index);
   const currentSerie = getSerieNumber();
   console.log("currentSerie loaded")
 
