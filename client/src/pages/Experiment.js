@@ -46,19 +46,15 @@ function ExperimentCompareImages() {
 
   useEffect(() => {
     if (currentSerie) {
-      console.log('currentSerie', series[currentSerie][img_index]);
-      console.log('img at 0', images[0]);
-      console.log('img at 0', typeof images[0].id );
       const image = images.find(img => img.id === series[currentSerie][img_index]);
-      console.log('image', image);
       setExperimentImg(image);
     }
   } , [currentSerie]);
   
-/*   useEffect(() => {
+  useEffect(() => {
     const image = images.find(img => img.id === series[currentSerie][img_index]);
     setExperimentImg(image);
-  }, [img_index]); */
+  }, [img_index]);
 
 
   /* useEffect(() => {
@@ -95,8 +91,7 @@ function ExperimentCompareImages() {
       /* getNewImageToRate(userId).then(index => {
         setExperimentImg(images[index]);
       }); */
-      const image = images.find(img => img.id === series[currentSerie][img_index]);
-      setExperimentImg(image);
+      setImgIndex(img_index + 1);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
