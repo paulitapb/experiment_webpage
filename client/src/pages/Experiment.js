@@ -26,16 +26,30 @@ function ExperimentCompareImages() {
   const [ratingExtraImgs, setRatingExtraImgs] = useState(false);
   
   const img_index = 0;
-  console.log('img_index', img_index);
-  const currentSerie = getSerieNumber();
-  console.log('currentSerie',currentSerie);
-  
-  console.log('img serie',series.size());
-  console.log('serie id',series[currentSerie]);
+  const [currentSerie, setCurrentSerie] = useState(null);
+  console.log(series.length)
+ 
   /* const first_image = images.find(img => img.id === series[currentSerie][img_index]);
   
   console.log('first_image', first_image);
   setExperimentImg(first_image); */
+  
+  useEffect(() => {
+    const fetchCurrentSerie = async () => {
+      const serieNumber = await getSerieNumber();
+      setCurrentSerie(serieNumber);
+    };
+
+    fetchCurrentSerie();
+    }, []);
+
+  useEffect(() => {
+    if (currentSerie) {
+      const image = images.find(img => img.id === series[currentSerie][img_index]);
+      console.log('image', image);
+      setExperimentImg(image);
+    }
+  } , [currentSerie]);
   
   useEffect(() => {
     const image = images.find(img => img.id === series[currentSerie][img_index]);
