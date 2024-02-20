@@ -13,8 +13,6 @@ const allowCORS = (req, res, next) => {
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;
-  }else{
-    console.log('Request received:', req.method, req.url, req.body, req.params, req.query)
   }
   next();
 };

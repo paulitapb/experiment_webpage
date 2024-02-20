@@ -39,7 +39,7 @@ export async function getNewImageToRate(userId){
 
 export async function getSerieNumber(){
   try {
-    const response = await axios.get('https://experiment-webpage-server.vercel.app/api/getCurrentSerie');
+    const response = await axios.post('https://experiment-webpage-server.vercel.app/api/getCurrentSerie');
     return response.data;
   } catch (error) {
     console.error('Error getting serie number:', error);
