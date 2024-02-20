@@ -49,12 +49,7 @@ function ExperimentCompareImages() {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
     }
-  } , [currentSerie]);
-  
-  useEffect(() => {
-    const image = images.find(img => img.id === series[currentSerie][img_index]);
-    setExperimentImg(image);
-  }, [img_index]);
+  } , [currentSerie, img_index]);
 
 
   /* useEffect(() => {
