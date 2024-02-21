@@ -138,10 +138,12 @@ function ExperimentCompareImages() {
         <div className='inner-star-rating-container'>
         <FiveStarsRating ref={fiveStarsRatingRef} />
         </div>
-        {(img_index < images.length-1) ? (
-           <NextButton handleOnClick={handleNextClick}/>
-        ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
-        }
+        <div className='inner-button-container'>
+          {(img_index < images.length-1) ? (
+            <NextButton handleOnClick={handleNextClick}/>
+          ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
+          }
+        </div>
       </div>
     </>
   );
