@@ -98,14 +98,44 @@
     transition: background-color 0.3s ease;
     margin: 10px;
   }
-
+  .SubmitButton2 {
+    padding: 10px 15px;
+    background-color: var(--deep-red);
+    color: var(--platinum);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
   @media (max-width: 600px) {
     .SubmitButton {
+      background-color: var(--deep-red);
+      color: var(--platinum);
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+
       position: fixed;
       justify-content: center;
       padding: 10px 15px;
-
-
+    }
+    .SubmitButton2 {
+      background-color: var(--deep-red);
+      color: var(--platinum);
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      
+      position: fixed;
+      justify-content: center;
+      padding: 10px 15px;
+      display: block; 
     }
   }
 
