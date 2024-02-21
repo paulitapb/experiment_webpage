@@ -100,7 +100,7 @@ function ExperimentCompareImages() {
   }
 
   return (
-    <>
+    <div className='view'>
         <div className='SubHeader'>
             ¿Cuán parecidas te parecen estas imagenes? 
         </div>
@@ -145,7 +145,7 @@ function ExperimentCompareImages() {
           }
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

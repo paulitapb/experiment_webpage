@@ -11,9 +11,9 @@
 
 @media (max-width: 600px) { 
   .image-container {
-    margin: 5px;
-    width: 50vw;
-    height: 50vw;
+    margin: 2px;
+    width: 45vw;
+    height: 45vw;
     overflow: hidden;
   }
 }
@@ -67,7 +67,7 @@
 
   @media (max-width: 600px) {
     .SubHeader {
-      font-size: 5vw;
+      font-size: 15px;
       padding: 10px 10px;
     }
     .BlueSubHeader {
@@ -75,7 +75,7 @@
       padding: 10px 10px;
     }
   }
-  
+
   .Center{
   text-align: center; 
   color: var(--deeper-gray-color);
@@ -119,3 +119,5 @@
     margin: auto;
     align-items: center;
   }
+
+
