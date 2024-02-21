@@ -47,10 +47,12 @@
     display: flex;
     flex-wrap: nowrap;
   }
+
   .inner-button-container{
     display: flex;
     flex-wrap: nowrap;
     padding-top: 10px;
+    width: 100%;
   }
 }
 
