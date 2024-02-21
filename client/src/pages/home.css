@@ -73,6 +73,7 @@
 }
 
 .input-button-container {
+  margin: 10px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -82,6 +83,7 @@
   .input-button-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 
