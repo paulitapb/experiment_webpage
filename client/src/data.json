@@ -100,16 +100,6 @@
     "promptUsed": 603
   },
   {
-    "id": 2132,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index560_group4_img3.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 560
-  },
-  {
     "id": 2150,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english-LORA1/index597_group4_img4.png",
@@ -148,16 +138,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA1",
     "promptUsed": 535
-  },
-  {
-    "id": 2179,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index516_group4_img2.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 516
   },
   {
     "id": 2182,
@@ -210,16 +190,6 @@
     "promptUsed": 572
   },
   {
-    "id": 2196,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index494_group4_img1.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 494
-  },
-  {
     "id": 2199,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-english-LORA1/index519_group4_img2.png",
@@ -238,26 +208,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA1",
     "promptUsed": 514
-  },
-  {
-    "id": 2212,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index618_group4_img4.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 618
-  },
-  {
-    "id": 2241,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index502_group4_img2.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 502
   },
   {
     "id": 2242,
@@ -310,26 +260,6 @@
     "promptUsed": 566
   },
   {
-    "id": 2286,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index575_group4_img3.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 575
-  },
-  {
-    "id": 2289,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index461_group4_img1.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 461
-  },
-  {
     "id": 2294,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english-LORA1/index493_group4_img1.png",
@@ -338,16 +268,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA1",
     "promptUsed": 493
-  },
-  {
-    "id": 2298,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-LORA1/index604_group4_img4.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA1",
-    "promptUsed": 604
   },
   {
     "id": 2299,
@@ -400,16 +320,6 @@
     "promptUsed": 467
   },
   {
-    "id": 2926,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index513_group4_img2_seed2650413412_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 513
-  },
-  {
     "id": 2953,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english-txtInv/index491_group4_img1_seed222468149_cfg7.png",
@@ -448,16 +358,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
     "promptUsed": 529
-  },
-  {
-    "id": 2854,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index616_group4_img4_seed932919414_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 616
   },
   {
     "id": 2995,
@@ -510,16 +410,6 @@
     "promptUsed": 552
   },
   {
-    "id": 2864,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index489_group4_img1_seed3619416847_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 489
-  },
-  {
     "id": 2866,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/SD-english-txtInv/index570_group4_img3_seed543028966_cfg7.png",
@@ -538,16 +428,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
     "promptUsed": 618
-  },
-  {
-    "id": 3033,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index485_group4_img1_seed3779900136_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 485
   },
   {
     "id": 3035,
@@ -620,16 +500,6 @@
     "promptUsed": 617
   },
   {
-    "id": 2880,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index575_group4_img3_seed1511517058_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 575
-  },
-  {
     "id": 3133,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english-txtInv/index470_group4_img1_seed1438108937_cfg7.png",
@@ -680,16 +550,6 @@
     "promptUsed": 551
   },
   {
-    "id": 3200,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index566_group4_img3_seed2051401405_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 566
-  },
-  {
     "id": 3217,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-english-txtInv/index502_group4_img2_seed3356838916_cfg7.png",
@@ -728,16 +588,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-txtInv",
     "promptUsed": 482
-  },
-  {
-    "id": 3270,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index605_group4_img4_seed4111133788_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 605
   },
   {
     "id": 3275,
@@ -790,16 +640,6 @@
     "promptUsed": 478
   },
   {
-    "id": 3305,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-txtInv/index507_group4_img2_seed4217426551_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-txtInv",
-    "promptUsed": 507
-  },
-  {
     "id": 478,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-spanish/index599_group4_img4_seed4084420406_cfg7.png",
@@ -848,16 +688,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-spanish",
     "promptUsed": 496
-  },
-  {
-    "id": 506,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-spanish/index601_group4_img4_seed856497544_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 601
   },
   {
     "id": 517,
@@ -918,16 +748,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-spanish",
     "promptUsed": 514
-  },
-  {
-    "id": 574,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-spanish/index590_group4_img4_seed2704913519_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 590
   },
   {
     "id": 577,
@@ -1000,16 +820,6 @@
     "promptUsed": 510
   },
   {
-    "id": 663,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index491_group4_img1_seed3730086834_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 491
-  },
-  {
     "id": 668,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-spanish/index465_group4_img1_seed2165346656_cfg7.png",
@@ -1040,16 +850,6 @@
     "promptUsed": 522
   },
   {
-    "id": 678,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-spanish/index517_group4_img2_seed3925296550_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 517
-  },
-  {
     "id": 685,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-spanish/index595_group4_img4_seed3423414305_cfg7.png",
@@ -1058,16 +858,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-spanish",
     "promptUsed": 595
-  },
-  {
-    "id": 697,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-spanish/index536_group4_img2_seed3388418889_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 536
   },
   {
     "id": 719,
@@ -1110,16 +900,6 @@
     "promptUsed": 474
   },
   {
-    "id": 935,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-spanish/index467_group4_img1_seed2150910960_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 467
-  },
-  {
     "id": 794,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-spanish/index464_group4_img1_seed3565154179_cfg7.png",
@@ -1140,16 +920,6 @@
     "promptUsed": 603
   },
   {
-    "id": 827,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-spanish/index547_group4_img3_seed3273112751_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 547
-  },
-  {
     "id": 853,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-spanish/index457_group4_img1_seed3836992737_cfg7.png",
@@ -1158,16 +928,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-spanish",
     "promptUsed": 457
-  },
-  {
-    "id": 857,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-spanish/index570_group4_img3_seed1262293598_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-spanish",
-    "promptUsed": 570
   },
   {
     "id": 867,
@@ -1350,26 +1110,6 @@
     "promptUsed": 514
   },
   {
-    "id": 2419,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english/index616_group4_img4_seed2097271582_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 616
-  },
-  {
-    "id": 2423,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english/index545_group4_img3_seed1170462004_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 545
-  },
-  {
     "id": 2666,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english/index467_group4_img1_seed1058369230_cfg7.png",
@@ -1400,16 +1140,6 @@
     "promptUsed": 584
   },
   {
-    "id": 2439,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english/index590_group4_img4_seed1014746818_cfg7.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 590
-  },
-  {
     "id": 2455,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/SD-english/index600_group4_img4_seed1390821788_cfg7.png",
@@ -1418,26 +1148,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english",
     "promptUsed": 600
-  },
-  {
-    "id": 2456,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english/index461_group4_img1_seed3459611279_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 461
-  },
-  {
-    "id": 2457,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english/index536_group4_img2_seed3422623709_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 536
   },
   {
     "id": 2463,
@@ -1458,16 +1168,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english",
     "promptUsed": 539
-  },
-  {
-    "id": 2747,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english/index544_group4_img3_seed3825199717_cfg7.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 544
   },
   {
     "id": 2755,
@@ -1508,16 +1208,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english",
     "promptUsed": 502
-  },
-  {
-    "id": 2789,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english/index510_group4_img2_seed4141363273_cfg7.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 510
   },
   {
     "id": 2523,
@@ -1568,16 +1258,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english",
     "promptUsed": 587
-  },
-  {
-    "id": 2545,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english/index479_group4_img1_seed2022870583_cfg7.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english",
-    "promptUsed": 479
   },
   {
     "id": 2549,
@@ -1650,36 +1330,6 @@
     "promptUsed": 573
   },
   {
-    "id": 1563,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index620_group4_img4.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 620
-  },
-  {
-    "id": 1570,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index547_group4_img3.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 547
-  },
-  {
-    "id": 1573,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index529_group4_img2.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 529
-  },
-  {
     "id": 1587,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/SD-english-LORA2/index463_group4_img1.png",
@@ -1708,16 +1358,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA2",
     "promptUsed": 545
-  },
-  {
-    "id": 1644,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index538_group4_img2.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 538
   },
   {
     "id": 1670,
@@ -1758,16 +1398,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA2",
     "promptUsed": 606
-  },
-  {
-    "id": 1715,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index581_group4_img3.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 581
   },
   {
     "id": 1716,
@@ -1820,16 +1450,6 @@
     "promptUsed": 617
   },
   {
-    "id": 1486,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index458_group4_img1.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 458
-  },
-  {
     "id": 1764,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/SD-english-LORA2/index502_group4_img2.png",
@@ -1838,26 +1458,6 @@
     "group": 4,
     "imgGeneratedBy": "SD-english-LORA2",
     "promptUsed": 502
-  },
-  {
-    "id": 1765,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index476_group4_img1.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 476
-  },
-  {
-    "id": 1772,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/SD-english-LORA2/index586_group4_img4.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "SD-english-LORA2",
-    "promptUsed": 586
   },
   {
     "id": 1786,
@@ -2010,39 +1610,9 @@
     "promptUsed": 542
   },
   {
-    "id": 3338,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/dibujos/dib182cap198.png",
-    "alt": "",
-    "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
     "id": 3344,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/dibujos/dib359cap395.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3354,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/dibujos/dib371cap409.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3359,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/dibujos/dib427cap472.png",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2070,31 +1640,11 @@
     "promptUsed": 542
   },
   {
-    "id": 3440,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/dibujos/dib404cap445.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
     "id": 3444,
     "name": "img generada de grupo 4 img 3",
     "dir": "/images/generated_imgs/dibujos/dib363cap389.png",
     "alt": "",
     "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3450,
-    "name": "img generada de grupo 4 img 4",
-    "dir": "/images/generated_imgs/dibujos/dib34cap37.png",
-    "alt": "",
-    "img": 4,
     "group": 4,
     "imgGeneratedBy": "dibujos",
     "promptUsed": 542
@@ -2123,16 +1673,6 @@
     "id": 3474,
     "name": "img generada de grupo 4 img 2",
     "dir": "/images/generated_imgs/dibujos/dib38cap32.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3493,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/dibujos/dib222cap240.png",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2215,26 +1755,6 @@
     "dir": "/images/generated_imgs/dibujos/dib135cap137.png",
     "alt": "",
     "img": 4,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3563,
-    "name": "img generada de grupo 4 img 2",
-    "dir": "/images/generated_imgs/dibujos/dib44cap46.png",
-    "alt": "",
-    "img": 2,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
-    "id": 3594,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/dibujos/dib202cap217.png",
-    "alt": "",
-    "img": 1,
     "group": 4,
     "imgGeneratedBy": "dibujos",
     "promptUsed": 542
@@ -2330,16 +1850,6 @@
     "promptUsed": 542
   },
   {
-    "id": 3728,
-    "name": "img generada de grupo 4 img 1",
-    "dir": "/images/generated_imgs/dibujos/dib490cap515.png",
-    "alt": "",
-    "img": 1,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
     "id": 3736,
     "name": "img generada de grupo 4 img 4",
     "dir": "/images/generated_imgs/dibujos/dib387cap432.png",
@@ -2380,16 +1890,6 @@
     "promptUsed": 542
   },
   {
-    "id": 3770,
-    "name": "img generada de grupo 4 img 3",
-    "dir": "/images/generated_imgs/dibujos/dib448cap494.png",
-    "alt": "",
-    "img": 3,
-    "group": 4,
-    "imgGeneratedBy": "dibujos",
-    "promptUsed": 542
-  },
-  {
     "id": 3776,
     "name": "img generada de grupo 4 img 1",
     "dir": "/images/generated_imgs/dibujos/dib85cap85.png",
@@ -2418,5 +1918,325 @@
     "group": 4,
     "imgGeneratedBy": "dibujos",
     "promptUsed": 542
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 468
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 533
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 602
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 515
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 546
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 493
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 500
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 601
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 486
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 491
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 547
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 522
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 489
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 544
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 457
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 604
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 583
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 581
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 510
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 551
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 616
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 488
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 561
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 571
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 600
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 526
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 505
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 586
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/2.jpeg",
+    "alt": "",
+    "img": 2,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 513
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/1.jpeg",
+    "alt": "",
+    "img": 1,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 490
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/3.jpeg",
+    "alt": "",
+    "img": 3,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 560
+  },
+  {
+    "id": 501,
+    "name": "DALLE image",
+    "dir": "client/public/images/generated_imgs/DALLE-english/4.jpeg",
+    "alt": "",
+    "img": 4,
+    "group": 4,
+    "imgGeneratedBy": "DALLE-english",
+    "promptUsed": 584
   }
 ]
