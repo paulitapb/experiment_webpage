@@ -12,8 +12,8 @@
 @media (max-width: 600px) { 
   .image-container {
     margin: 2px;
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     overflow: hidden;
   }
 }

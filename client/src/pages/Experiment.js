@@ -102,9 +102,9 @@ function ExperimentCompareImages() {
   return (
     <div >
         <div className='SubHeader'>
-            ¿Cuán parecidas te parecen estas imagenes? 
+          Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original ¿Cuán bien te parece que salió el proceso?
         </div>
-        <div className='Center'> <i>(1 es poco parecidas y 5 muy parecidas)</i> </div>
+        <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
 
         <div className='outer-container'>
             <div className='image-container-exp'>
