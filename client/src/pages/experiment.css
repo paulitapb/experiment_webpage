@@ -28,7 +28,13 @@
     padding: 1px;
     align-items: center;
     justify-content: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner-star-rating-container{
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .SubHeader {
     font-size: calc(8px + 1.5vw);
