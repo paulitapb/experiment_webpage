@@ -44,6 +44,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
+
+@media (max-width: 600px) {
+  .SubmitButton {
+    padding: 10px 15px;
+    background-color: var(--deep-red);
+    color: var(--platinum);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    max-width: 50%;
+  }
+}
+
 .Input{
   color: var(--deeper-gray-color);
   font-weight: bold;
