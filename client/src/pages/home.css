@@ -63,7 +63,7 @@
 
 @media (max-width: 600px) {
   .button-container {
-    width: 90%; 
+    width: 60%; 
   }
   .input-button-container {
     flex-direction: column; 
