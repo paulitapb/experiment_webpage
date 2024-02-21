@@ -59,7 +59,7 @@ function CellPhoneLogin() {
     };
     
     return (
-      <div className='outer-container-login'>
+      <div>
         <form onSubmit={handleSubmit} className='input-button-container'>
           <input
             type="text"
