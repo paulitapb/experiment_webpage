@@ -1922,7 +1922,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index468_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index468_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -1932,7 +1932,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index533_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index533_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -1942,7 +1942,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index602_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index602_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -1952,7 +1952,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index515_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index515_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -1962,7 +1962,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index546_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index546_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -1972,7 +1972,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index493_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index493_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -1982,7 +1982,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index500_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index500_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -1992,7 +1992,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index601_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index601_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2002,7 +2002,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index486_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index486_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2012,7 +2012,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index491_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index491_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2022,7 +2022,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index547_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index547_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2032,7 +2032,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index522_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index522_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2042,7 +2042,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index489_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index489_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2052,7 +2052,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index544_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index544_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2062,7 +2062,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index457_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index457_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2072,7 +2072,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index604_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index604_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2082,7 +2082,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index583_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index583_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2092,7 +2092,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index581_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index581_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2102,7 +2102,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index510_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index510_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2112,7 +2112,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index551_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index551_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2122,7 +2122,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index616_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index616_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2132,7 +2132,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index488_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index488_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2142,7 +2142,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index561_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index561_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2152,7 +2152,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index571_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index571_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2162,7 +2162,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index600_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index600_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2172,7 +2172,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index526_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index526_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2182,7 +2182,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index505_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index505_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2192,7 +2192,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index586_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index586_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
@@ -2202,7 +2202,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index513_group4_img2.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index513_group4_img2.jpeg",
     "alt": "",
     "img": 2,
     "group": 4,
@@ -2212,7 +2212,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index490_group4_img1.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index490_group4_img1.jpeg",
     "alt": "",
     "img": 1,
     "group": 4,
@@ -2222,7 +2222,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index560_group4_img3.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index560_group4_img3.jpeg",
     "alt": "",
     "img": 3,
     "group": 4,
@@ -2232,7 +2232,7 @@
   {
     "id": 501,
     "name": "DALLE image",
-    "dir": "client/public/images/generated_imgs/DALLE-english/index584_group4_img4.jpeg",
+    "dir": "/images/generated_imgs/DALLE-english/index584_group4_img4.jpeg",
     "alt": "",
     "img": 4,
     "group": 4,
