@@ -55,7 +55,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    max-width: 50%;
+    max-width: 30%;
     align-items: center;
   }
 }
@@ -79,7 +79,8 @@
 
 @media (max-width: 600px) {
   .button-container {
-    width: 30%; 
+    flex-direction: column; 
+    align-items: center;
   }
   .input-button-container {
     flex-direction: column; 
