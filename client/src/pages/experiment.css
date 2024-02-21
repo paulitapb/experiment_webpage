@@ -65,6 +65,17 @@
     font-weight: bold;
   }
 
+  @media (max-width: 600px) {
+    .SubHeader {
+      font-size: 5vw;
+      padding: 10px 10px;
+    }
+    .BlueSubHeader {
+      font-size: 5vw;
+      padding: 10px 10px;
+    }
+  }
+  
   .Center{
   text-align: center; 
   color: var(--deeper-gray-color);
