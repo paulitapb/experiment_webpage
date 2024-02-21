@@ -37,7 +37,7 @@ export default class FiveStarsRating extends Component {
 
     render() {
       return [...Array(5).keys()].map((index) => (
-        <span key={index} style={{ color: this.starColor(index) }}>
+        <span key={index} style={{ color: this.starColor(index), flexDirection: 'row' }}>
           <FontAwesomeIcon
             icon={faStar}
             style={{ height: '40px', cursor: 'pointer' }}
