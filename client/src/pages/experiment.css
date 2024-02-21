@@ -11,9 +11,9 @@
 
 @media (max-width: 600px) { 
   .image-container {
-    margin: 10px;
-    width: 30vw;
-    height: 30vw;
+    margin: 5px;
+    width: 50vw;
+    height: 50vw;
     overflow: hidden;
   }
 }
@@ -47,6 +47,7 @@
   .inner-button-container{
     display: flex;
     flex-wrap: nowrap;
+    padding-top: 10px;
   }
 }
 .SubHeader {
