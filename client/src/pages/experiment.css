@@ -47,12 +47,11 @@
     display: flex;
     flex-wrap: nowrap;
   }
-
+  
   .inner-button-container{
     display: flex;
     flex-wrap: nowrap;
     padding-top: 10px;
-    width: 100%;
   }
 }
 
@@ -98,12 +97,14 @@
     transition: background-color 0.3s ease;
     margin: 10px;
   }
-  
+
   @media (max-width: 600px) {
     .SubmitButton {
       position: fixed;
       justify-content: center;
       padding: 10px 15px;
+
+
     }
   }
 
