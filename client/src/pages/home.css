@@ -47,7 +47,6 @@
 
 @media (max-width: 600px) {
   .SubmitButton {
-    padding: 10px 15px;
     background-color: var(--deep-red);
     color: var(--platinum);
     font-weight: bold;
@@ -55,9 +54,8 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    max-width: 30%;
-    align-items: center;
-    justify-content: center;
+    max-width: 20%;
+    position: relative;
   }
 }
 
@@ -78,15 +76,6 @@
   align-items: flex-start;
   justify-content: center;
 }
-
-@media (max-width: 600px) {
-  .input-button-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .button-container {
   width: 120px;
   height: 40px; 
@@ -97,12 +86,30 @@
  
 }
 
+@media (max-width: 600px) {
+  .input-button-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+}
+
+
+
 .outer-container-login{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  flex-wrap: wrap;
 }
 
 .experiment-explanation {
