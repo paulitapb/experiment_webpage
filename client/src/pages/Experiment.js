@@ -100,7 +100,7 @@ function ExperimentCompareImages() {
   }
 
   return (
-    <div >
+    <div className='Center'>
         <div className='SubHeader'>
           Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original ¿Cuán bien te parece que salió el proceso?
         </div>
