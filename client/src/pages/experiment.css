@@ -53,6 +53,7 @@
     padding-top: 10px;
   }
 }
+
 .SubHeader {
     font-size: calc(8px + 1.5vw);
     text-align: center;
@@ -98,9 +99,11 @@
 
   @media (max-width: 600px) {
     .SubmitButton {
-      width: auto;
       position: fixed;
       justify-content: center;
+      padding: 10px 15px;
+
+
     }
   }
 
