@@ -12,8 +12,8 @@
 @media (max-width: 600px) { 
   .image-container {
     margin: 2px;
-    width: 45vw;
-    height: 45vw;
+    width: var(--vh, 40vh);
+    height: var(--vh, 40vh);
     overflow: hidden;
   }
 }
@@ -71,7 +71,7 @@
       padding: 10px 10px;
     }
     .BlueSubHeader {
-      font-size: 5vw;
+      font-size: var(--vh, 5vh);
       padding: 10px 10px;
     }
   }
