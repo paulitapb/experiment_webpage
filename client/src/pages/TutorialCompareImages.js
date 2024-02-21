@@ -57,8 +57,12 @@ function TutorialCompareImages() {
       </div>
       
       <div className='rating-container'>
-        <FiveStarsRating ref={fiveStarsRatingRef}/>
-        <button onClick={handleGoToExperiment} className='SubmitButton'>Comenzar con el experimento</button>
+        <div className='inner-star-rating-container'>
+          <FiveStarsRating ref={fiveStarsRatingRef}/>
+        </div>
+        <div className='inner-button-container'>
+         <button onClick={handleGoToExperiment} className='SubmitButton'>Comenzar con el experimento</button>
+        </div>
       </div>
     </div>
   );

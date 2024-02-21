@@ -12,8 +12,8 @@
 @media (max-width: 600px) { 
   .image-container {
     margin: 2px;
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
     overflow: hidden;
   }
 }
@@ -39,6 +39,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    
   }
   .inner-star-rating-container{
     display: flex;

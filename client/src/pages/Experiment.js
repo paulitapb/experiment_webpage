@@ -102,7 +102,8 @@ function ExperimentCompareImages() {
   return (
     <div>
         <div className='SubHeader'>
-          Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original ¿Cuán bien te parece que salió el proceso?
+          Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original 
+          ¿Cuán bien te parece que salió el proceso?
         </div>
         <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
 
