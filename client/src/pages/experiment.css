@@ -14,14 +14,12 @@
   object-fit: cover;
 }
 
-
 .rating-container {
     text-align: center;
     padding: 1vw;
     align-items: center;
     justify-content: center;
-    display: flex;
-    
+    display: flex;    
 }
 
 .SubHeader {
