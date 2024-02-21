@@ -82,6 +82,8 @@
   .button-container {
     flex-direction: column; 
     align-items: center;
+    justify-content: center; 
+
   }
   .input-button-container {
     flex-direction: column; 
@@ -108,7 +110,6 @@
   text-align: center;
 
 }
-
 
 .image-container-home{
   display: flex;
