@@ -32,7 +32,13 @@ export default class FiveStarsRating extends Component {
     }
   
     starColor(index) {
-      return (this.state.currRating > index || this.state.hoverRating > index) ? 'gold' : 'gray';
+      if (this.state.currRating > index){
+        return 'gold';
+      }
+      if (this.state.hoverRating > index){
+        return '#fdfd96'; // pale yellow
+      }
+        return 'gray';
     }
 
     render() {
