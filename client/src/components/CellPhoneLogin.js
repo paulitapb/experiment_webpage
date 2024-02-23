@@ -34,9 +34,9 @@ function CellPhoneLogin() {
         setIsLoading(false);
         return;
       }
-      //TODO: change 
-      //const userExists = await checkUserExists(hashedCellNumber);
-      const userExists = false; 
+       
+      const userExists = await checkUserExists(hashedCellNumber);
+       
       if (userExists) {
         console.log('User already exists');
         alert("Bienvenidx nuevamente!")
@@ -45,11 +45,11 @@ function CellPhoneLogin() {
       }else{ 
         console.log('Add new user: User does not exist');
         try {
-          //TODO: change 
-         /*  await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
+          
+          await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
             userId: hashedCellNumber, 
             loginTime: timestamp
-           }); */
+           });
            navigate('/tutorial', {state: {userId: hashedCellNumber}})
          } catch (error) {
            console.error('Error submitting data:', error);
