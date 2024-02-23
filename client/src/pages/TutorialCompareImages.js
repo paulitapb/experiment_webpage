@@ -62,7 +62,7 @@ function TutorialCompareImages() {
         </div>
         <div className='inner-button-container'>
           <div className='button-container'>
-         <button onClick={handleGoToExperiment} className='SubmitButton2'>Comenzar con el experimento</button>
+         <button onClick={handleGoToExperiment} className='SubmitButton'>Comenzar con el experimento</button>
          </div>
         </div>
       </div>

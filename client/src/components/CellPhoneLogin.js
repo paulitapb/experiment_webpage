@@ -29,7 +29,7 @@ function CellPhoneLogin() {
       
       if (!isValidCellNumber) {
         console.error('Invalid cell number');
-        alert("El numero de telefono ingresado no es valido")
+        alert("El numero de telefono ingresado no es valido. El número ingresado debe tener 10 dígitos. Por favor, intenta de nuevo.")
         setUserId('')
         setIsLoading(false);
         return;

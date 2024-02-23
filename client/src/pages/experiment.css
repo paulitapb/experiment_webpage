@@ -46,12 +46,14 @@
   .inner-star-rating-container{
     display: flex;
     flex-wrap: nowrap;
+    width: 100%;
   }
   
   .inner-button-container{
     display: flex;
     flex-wrap: nowrap;
     padding-top: 10px;
+    width: 100%;
   }
 }
 
