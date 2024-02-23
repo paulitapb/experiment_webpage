@@ -41,25 +41,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
   }
   .inner-star-rating-container{
-    display: flex;
-    flex-wrap: nowrap;
     width: 100%;
     align-items: center;
   }
   
   .inner-button-container{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 10px;
     width: 100%;
-    align-items: center;
-  }
-  .inner-button-container button {
-    width: 100%; 
-    box-sizing: border-box; 
+    padding: 20px;
   }
 }
 
@@ -124,6 +114,18 @@
     font-weight: bold;
   }
 
+  @media (max-width: 600px) {
+    .ThankYou {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      text-align: center;
+      padding: 10vw;
+      font-size: 10vw;
+    }
+  }
+
   .outer-container {
     display: flex;
     text-align: center;
@@ -133,4 +135,10 @@
     align-items: center;
   }
 
-
+@media (max-width: 600px) {
+  .button-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

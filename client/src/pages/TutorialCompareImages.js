@@ -54,7 +54,7 @@ function TutorialCompareImages() {
                   </div>
                 
             </div>
-      </div>
+      
       
       <div className='rating-container'>
         <div className='inner-star-rating-container'>
@@ -65,6 +65,7 @@ function TutorialCompareImages() {
          <button onClick={handleGoToExperiment} className='SubmitButton'>Comenzar con el experimento</button>
          </div>
         </div>
+      </div>
       </div>
     </div>
   );
