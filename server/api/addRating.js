@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
   try {
     allowCORS(req, res, () => {});
 
-    const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating, submitTime, serieAssigned, lastImageIndexSubmitted} = req.body; 
+    const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating, submitTime, lastImageIndexSubmitted} = req.body; 
     
     if (!imgId || !imgGroup || !promptUsed || !rating || !submitTime || !userId || !lastImageIndexSubmitted) {
       return res.status(400).json({ error: 'Missing required fields' });
@@ -17,12 +17,9 @@ module.exports = async (req, res) => {
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
-      if (user.serieAssigned == null) {
-        user.serieAssigned = serieAssigned;
-      }
 
       user.lastImageIndexSubmitted = lastImageIndexSubmitted;
-      
+
       user.ratings.push({ 
         imgId:  imgId, 
         imgGroup: imgGroup, 

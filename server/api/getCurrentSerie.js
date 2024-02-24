@@ -31,7 +31,9 @@ module.exports = async (req, res) => {
         { $set: { currentIndex: new_index } },
         { new: true }  
       ).catch(err => { console.error(err); });
-
+      
+      user.serieAssigned = updated_serie_index.currentIndex;
+      await user.save();   
       res.json(current_serie_index.currentIndex);
     }else{
       res.json(user.serieAssigned);
