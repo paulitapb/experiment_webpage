@@ -58,6 +58,10 @@ function ExperimentCompareImages() {
 
 
   const submitRating = async (timestamp) => {
+    if (!navigator.onLine) {
+      alert('No se pudo enviar la calificación. Por favor, revisa tu conexión a internet.');
+      return;
+    }
     try {
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
         userId: userId,
