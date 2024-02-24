@@ -31,6 +31,7 @@ function ExperimentCompareImages() {
     const fetchCurrentSerie = async () => {
       const serieNumber = await getSerieNumber(userId);
       console.log('Serie number:', serieNumber);
+      console.log('img_index:', img_index);
       setCurrentSerie(serieNumber);
     };
 
