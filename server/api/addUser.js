@@ -19,7 +19,10 @@ module.exports = async (req, res) => {
       return res.status(400).json({ error: 'User already exists' });
     }
     const login_time = new Date(loginTime);
-    const newUser = new ExperimentModel({ userId:userId, loginTime: login_time, ratings: [] });
+    const newUser = new ExperimentModel({ userId:userId, loginTime: login_time, ratings: [], 
+                                          tutorialTime: null, 
+                                          serieAssigned: null, 
+                                          lastImageIndexSubmitted: null});
     await newUser.save();
 
     res.json(newUser);

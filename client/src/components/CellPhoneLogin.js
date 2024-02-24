@@ -39,8 +39,9 @@ function CellPhoneLogin() {
        
       if (userExists) {
         console.log('User already exists');
-        alert("Bienvenidx nuevamente!")
-        navigate('/experiment', {state: {userId: hashedCellNumber}} );
+        //alert("Bienvenidx nuevamente!")
+        //navigate('/experiment', {state: {userId: hashedCellNumber}} );
+        alert('Ya completaste el experimento! Gracias por tu participación!')
 
       }else{ 
         console.log('Add new user: User does not exist');

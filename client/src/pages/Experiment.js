@@ -29,7 +29,8 @@ function ExperimentCompareImages() {
   
   useEffect(() => {
     const fetchCurrentSerie = async () => {
-      const serieNumber = await getSerieNumber();
+      const serieNumber = await getSerieNumber(userId);
+      console.log('Serie number:', serieNumber);
       setCurrentSerie(serieNumber);
     };
 

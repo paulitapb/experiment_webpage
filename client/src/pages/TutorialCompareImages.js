@@ -1,5 +1,6 @@
 import {useRef} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 import FiveStarsRating from '../components/StarRating.js';
 
@@ -12,9 +13,14 @@ function TutorialCompareImages() {
     const { userId } = location.state;
     const fiveStarsRatingRef = useRef(null);
 
-    const handleGoToExperiment = () => {
+    const handleGoToExperiment = async () => {
         if(fiveStarsRatingRef.current.currentRating() > 0){
-            navigate('/experiment', {state: {userId: userId}} );
+          const timestamp = new Date().getTime();
+          const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addTutorialTime', {
+            userId: userId,
+            tutorialTime: timestamp
+          });
+          navigate('/experiment', {state: {userId: userId}} );
         }else{
             alert("Por favor, califique la imagen antes de continuar")
         }

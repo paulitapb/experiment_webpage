@@ -7,18 +7,22 @@ module.exports = async (req, res) => {
   try {
     allowCORS(req, res, () => {});
 
-    const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating, submitTime } = req.body; 
+    const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating, submitTime, serieAssigned, lastImageIndexSubmitted} = req.body; 
     
-    if (!imgId || !imgGroup || !promptUsed || !rating || !submitTime || !userId) {
+    if (!imgId || !imgGroup || !promptUsed || !rating || !submitTime || !userId || !lastImageIndexSubmitted) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
   
-      console.log("user id" + userId)
       let user = await ExperimentModel.findOne({ userId: userId });
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
-  
+      if (user.serieAssigned == null) {
+        user.serieAssigned = serieAssigned;
+      }
+
+      user.lastImageIndexSubmitted = lastImageIndexSubmitted;
+      
       user.ratings.push({ 
         imgId:  imgId, 
         imgGroup: imgGroup, 

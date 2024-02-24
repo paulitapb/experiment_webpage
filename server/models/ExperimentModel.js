@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const ratingSchema = new mongoose.Schema({
             imgId: { type: Number, required: true },
             imgGroup: { type: Number, required: true },
@@ -13,8 +12,10 @@ const ratingSchema = new mongoose.Schema({
 const expDBSchema = new mongoose.Schema({
     userId: { type: String, required: true , unique: true},
     loginTime: { type: Date, required: true },
-    ratings: [ratingSchema]
-    
+    ratings: [ratingSchema], 
+    tutorialTime: { type: Date, required: false },
+    serieAssigned: { type: Number, required: false },
+    lastImageIndexSubmitted: { type: Number, required: false }, 
 });
 
 
