@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
 
     const {userId, imgId, imgGroup, imgGeneratedBy, promptUsed, rating, submitTime, lastImageIndexSubmitted} = req.body; 
     
-    if (!imgId || !imgGroup || !promptUsed || !rating || !submitTime || !userId || !lastImageIndexSubmitted) {
+    if (!imgId || !imgGroup || !promptUsed || !rating || !submitTime || !userId || (lastImageIndexSubmitted == undefined)) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
   
