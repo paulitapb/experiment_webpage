@@ -2,6 +2,7 @@ import {useRef, useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 
+
 import './experiment.css'
 import images from '../data.json';
 
@@ -23,19 +24,20 @@ function ExperimentCompareImages() {
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
   
-  const [img_index, setImgIndex] = useState(0);
-  const [currentSerie, setCurrentSerie] = useState(null);
+  const [img_index, setImgIndex] = useState(parseInt(localStorage.getItem('imgIndex')) || 0);
+  const [currentSerie, setCurrentSerie] = useState(localStorage.getItem('currentSerie') || null);
   
   
   useEffect(() => {
-    const fetchCurrentSerie = async () => {
-      const serieNumber = await getSerieNumber(userId);
-      console.log('Serie number:', serieNumber);
-      console.log('img_index:', img_index);
-      setCurrentSerie(serieNumber);
+    if (currentSerie === null){
+      const fetchCurrentSerie = async () => {
+        const serieNumber = await getSerieNumber(userId);
+        console.log('Serie number:', serieNumber);
+        setCurrentSerie(serieNumber);
+        localStorage.setItem('currentSerie', serieNumber);
+      }
+      fetchCurrentSerie();
     };
-
-    fetchCurrentSerie();
     }, []);
 
   // update next image 
@@ -73,7 +75,7 @@ function ExperimentCompareImages() {
       setExperimentImg(null);
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
-
+      localStorage.setItem('imgIndex', img_index + 1);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
