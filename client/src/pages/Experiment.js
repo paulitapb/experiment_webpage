@@ -11,6 +11,16 @@ import FiveStarsRating from '../components/StarRating';
 import {getSerieNumber } from '../utils/dbInteractionFunctions.js';
 import series from '../id_images_series_piloto.json';
 
+function ProgressBar({ value, max }) {
+  const percentage = (value / max) * 100;
+  return (
+    <div className="progress-bar-container">
+      <progress value={value} max={max}></progress>
+      <span className="progress-bar-text">{`${percentage.toFixed(0)}%`}</span>
+    </div>
+
+  );
+}
 
 
 function ExperimentCompareImages() {
@@ -27,6 +37,8 @@ function ExperimentCompareImages() {
   const [img_index, setImgIndex] = useState(parseInt(localStorage.getItem('imgIndex')) || 0);
   const [currentSerie, setCurrentSerie] = useState(localStorage.getItem('currentSerie') || null);
   
+  const [progress, setProgress] = useState(0);
+  const maxProgress = images.length - 1;
   
   useEffect(() => {
     if (currentSerie === null){
@@ -76,7 +88,11 @@ function ExperimentCompareImages() {
       });
       console.log('Rating added successfully!');
       fiveStarsRatingRef.current.reset();
-      
+      setProgress(prevProgress => {
+        const updatedProgress = prevProgress + 1;
+        return updatedProgress > maxProgress ? maxProgress : updatedProgress;
+      });
+
       setExperimentImg(null);
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
@@ -109,6 +125,7 @@ function ExperimentCompareImages() {
     navigate('/thank-you');
   }
 
+  
   return (
     <div>
         <div className='SubHeader'>
@@ -147,7 +164,7 @@ function ExperimentCompareImages() {
       
       <div className='rating-container'>
         <div className='inner-star-rating-container'>
-        <FiveStarsRating ref={fiveStarsRatingRef} />
+          <FiveStarsRating ref={fiveStarsRatingRef} />
         </div>
         <div className='inner-button-container'>
           {(img_index < images.length-1) ? (
@@ -155,6 +172,9 @@ function ExperimentCompareImages() {
           ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
           }
         </div>
+      </div>
+      <div className='progress-bar-container'>
+        <ProgressBar value={progress} max={maxProgress} className='progress'/>
       </div>
       </div>
     
