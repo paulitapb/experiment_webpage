@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const ratingSchema = new mongoose.Schema({
+            imgGeneratedId: { type: Number, required: true },
             imgId: { type: Number, required: true },
             imgGroup: { type: Number, required: true },
             imgGeneratedBy: { type: String, required: true },

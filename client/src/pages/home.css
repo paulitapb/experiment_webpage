@@ -1,13 +1,13 @@
 
 .Header h1{
-  font-size: calc(30px + 2vw);
+  font-size: calc(25px + 2vw);
   text-align: center;
   color: var(--deep-blue); 
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .SubHeader {
-  font-size: calc(8px + 1.5vw);
+  font-size: calc(2px + 1.5vw);
   text-align: center;
   color: var(--deeper-gray-color);
   margin: 0;
@@ -15,7 +15,7 @@
 }
 
 .SubSubHeader{
-  font-size: calc(10px + 2vw);
+  font-size: calc(4px + 2vw);
   text-align: center;
   color: var(--deeper-gray-color);
   font-weight: bold;
@@ -104,10 +104,10 @@
 
 
 .experiment-explanation {
-  font-size: calc(8px + 1vw);
+  font-size: calc(4px + 1vw);
   line-height: 1.6; 
   color: #333; 
-  margin: 7px 0; 
+  margin: 5px 0; 
   padding: 0 10px; 
   display: flex;
   justify-content: center;

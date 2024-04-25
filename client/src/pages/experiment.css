@@ -42,17 +42,22 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .inner-star-rating-container{
-    width: 100%;
+  .inner-button-container, .button-container {
+    width: 100%; /* Ensure containers are not restricting the button */
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .inner-button-container{
-    width: 100%;
-    padding: 20px;
-  }
+    flex-direction: column;
+    margin-top: 30px;
 }
 
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    justify-content: center;
+  }
+}
 .SubHeader {
     font-size: calc(8px + 1.5vw);
     text-align: center;
@@ -98,13 +103,16 @@
 
   @media (max-width: 600px) {
     .SubmitButton {
-      position: fixed;
-      justify-content: center;
-      padding: 10px 15px;
-
-
-    }
+      width: 100%; 
+      padding: 12px 20px; 
+      font-size: 10px; 
+      overflow-wrap: break-word; 
+      text-align: center;
+      margin: 0 auto;
+      min-width: unset; 
   }
+  }
+  
 
   .ThankYou {
     text-align: center;
@@ -135,10 +143,4 @@
     align-items: center;
   }
 
-@media (max-width: 600px) {
-  .button-container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-}
+

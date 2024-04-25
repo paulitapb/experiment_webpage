@@ -34,28 +34,30 @@ function CellPhoneLogin() {
         setIsLoading(false);
         return;
       }
-       
+      
       const userExists = await checkUserExists(hashedCellNumber);
-       
+      
       if (userExists) {
         console.log('User already exists');
-        //alert("Bienvenidx nuevamente!")
-        //navigate('/experiment', {state: {userId: hashedCellNumber}} );
+        alert("Bienvenidx nuevamente!")
+        navigate('/experiment', {state: {userId: hashedCellNumber}} );
         alert('Ya completaste el experimento! Gracias por tu participación!')
 
       }else{ 
         console.log('Add new user: User does not exist');
+        navigate('/tutorial', {state: {userId: hashedCellNumber}});
+
         try {
           
           await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
             userId: hashedCellNumber, 
             loginTime: timestamp
-           });
-           navigate('/tutorial', {state: {userId: hashedCellNumber}})
-         } catch (error) {
-           console.error('Error submitting data:', error);
-         }
-      }
+          });
+          navigate('/tutorial', {state: {userId: hashedCellNumber}})
+        } catch (error) {
+          console.error('Error submitting data:', error);
+        }
+      } 
       setIsLoading(false);
     };
     
@@ -69,7 +71,7 @@ function CellPhoneLogin() {
             placeholder="Ingresa tu telefono"
             className='Input'
           />
-          <div className='button-container'>
+          <div className='button-container' style={{ marginTop: '8px' }}>
           {isLoading ? (
                 <div className="loader"></div>
               ) : (

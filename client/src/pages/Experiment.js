@@ -65,6 +65,7 @@ function ExperimentCompareImages() {
     try {
       const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
         userId: userId,
+        imgGeneratedId: experimentImg.id, 
         imgId: experimentImg.img, 
         imgGroup: experimentImg.group,
         imgGeneratedBy: experimentImg.imgGeneratedBy, 
@@ -111,7 +112,7 @@ function ExperimentCompareImages() {
   return (
     <div>
         <div className='SubHeader'>
-          Suponiendo que la imágen de la derecha fue generada con una descripción la imágen original 
+          Suponiendo que la imagen de la derecha fue generada con una descripción la imagen de la izquierda
           ¿Cuán bien te parece que salió el proceso?
         </div>
         <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
@@ -142,7 +143,7 @@ function ExperimentCompareImages() {
                 )}
                 </div>
             </div>
-      
+      </div>
       
       <div className='rating-container'>
         <div className='inner-star-rating-container'>
@@ -156,7 +157,7 @@ function ExperimentCompareImages() {
         </div>
       </div>
       </div>
-    </div>
+    
   );
 }
 
