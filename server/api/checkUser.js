@@ -4,7 +4,7 @@ const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
   try {
-    allowCORS(req, res, () => {});
+    allowCORS(req, res);
     const userId = req.query.userId;
 
     const userExists = await ExperimentModel.exists({ userId: userId });
@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
   } catch (err) {
     console.error(err);
     if (!res.headersSent) {
-      res.status(500).send('Server Error');
+      return res.status(500).send('Server Error');
     }
   }
 }
