@@ -9,7 +9,7 @@ import images from '../data.json';
 import NextButton from '../components/NextButton.js';
 import FiveStarsRating from '../components/StarRating';
 import {getSerieNumber } from '../utils/dbInteractionFunctions.js';
-import series from '../id_images_series_piloto.json';
+import series from '../id_images_series.json';
 
 function ProgressBar({ value, max }) {
   const percentage = (value / max) * 100;
