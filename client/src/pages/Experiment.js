@@ -57,6 +57,7 @@ function ExperimentCompareImages() {
     if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
+      console.log('Experiment image:', image.dir);
       
     }
   } , [currentSerie, img_index]);
