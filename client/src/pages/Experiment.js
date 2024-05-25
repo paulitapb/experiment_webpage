@@ -80,7 +80,7 @@ function ExperimentCompareImages() {
         imgGeneratedId: experimentImg.id, 
         imgId: experimentImg.img, 
         imgGroup: experimentImg.group,
-        imgGeneratedBy: experimentImg.imgGeneratedBy, 
+        imgGeneratedBy: experimentImg.experiment, 
         promptUsed: experimentImg.promptUsed, 
         rating: fiveStarsRatingRef.current.currentRating(), 
         submitTime: timestamp, 
