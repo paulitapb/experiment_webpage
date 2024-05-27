@@ -12,7 +12,8 @@ import {getSerieNumber } from '../utils/dbInteractionFunctions.js';
 import series from '../id_images_series.json';
 
 function ProgressBar({ value, max }) {
-  const percentage = (value / max) * 100;
+  const percentage = Math.min((value / max) * 100, 99);
+  
   return (
     <div className="progress-bar-container">
       <progress value={value} max={max}></progress>
