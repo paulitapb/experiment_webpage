@@ -39,7 +39,7 @@ function TutorialCompareImages() {
         Necesitamos que compares las imágenes y, suponiendo que la imagen de la derecha fue generada con una descripción de la imagen de la izquierda ¿Cuán bien te parece que salió el proceso? Para esto usamos un sistema de estrellas donde 1 estrella es la menor puntuación y 5 estrellas la máxima. 
         </p>
       <div className='SubHeader'>
-        Suponiendo que la imagen de la derecha fue generada con una descripción de la imagen de la derecha ¿Cuán bien te parece que salió el proceso?
+        Suponiendo que la imagen de la derecha fue generada con una descripción de la imagen de la izquierda ¿Cuán bien te parece que salió el proceso?
 
         </div>
         <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
