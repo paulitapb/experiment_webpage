@@ -44,7 +44,7 @@ function ExperimentCompareImages() {
     if (currentSerie === null){
       const fetchCurrentSerie = async () => {
         const serieNumber = await getSerieNumber(userId);
-        console.log('Serie number:', serieNumber);
+        //console.log('Serie number:', serieNumber);
         setCurrentSerie(serieNumber);
         localStorage.setItem('currentSerie', serieNumber);
       }
@@ -59,7 +59,7 @@ function ExperimentCompareImages() {
       setExperimentImg(image);
       console.log('Curent serie:', currentSerie, 'Image index:', img_index)
       if(image !== undefined){
-        console.log('Experiment image:', image.dir);
+        //console.log('Experiment image:', image.dir);
       }
     }
   } , [currentSerie, img_index]);
@@ -170,7 +170,7 @@ function ExperimentCompareImages() {
           <FiveStarsRating ref={fiveStarsRatingRef} />
         </div>
         <div className='inner-button-container'>
-          {(img_index < images.length-1) ? (
+          {(img_index < series[0].length-1) ? (
             <NextButton handleOnClick={handleNextClick}/>
           ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
           }
