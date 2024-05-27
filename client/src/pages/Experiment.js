@@ -38,7 +38,7 @@ function ExperimentCompareImages() {
   const [currentSerie, setCurrentSerie] = useState(localStorage.getItem('currentSerie') || null);
   
   const [progress, setProgress] = useState(0);
-  const maxProgress = images.length - 1;
+  const maxProgress = series[0].length-1;
   
   useEffect(() => {
     if (currentSerie === null){
