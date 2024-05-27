@@ -4,9 +4,7 @@ const ExperimentModel = require('../models/ExperimentModel');
 
 module.exports = async (req, res) => {
   try{
-    if (allowCORS(req, res, () => {})) {
-      return;
-    }
+    allowCORS(req, res, () => {});
     
     const { userId, loginTime } = req.body;
 
