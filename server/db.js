@@ -6,6 +6,7 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.error('Database connection error', err));
 
 const allowCORS = (req, res, next) => {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
   console.log(`Received ${req.method} request from ${req.origin}`);
   res.setHeader('Access-Control-Allow-Origin', 'https://experimentsd-web.vercel.app'); 
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
