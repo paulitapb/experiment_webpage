@@ -38,7 +38,7 @@ function ExperimentCompareImages() {
   const [img_index, setImgIndex] = useState(parseInt(localStorage.getItem('imgIndex')) || 0);
   const [currentSerie, setCurrentSerie] = useState(localStorage.getItem('currentSerie') || null);
   
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(parseInt(localStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
   
   useEffect(() => {
@@ -58,7 +58,7 @@ function ExperimentCompareImages() {
     if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
-      console.log('Curent serie:', currentSerie, 'Image index:', img_index)
+      //console.log('Curent serie:', currentSerie, 'Image index:', img_index)
       if(image !== undefined){
         //console.log('Experiment image:', image.dir);
       }
@@ -96,7 +96,7 @@ function ExperimentCompareImages() {
         const updatedProgress = prevProgress + 1;
         return updatedProgress > maxProgress ? maxProgress : updatedProgress;
       });
-
+      localStorage.setItem('progress', progress + 1);
       setExperimentImg(null);
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
