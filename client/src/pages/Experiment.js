@@ -45,7 +45,7 @@ function ExperimentCompareImages() {
     if (currentSerie === null){
       const fetchCurrentSerie = async () => {
         const serieNumber = await getSerieNumber(userId);
-        console.log('Serie number:', serieNumber);
+        //console.log('Serie number:', serieNumber);
         setCurrentSerie(serieNumber);
         sessionStorage.setItem('currentSerie', serieNumber);
       }
@@ -58,10 +58,10 @@ function ExperimentCompareImages() {
     if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
       setExperimentImg(image);
-      console.log('Curent serie:', currentSerie, 'Image index:', img_index)
-      if(image !== undefined){
+      //console.log('Curent serie:', currentSerie, 'Image index:', img_index)
+      /* if(image !== undefined){
         console.log('Experiment image:', image.dir);
-      }
+      } */
     }
   } , [currentSerie, img_index]);
 
