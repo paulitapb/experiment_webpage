@@ -35,10 +35,10 @@ function ExperimentCompareImages() {
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
   
-  const [img_index, setImgIndex] = useState(parseInt(localStorage.getItem('imgIndex')) || 0);
-  const [currentSerie, setCurrentSerie] = useState(localStorage.getItem('currentSerie') || null);
+  const [img_index, setImgIndex] = useState(parseInt(sessionStorage.getItem('imgIndex')) || 0);
+  const [currentSerie, setCurrentSerie] = useState(sessionStorage.getItem('currentSerie') || null);
   
-  const [progress, setProgress] = useState(parseInt(localStorage.getItem('progress')) || 0);
+  const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
   
   useEffect(() => {
@@ -47,7 +47,7 @@ function ExperimentCompareImages() {
         const serieNumber = await getSerieNumber(userId);
         console.log('Serie number:', serieNumber);
         setCurrentSerie(serieNumber);
-        localStorage.setItem('currentSerie', serieNumber);
+        sessionStorage.setItem('currentSerie', serieNumber);
       }
       fetchCurrentSerie();
     };
@@ -96,11 +96,11 @@ function ExperimentCompareImages() {
         const updatedProgress = prevProgress + 1;
         return updatedProgress > maxProgress ? maxProgress : updatedProgress;
       });
-      localStorage.setItem('progress', progress);
+      sessionStorage.setItem('progress', progress);
       setExperimentImg(null);
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
-      localStorage.setItem('imgIndex', img_index + 1);
+      sessionStorage.setItem('imgIndex', img_index + 1);
     } catch (error) {
       console.error('Error adding rating:', error);
     }
