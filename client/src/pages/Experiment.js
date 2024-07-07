@@ -79,7 +79,7 @@ function ExperimentCompareImages() {
       return;
     }
     try {
-      const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addRating', {
+      const response = await axios.post('http://127.0.0.1:8000/api/addRating', {
         userId: userId,
         imgGeneratedId: experimentImg.id, 
         imgId: experimentImg.img, 

@@ -49,7 +49,7 @@ function CellPhoneLogin() {
 
         try {
           
-          await axios.post('https://experiment-webpage-server.vercel.app/api/addUser', {
+          await axios.post('http://127.0.0.1:8000/api/addUser', {
             userId: hashedCellNumber, 
             loginTime: timestamp
           });

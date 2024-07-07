@@ -16,11 +16,15 @@ function TutorialCompareImages() {
     const handleGoToExperiment = async () => {
         if(fiveStarsRatingRef.current.currentRating() > 0){
           const timestamp = new Date().getTime();
-          const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addTutorialTime', {
+        try {
+          const response = await axios.post('http://127.0.0.1:8000/api/addTutorialTime', {
             userId: userId,
             tutorialTime: timestamp
           });
-          navigate('/experiment', {state: {userId: userId}} );
+        } catch (error) {
+          console.error("Error trying to add tutorial time:", error)
+        }
+        navigate('/experiment', {state: {userId: userId}} );
         }else{
             alert("Por favor, califique la imagen antes de continuar")
         }

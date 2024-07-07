@@ -3,7 +3,7 @@ import images from '../data.json';
 
 export async function checkUserExists(hashedCellNumber){
     try {
-      const response = await axios.post('https://experiment-webpage-server.vercel.app/api/checkUser', 
+      const response = await axios.post('http://127.0.0.1:8000/api/checkUser', 
       {},{
         params: {
           userId: hashedCellNumber,
@@ -22,7 +22,7 @@ export async function checkUserExists(hashedCellNumber){
 export async function getNewImageToRate(userId){
     const randomIndex = Math.floor(Math.random() * images.length);
     const imgSelected = images[randomIndex];
-    const userAlreadyRated = await axios.post('https://experiment-webpage-server.vercel.app/api/hasRated', {
+    const userAlreadyRated = await axios.post('http://127.0.0.1:8000/api/hasRated', {
       params: {
         userId: userId,
         imgId: imgSelected.img,
@@ -39,7 +39,7 @@ export async function getNewImageToRate(userId){
 
 export async function getSerieNumber(userId){
   try {
-    const response = await axios.post('https://experiment-webpage-server.vercel.app/api/getCurrentSerie', 
+    const response = await axios.post('http://127.0.0.1:8000/api/getCurrentSerie', 
     {userId: userId});
     return response.data;
   } catch (error) {
