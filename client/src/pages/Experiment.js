@@ -1,15 +1,15 @@
+// Paula's imports
 import {useRef, useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 
-
 import './experiment.css'
-import images from '../data.json';
 
 import NextButton from '../components/NextButton.js';
-import FiveStarsRating from '../components/StarRating';
-import {getSerieNumber } from '../utils/dbInteractionFunctions.js';
-import series from '../id_images_series.json';
+
+// My imports
+import experiments from '../data.json';
+import WordSelector from '../components/WordSelector.js';
 
 function ProgressBar({ value, max }) {
   const percentage = Math.min((value / max) * 100, 99);
@@ -26,90 +26,65 @@ function ProgressBar({ value, max }) {
 
 function ExperimentCompareImages() {
 
+  // Paula's states
   const navigate = useNavigate();
   const location = useLocation();
   const { userId } = location.state;
+    
+  const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 1);
+  const maxProgress = experiments.length;
 
-  const fiveStarsRatingRef = useRef(null);
+  // My states
+  const [exp_index, setExperimentIndex] = useState(0);
+  const [exp, setExperiment] = useState(experiments[exp_index]);
+  const wordSelectorRef = useRef(null);
   
-  const [experimentImg, setExperimentImg] = useState(null);
-  const [originalImagePath, setOriginalImagePath] = useState(null);
-  
-  const [img_index, setImgIndex] = useState(parseInt(sessionStorage.getItem('imgIndex')) || 0);
-  const [currentSerie, setCurrentSerie] = useState(sessionStorage.getItem('currentSerie') || null);
-  
-  const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
-  const maxProgress = series[0].length-1;
-  
-  useEffect(() => {
-    if (currentSerie === null){
-      const fetchCurrentSerie = async () => {
-        const serieNumber = await getSerieNumber(userId);
-        //console.log('Serie number:', serieNumber);
-        setCurrentSerie(serieNumber);
-        sessionStorage.setItem('currentSerie', serieNumber);
-      }
-      fetchCurrentSerie();
-    };
-    }, []);
+
+  // Facu
 
   // update next image 
   useEffect(() => {
-    if (currentSerie !== undefined && series[currentSerie]) {
-      const image = images.find(img => img.id === series[currentSerie][img_index]);
-      setExperimentImg(image);
-      //console.log('Curent serie:', currentSerie, 'Image index:', img_index)
-      /* if(image !== undefined){
-        console.log('Experiment image:', image.dir);
-      } */
-    }
-  } , [currentSerie, img_index]);
-
-  //update original img to match the experiment image  
-  useEffect(() => {
-    if (experimentImg) {
-      setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
-    }
-  }, [experimentImg]);
-
+    console.log(exp_index)
+    setExperiment(experiments[exp_index]);
+  } , [exp_index]);
 
   const submitRating = async (timestamp) => {
     if (!navigator.onLine) {
       alert('No se pudo enviar la calificación. Por favor, revisa tu conexión a internet.');
       return;
     }
-    try {
-      const response = await axios.post('http://127.0.0.1:8000/api/addRating', {
-        userId: userId,
-        imgGeneratedId: experimentImg.id, 
-        imgId: experimentImg.img, 
-        imgGroup: experimentImg.group,
-        imgGeneratedBy: experimentImg.experiment, 
-        promptUsed: experimentImg.promptUsed, 
-        rating: fiveStarsRatingRef.current.currentRating(), 
-        submitTime: timestamp, 
-        lastImageIndexSubmitted: img_index,
-      });
-      console.log('Rating added successfully!');
-      fiveStarsRatingRef.current.reset();
-      setProgress(prevProgress => {
-        const updatedProgress = prevProgress + 1;
-        return updatedProgress > maxProgress ? maxProgress : updatedProgress;
-      });
-      sessionStorage.setItem('progress', progress);
-      setExperimentImg(null);
-      setOriginalImagePath(null);
-      setImgIndex(img_index + 1);
-      sessionStorage.setItem('imgIndex', img_index + 1);
-    } catch (error) {
-      console.error('Error adding rating:', error);
-    }
+    // try {
+    //   const response = await axios.post('http://127.0.0.1:8000/api/addRating', {
+    //     userId: userId,
+    //     imgGeneratedId: experimentImg.id, 
+    //     imgId: experimentImg.img, 
+    //     imgGroup: experimentImg.group,
+    //     imgGeneratedBy: experimentImg.experiment, 
+    //     promptUsed: experimentImg.promptUsed, 
+    //     rating: fiveStarsRatingRef.current.currentRating(), 
+    //     submitTime: timestamp, 
+    //     lastImageIndexSubmitted: img_index,
+    //   });
+    console.log('Rating added successfully!');
+    wordSelectorRef.current.reset();
+    setProgress(prevProgress => {
+      const updatedProgress = prevProgress + 1;
+      return updatedProgress > maxProgress ? maxProgress : updatedProgress;
+    });
+    sessionStorage.setItem('progress', progress);
+    setExperimentIndex(exp_index + 1);
+    sessionStorage.setItem('exp_index', exp_index + 1); 
+    //setExperiment(null);
+    // } catch (error) {
+    //   console.error('Error adding rating:', error);
+    // }
   };
 
 
   const handleNextClick = async () => {
-    if (fiveStarsRatingRef) {
-      if(fiveStarsRatingRef.current.currentRating() === 0){
+    if (wordSelectorRef) {
+      // !Repeated Code
+      if(!wordSelectorRef.current.isFull()){
         alert('Ingresa una calificación antes de continuar');
         return;
       }
@@ -120,12 +95,14 @@ function ExperimentCompareImages() {
   }
 
   const handleExitClick = async () => {
-    if (fiveStarsRatingRef.current.currentRating() === 0) {
-      alert('Ingresa una calificación antes de salir del experimento');
+    if(!wordSelectorRef.current.isFull()){
+      alert('Ingresa una calificación antes de continuar');
       return;
     }
     const timestamp = new Date().getTime();
     submitRating(timestamp);
+    // !Es temporal
+    sessionStorage.setItem('progress', 0); 
     navigate('/thank-you');
   }
 
@@ -138,40 +115,12 @@ function ExperimentCompareImages() {
         </div>
         <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>
 
-        <div className='outer-container'>
-            <div className='image-container-exp'>
-                <h4>Imagen original</h4> 
-                  <div className="image-container">
-                  {!originalImagePath ? (
-                    <div className="loader" style={{ height: '50px', width: '50px' }}>
-                    </div>
-                  ):(
-                    <img 
-                    src={process.env.PUBLIC_URL + originalImagePath} 
-                    alt=''/>)
-                  }
-                  </div>
-            </div>
-            <div className='image-container-exp'>
-                <h4>Imagen generada</h4> 
-                <div className="image-container">
-                {!experimentImg ? (
-                  <div className="loader" style={{ height: '50px', width: '50px' }}></div>
-                ):(
-                  <img 
-                  src={process.env.PUBLIC_URL + experimentImg.dir} 
-                  alt=''/> 
-                )}
-                </div>
-            </div>
-      </div>
-      
       <div className='rating-container'>
         <div className='inner-star-rating-container'>
-          <FiveStarsRating ref={fiveStarsRatingRef} />
+          <WordSelector ref={wordSelectorRef}  exp={exp}/>
         </div>
         <div className='inner-button-container'>
-          {(img_index < series[0].length-1) ? (
+          {(progress < maxProgress) ? (
             <NextButton handleOnClick={handleNextClick}/>
           ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
           }
