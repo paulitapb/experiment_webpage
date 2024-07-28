@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+# @app.get("/", tags=['root'])
+# async def read_root():
+#     return {"message": "Bienvenides a esta fantástica aplicación"}
 
 origins = [
     "http://localhost:3000",
