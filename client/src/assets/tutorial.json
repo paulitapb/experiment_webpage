@@ -1,0 +1,30 @@
+{
+    "topic": "Tarjeta", 
+    "context": "Plata",
+    "words": [
+      {
+        "id":1,
+        "word":"Dinero1"
+      },
+      {
+        "id":2,
+        "word":"Dinero2"
+      },
+      {
+        "id":3,
+        "word":"Dinero3"
+      },
+      {
+        "id":4,
+        "word":"Dinero4"
+      },
+      {
+        "id":5,
+        "word":"Dinero5"
+      },
+      {
+        "id":6,
+        "word":"Dinero6"
+      }
+    ]
+}

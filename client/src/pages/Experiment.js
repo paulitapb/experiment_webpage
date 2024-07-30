@@ -90,7 +90,6 @@ function ExperimentCompareImages() {
       }
       const timestamp = new Date().getTime();
       submitRating(timestamp);
-
     }
   }
 

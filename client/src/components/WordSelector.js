@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import React,  { Component} from 'react';
+    import React,  { Component} from 'react';
 
 
 export default class WordSelector extends Component {
@@ -26,7 +25,8 @@ export default class WordSelector extends Component {
                 console.log(selected)
                 return (
                     <button
-                        style={{ display: 'block', padding: '5px' }}
+                        // TODO: change styles to css file
+                        style={{ width: "100%", display: 'block', padding: '5px' , backgroundColor: this.state.selected.has(item.id) ? 'red' : 'yellow'}}
                         key={item.id}
                         onClick={() => {
                             if (selected.size > 3) {
@@ -34,9 +34,7 @@ export default class WordSelector extends Component {
                             }
 
                             if (this.state.selected.has(item.id)) {
-                                console.log("borro")
                                 selected.delete(item.id)
-                                console.log(selected)
                             } else if (selected.size < 3) {
                                 selected.add(item.id)
                             } else {
@@ -45,7 +43,6 @@ export default class WordSelector extends Component {
                             this.setState({selected: new Set(selected)}) 
                         }}
                     >
-                        {this.state.selected.has(item.id) ? '(x) ' : '( ) '}
                         {item.word}
                     </button>
                 )
