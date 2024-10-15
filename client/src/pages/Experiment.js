@@ -157,7 +157,7 @@ function ExperimentCompareImages() {
                 <h4>Imagen generada</h4> 
                 <div className="image-container">
                 {!experimentImg ? (
-                  <div className="loader" style={{ height: '50px', width: '50px' }}></div>
+                  <div className='loader' style={{ height: '50px', width: '50px' }}></div>
                 ):(
                   <img 
                   src={process.env.PUBLIC_URL + experimentImg.dir} 
