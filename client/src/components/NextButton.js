@@ -20,7 +20,7 @@ const NextButton = ({handleOnClick}) => {
         return(
                 <div className='button-container'>
                 {isLoading ? (
-                            <div className="loader"></div>
+                            <div className='loader'></div>
                         ) : (
                             <button className='SubmitButton' onClick={handleClick}> Siguiente imagen </button>
                         )}
