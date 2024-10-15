@@ -55,7 +55,7 @@ function TutorialCompareImages() {
         <div className='outer-container'>
             <div className='image-container-exp'>
                 <h4>Imagen original</h4>
-                  <div className="image-container">
+                  <div className='image-container'>
                     <img 
                     src={process.env.PUBLIC_URL + "../images/img_original/img44.webp"} 
                     alt=''/>
@@ -64,7 +64,7 @@ function TutorialCompareImages() {
             </div>
             <div className='image-container-exp'>
                 <h4>Imagen generada</h4> 
-                  <div className="image-container">
+                  <div className='image-container'>
                     <img 
                     src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.webp"} 
                     alt=''></img>

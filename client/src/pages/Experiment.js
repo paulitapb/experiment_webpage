@@ -142,9 +142,9 @@ function ExperimentCompareImages() {
         <div className='outer-container'>
             <div className='image-container-exp'>
                 <h4>Imagen original</h4> 
-                  <div className="image-container">
+                  <div className='image-container'>
                   {!originalImagePath ? (
-                    <div className="loader" style={{ height: '50px', width: '50px' }}>
+                    <div className='loader' style={{ height: '50px', width: '50px' }}>
                     </div>
                   ):(
                     <img 
@@ -155,7 +155,7 @@ function ExperimentCompareImages() {
             </div>
             <div className='image-container-exp'>
                 <h4>Imagen generada</h4> 
-                <div className="image-container">
+                <div className='image-container'>
                 {!experimentImg ? (
                   <div className='loader' style={{ height: '50px', width: '50px' }}></div>
                 ):(
