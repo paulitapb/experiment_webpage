@@ -1,5 +1,6 @@
 
 import '../pages/experiment.css';
+import '../styles/global.css';
 import { useState } from 'react';
 
 
