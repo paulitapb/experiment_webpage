@@ -68,7 +68,7 @@ function ExperimentCompareImages() {
   //update original img to match the experiment image  
   useEffect(() => {
     if (experimentImg) {
-      setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".png");
+      setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".webp");
     }
   }, [experimentImg]);
 
@@ -103,6 +103,7 @@ function ExperimentCompareImages() {
       sessionStorage.setItem('imgIndex', img_index + 1);
     } catch (error) {
       console.error('Error adding rating:', error);
+      window.location.reload();
     }
   };
 
@@ -133,7 +134,7 @@ function ExperimentCompareImages() {
   return (
     <div>
         <div className='SubHeader'>
-          Suponiendo que la imagen de la derecha fue generada con una descripción la imagen de la izquierda
+          Suponiendo que la imagen de la derecha fue generada con una descripción de la imagen de la izquierda
           ¿Cuán bien te parece que salió el proceso?
         </div>
         <div className='Center'> <i>(1 es muy mal y 5 muy bien)</i> </div>

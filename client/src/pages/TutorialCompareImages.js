@@ -49,7 +49,7 @@ function TutorialCompareImages() {
                 <h4>Imagen original</h4>
                   <div className="image-container">
                     <img 
-                    src={process.env.PUBLIC_URL + "../images/img_original/img44.png"} 
+                    src={process.env.PUBLIC_URL + "../images/img_original/img44.webp"} 
                     alt=''/>
                   </div>
                   
@@ -58,7 +58,7 @@ function TutorialCompareImages() {
                 <h4>Imagen generada</h4> 
                   <div className="image-container">
                     <img 
-                    src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.jpg"} 
+                    src={process.env.PUBLIC_URL + "../images/DeMolenRembrandt.webp"} 
                     alt=''></img>
                   </div>
                 
