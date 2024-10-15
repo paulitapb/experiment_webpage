@@ -12,15 +12,23 @@ function TutorialCompareImages() {
     const location = useLocation();
     const { userId } = location.state;
     const fiveStarsRatingRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleGoToExperiment = async () => {
         if(fiveStarsRatingRef.current.currentRating() > 0){
+          setIsLoading(true);
           const timestamp = new Date().getTime();
-          const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addTutorialTime', {
+          try {
+            const response = await axios.post('https://experiment-webpage-server.vercel.app/api/addTutorialTime', {
             userId: userId,
             tutorialTime: timestamp
           });
           navigate('/experiment', {state: {userId: userId}} );
+          }catch (error) {
+            window.location.reload();
+          }finally {
+            setIsLoading(false);
+          }
         }else{
             alert("Por favor, califique la imagen antes de continuar")
         }
