@@ -9,12 +9,14 @@ const NextButton = ({handleOnClick}) => {
 
     const handleClick = async () => {
         setIsLoading(true);
+        console.log('Loading started', isLoading); 
         try {
             await handleOnClick();
         } catch (error) {
             console.error(error);
         } finally {
             setIsLoading(false);
+            console.log('Loading finished', isLoading); 
         }
     };
         return(

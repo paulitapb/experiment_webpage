@@ -53,7 +53,6 @@ function ExperimentCompareImages() {
     };
     }, []);
 
-  // update next image 
   useEffect(() => {
     if (currentSerie !== undefined && series[currentSerie]) {
       const image = images.find(img => img.id === series[currentSerie][img_index]);
@@ -116,7 +115,6 @@ function ExperimentCompareImages() {
       }
       const timestamp = new Date().getTime();
       submitRating(timestamp);
-
     }
   }
 
