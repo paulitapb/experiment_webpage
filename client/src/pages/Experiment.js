@@ -40,6 +40,10 @@ function ExperimentCompareImages() {
   
   const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
+
+  const isLoadingRef = useRef(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   
   useEffect(() => {
     if (currentSerie === null){
@@ -113,8 +117,14 @@ function ExperimentCompareImages() {
         alert('Ingresa una calificación antes de continuar');
         return;
       }
+      isLoadingRef.current = true; 
+      setIsLoading(true); 
+
       const timestamp = new Date().getTime();
       submitRating(timestamp);
+
+      isLoadingRef.current = false;
+      setIsLoading(false);
     }
   }
 
@@ -171,7 +181,7 @@ function ExperimentCompareImages() {
         </div>
         <div className='inner-button-container'>
           {(img_index < series[0].length-1) ? (
-            <NextButton handleOnClick={handleNextClick}/>
+            <NextButton handleOnClick={handleNextClick} isLoadingRef={isLoadingRef} isLoading={isLoading}/>
           ):(<button onClick={handleExitClick} className='SubmitButton'>Salir del experimento</button>)
           }
         </div>
