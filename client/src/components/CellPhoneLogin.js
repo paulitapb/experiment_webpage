@@ -56,6 +56,7 @@ function CellPhoneLogin() {
           navigate('/tutorial', {state: {userId: hashedCellNumber}})
         } catch (error) {
           console.error('Error submitting data:', error);
+          window.location.reload();
         }
       } 
       setIsLoading(false);
