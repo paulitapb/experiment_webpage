@@ -122,7 +122,7 @@ function ExperimentCompareImages() {
 
       const timestamp = new Date().getTime();
       submitRating(timestamp);
-      await new Promise(resolve => setTimeout(resolve, 2000)); // 2 seconds delay
+      await new Promise(resolve => setTimeout(resolve,300)); // delay to show loading feedback
 
       isLoadingRef.current = false;
       setIsLoading(false);
