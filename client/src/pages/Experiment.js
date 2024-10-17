@@ -72,6 +72,8 @@ function ExperimentCompareImages() {
   useEffect(() => {
     if (experimentImg) {
       setOriginalImagePath("../images/img_original/img" + experimentImg.group.toString() + experimentImg.img.toString() + ".webp");
+      isLoadingRef.current = false;
+      setIsLoading(false);
     }
   }, [experimentImg]);
 
@@ -122,10 +124,7 @@ function ExperimentCompareImages() {
 
       const timestamp = new Date().getTime();
       submitRating(timestamp);
-      await new Promise(resolve => setTimeout(resolve,100)); // delay to show loading feedback
-
-      isLoadingRef.current = false;
-      setIsLoading(false);
+      
     }
   }
 
