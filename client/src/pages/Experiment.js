@@ -62,8 +62,9 @@ function ExperimentCompareImages() {
       setImgIndex(lastImageIndexSubmitted.data);
       sessionStorage.setItem('imgIndex', lastImageIndexSubmitted.data);
       if (lastImageIndexSubmitted.data == series[0].length-1){
-        alert("Ya terminaste el experimento! Gracias por participar!")
-        navigate('/thank-you');
+        setTimeout(() => {
+          navigate('/thank-you');
+        }, 2000);
       }
     }
     }, []);
