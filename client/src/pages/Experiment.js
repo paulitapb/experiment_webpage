@@ -109,7 +109,7 @@ function ExperimentCompareImages() {
        
     } catch (error) {
       console.error('Error adding rating:', error);
-      this.window.reload();
+      window.location.reload();
     }
   };
 
