@@ -28,11 +28,7 @@ function ExperimentCompareImages() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const { userId, currentSerieFromLastWindow } = location.state || {};
-
-  if (currentSerieFromLastWindow !== undefined) {
-    sessionStorage.setItem('currentSerie', currentSerieFromLastWindow);
-  }
+  const { userId } = location.state;
   const [currentSerie, setCurrentSerie] = useState(sessionStorage.getItem('currentSerie') || null);
   
 
@@ -41,7 +37,14 @@ function ExperimentCompareImages() {
   const [experimentImg, setExperimentImg] = useState(null);
   const [originalImagePath, setOriginalImagePath] = useState(null);
   
+  
   const [img_index, setImgIndex] = useState(parseInt(sessionStorage.getItem('imgIndex')) || 0);
+  const lastImageIndexSubmitted = checkLastImageRated();
+  if (lastImageIndexSubmitted !== null) {
+    setImgIndex(lastImageIndexSubmitted);
+    sessionStorage.setItem('imgIndex', lastImageIndexSubmitted);
+  }
+
   const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
 
@@ -81,6 +84,17 @@ function ExperimentCompareImages() {
     }
   }, [experimentImg]);
 
+  const checkLastImageRated = async (timestamp) => {
+    
+    try {
+      const lastImageIndexSubmitted = await axios.post('https://experiment-webpage-server.vercel.app/api/getLastImageRated', {userId: userId});
+      console.log('Getting last image rated!');
+      return lastImageIndexSubmitted;
+    } catch (error) {
+      console.error('Error getting rating:', error);
+      return null;
+    }
+  };
 
   const submitRating = async (timestamp) => {
     if (!navigator.onLine) {
