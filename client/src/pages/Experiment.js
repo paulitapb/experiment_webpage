@@ -59,10 +59,8 @@ function ExperimentCompareImages() {
     const lastImageIndexSubmitted = await checkLastImageRated();
   
     if (lastImageIndexSubmitted !== null) {
-      setImgIndex(lastImageIndexSubmitted);
-      sessionStorage.setItem('imgIndex', lastImageIndexSubmitted);
-      console.log("image idex: ", lastImageIndexSubmitted.data);
-      console.log("series length: ", series[0].length);
+      setImgIndex(lastImageIndexSubmitted.data);
+      sessionStorage.setItem('imgIndex', lastImageIndexSubmitted.data);
       if (lastImageIndexSubmitted.data == series[0].length-1){
         navigate('/thank-you');
       }
@@ -89,7 +87,7 @@ function ExperimentCompareImages() {
     }
   }, [experimentImg]);
 
-  const checkLastImageRated = async (timestamp) => {
+  const checkLastImageRated = async () => {
     
     try {
       const lastImageIndexSubmitted = await axios.post('https://experiment-webpage-server.vercel.app/api/getLastImageRated', {userId: userId});
@@ -129,7 +127,6 @@ function ExperimentCompareImages() {
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
       sessionStorage.setItem('imgIndex', img_index + 1);
-       
     } catch (error) {
       console.error('Error adding rating:', error);
       window.location.reload();
