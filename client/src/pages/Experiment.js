@@ -28,10 +28,13 @@ function ExperimentCompareImages() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const { userId, currentSerie } = location.state || {};
-  if (sessionStorage.getItem('currentSerie') != null){
-    setCurrentSerie(sessionStorage.getItem('currentSerie'))
+  const { userId, currentSerieFromLastWindow } = location.state || {};
+
+  if (currentSerieFromLastWindow !== undefined) {
+    sessionStorage.setItem('currentSerie', currentSerieFromLastWindow);
   }
+  const [currentSerie, setCurrentSerie] = useState(sessionStorage.getItem('currentSerie') || null);
+  
 
   const fiveStarsRatingRef = useRef(null);
   
