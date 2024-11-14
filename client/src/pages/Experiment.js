@@ -46,7 +46,7 @@ function ExperimentCompareImages() {
   const [isLoading, setIsLoading] = useState(false);
 
   
-  useEffect(() => {
+  useEffect(async () => {
     if (currentSerie === null){
       const fetchCurrentSerie = async () => {
         const serieNumber = await getSerieNumber(userId);
@@ -56,7 +56,7 @@ function ExperimentCompareImages() {
       }
       fetchCurrentSerie();
     };
-    const lastImageIndexSubmitted = checkLastImageRated();
+    const lastImageIndexSubmitted = await checkLastImageRated();
   
     if (lastImageIndexSubmitted !== null) {
       setImgIndex(lastImageIndexSubmitted);
