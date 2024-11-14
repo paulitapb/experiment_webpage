@@ -28,7 +28,10 @@ function ExperimentCompareImages() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const { userId } = location.state;
+  const { userId, currentSerie } = location.state || {};
+  if (sessionStorage.getItem('currentSerie') != null){
+    setCurrentSerie(sessionStorage.getItem('currentSerie'))
+  }
 
   const fiveStarsRatingRef = useRef(null);
   
@@ -36,8 +39,6 @@ function ExperimentCompareImages() {
   const [originalImagePath, setOriginalImagePath] = useState(null);
   
   const [img_index, setImgIndex] = useState(parseInt(sessionStorage.getItem('imgIndex')) || 0);
-  const [currentSerie, setCurrentSerie] = useState(sessionStorage.getItem('currentSerie') || null);
-  
   const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
 

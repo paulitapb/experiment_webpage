@@ -40,7 +40,8 @@ function CellPhoneLogin() {
       if (userExists) {
         console.log('User already exists');
         alert("Bienvenidx nuevamente!")
-        navigate('/experiment', {state: {userId: hashedCellNumber}} );
+        const serieAssignedRetrieved = await axios.post('https://experiment-webpage-server.vercel.app/api/getLastImageRated', {userId: hashedCellNumber});
+        navigate('/experiment', {state: {userId: hashedCellNumber, serieAssigned: serieAssignedRetrieved}} );
         //alert('Ya completaste el experimento! Gracias por tu participación!')
 
       }else{ 
