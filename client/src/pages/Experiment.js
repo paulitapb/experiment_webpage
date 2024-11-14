@@ -39,12 +39,6 @@ function ExperimentCompareImages() {
   
   
   const [img_index, setImgIndex] = useState(parseInt(sessionStorage.getItem('imgIndex')) || 0);
-  const lastImageIndexSubmitted = checkLastImageRated();
-  if (lastImageIndexSubmitted !== null) {
-    setImgIndex(lastImageIndexSubmitted);
-    sessionStorage.setItem('imgIndex', lastImageIndexSubmitted);
-  }
-
   const [progress, setProgress] = useState(parseInt(sessionStorage.getItem('progress')) || 0);
   const maxProgress = series[0].length-1;
 
@@ -62,6 +56,12 @@ function ExperimentCompareImages() {
       }
       fetchCurrentSerie();
     };
+    const lastImageIndexSubmitted = checkLastImageRated();
+  
+    if (lastImageIndexSubmitted !== null) {
+      setImgIndex(lastImageIndexSubmitted);
+      sessionStorage.setItem('imgIndex', lastImageIndexSubmitted);
+    }
     }, []);
 
   useEffect(() => {
