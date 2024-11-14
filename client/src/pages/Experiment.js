@@ -61,6 +61,8 @@ function ExperimentCompareImages() {
     if (lastImageIndexSubmitted !== null) {
       setImgIndex(lastImageIndexSubmitted);
       sessionStorage.setItem('imgIndex', lastImageIndexSubmitted);
+      console.log("image idex: ", lastImageIndexSubmitted);
+      console.log("series length: ", series[0].length);
       if (lastImageIndexSubmitted == series[0].length-1){
         navigate('/thank-you');
       }
