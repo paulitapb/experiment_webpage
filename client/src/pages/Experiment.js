@@ -106,9 +106,10 @@ function ExperimentCompareImages() {
       setOriginalImagePath(null);
       setImgIndex(img_index + 1);
       sessionStorage.setItem('imgIndex', img_index + 1);
+       
     } catch (error) {
       console.error('Error adding rating:', error);
-      window.location.reload();
+      alert("Ocurrio un error, volve a ingresar la calificación. Si ya lo hiciste recarga la página!")
     }
   };
 
