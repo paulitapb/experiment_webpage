@@ -56,16 +56,18 @@ function ExperimentCompareImages() {
       }
       fetchCurrentSerie();
     };
-    const lastImageIndexSubmitted = await checkLastImageRated();
+    if (img_index === null){
+      const lastImageIndexSubmitted = await checkLastImageRated();
   
-    if (lastImageIndexSubmitted !== null) {
-      setImgIndex(lastImageIndexSubmitted.data);
-      sessionStorage.setItem('imgIndex', lastImageIndexSubmitted.data);
-      if (lastImageIndexSubmitted.data == series[0].length-1){
-        alert("Ya terminaste el experimento! Gracias por participar");
-        setTimeout(() => {
-          navigate('/thank-you');
-        }, 2000);
+      if (lastImageIndexSubmitted !== null) {
+        setImgIndex(lastImageIndexSubmitted.data);
+        sessionStorage.setItem('imgIndex', lastImageIndexSubmitted.data);
+        if (lastImageIndexSubmitted.data == series[0].length-1){
+          alert("Ya terminaste el experimento! Gracias por participar");
+          setTimeout(() => {
+            navigate('/thank-you');
+          }, 2000);
+        }
       }
     }
     }, []);
